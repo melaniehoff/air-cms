@@ -18,7 +18,7 @@
     "start:server": "netlify-lambda serve ./server",
     "build": "run-p build:**",
     "build:app": "react-scripts build",
-    "build:lambda": "netlify-lambda build src/lambda",
+    "build:lambda": "netlify-lambda build ./server",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
