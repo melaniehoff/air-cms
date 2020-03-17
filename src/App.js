@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// import poster from '../public/cloud9.png';
 import './App.css';
+const pub = process.env.PUBLIC_URL;
 
 class App extends React.Component {
 
@@ -20,17 +22,11 @@ render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="https://lh3.googleusercontent.com/proxy/QN7EC4e_6Mv1LkWEv2J1RzM41jEg506hbbhlnW13HH5ELdl4udTvpFdXvWeTx9veNx4G3NwqfsUAsg77YH9iWhib-yTa1o_soWUIBzXpxdAxkMAz2FTt9d36QnNRcZZ_LM3j9ZUFOuOBgJ0yGKUbsSIsuUqWHbC6rUoW" className="App-logo" alt="logo" />
+          <img src={pub + 'cloud9.png'} alt="poster" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+           Learning how to do this.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
+          <a className="App-link" href="http://www.bufubyusforus.com/" target="_blank" rel="noopener noreferrer">~~Learning~~
           </a>
         </header>
       </div>
