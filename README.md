@@ -1,3 +1,3 @@
 # ☁️ CLOUD9 ☁️ BUFU ☁️ CHINA RESIDENCIES ☁️
 
-- airtable CMS + Netlify + React
+trying out airtable as CMS + Netlify + React
