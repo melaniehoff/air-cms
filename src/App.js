@@ -20,7 +20,7 @@ render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src="https://lh3.googleusercontent.com/proxy/QN7EC4e_6Mv1LkWEv2J1RzM41jEg506hbbhlnW13HH5ELdl4udTvpFdXvWeTx9veNx4G3NwqfsUAsg77YH9iWhib-yTa1o_soWUIBzXpxdAxkMAz2FTt9d36QnNRcZZ_LM3j9ZUFOuOBgJ0yGKUbsSIsuUqWHbC6rUoW" className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
