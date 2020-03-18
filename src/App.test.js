@@ -23,3 +23,20 @@ test('renders learn react link', () => {
 //       </div>
 //     );
 //   }
+
+
+
+                // <div>
+                //     <ol>
+                //     {
+                //         records.map(record => (
+                //             <li key={record.id} align="start">
+                //                 <div>
+                //                     <p className="title">{record.title}</p>
+                //                     <p className="body">{record.body}</p>
+                //                 </div>
+                //             </li>
+                //         ))
+                //     }
+                //     </ol>
+                // </div>
