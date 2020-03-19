@@ -1,8 +1,3 @@
-p {
-	color: pink;
-	width: 33vw;
-}
-
 
 #Committees {
 	float: right;
@@ -11,12 +6,12 @@ p {
 }
 
 
-#Committees p {
-	color: white;
+p {
+	color: pink;
 	width: 30vw;
 }
 
 
 h3 {
-	color: black;
+	color: darkblue;
 }
