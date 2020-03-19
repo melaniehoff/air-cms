@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './GetOnlinePosts.css';
+import '../Components.css';
 class GetOnlinePosts extends Component {
     constructor(props){
         super(props);
         this.state = {
             err : null,
             isLoaded : false,
-            records : []        
+            records : []
         };
     }
     componentDidMount() {
@@ -31,7 +31,7 @@ class GetOnlinePosts extends Component {
   render() {
       // An alternative way to do this that's preferred in most style guides is:
         // const { records } = this.state;
-        // See the object destructuring section: 
+        // See the object destructuring section:
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
       const { records } = this.state;
         // This map call produces an array of <div> elements. Alternatively, we could use another
