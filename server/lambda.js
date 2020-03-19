@@ -8,5 +8,8 @@ exports.handler = async (event) => {
 "headers": {"Authorization": `Bearer ${process_api_key}`} })
   const data = await response.text();
 
-  return { statusCode: 200, body: data};
+  return { 
+  	statusCode: 200, 
+  	body: data
+  };
 }
