@@ -12,7 +12,7 @@ class App extends React.Component {
 componentDidMount() {
         fetch(".netlify/functions/lambda")
         .then(function(response) {
-          console.log(response)
+//           console.log(response)
           return response.json();
         })
           .then( (data) => {
@@ -21,7 +21,7 @@ componentDidMount() {
                 isLoaded : true,
                 posts : data
             });
-          console.log(data)
+//           console.log(data)
 
         }).catch(err => {
 			 this.setState({

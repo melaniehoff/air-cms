@@ -4,27 +4,25 @@ class GetOnlinePosts extends Component {
     constructor(props){
         super(props);
         this.state = {
-            error : null,
+            err : null,
             isLoaded : false,
-            posts : []        
+            records : []        
         };
     }
 
     componentDidMount() {
         fetch(".netlify/functions/lambda")
-        .then(function(response) {
-          console.log(response)
-          return response.json();
-        })
+		  .then( response => response.json())
           .then( (data) => {
-          //omits projects tagged as private
             this.setState({
                 isLoaded : true,
-                posts : data
+                meow : data,
+                records: data.records
             });
-          console.log(data)
+          console.log(data.records)
 
-        }).catch(err => {
+        })
+			.catch(err => {
 			 this.setState({
                 isLoaded: true,
                 err
@@ -34,18 +32,19 @@ class GetOnlinePosts extends Component {
     }
 
 	render() {
-     	const {err, isLoaded, records} = this.state;
+     	// const {err, isLoaded, records} = this.state;
+     	//console.log(this.state.records)
+     	var records = this.state.records;
+     	console.log(records[0])
 
-        if(err){
-            return <div>Error in loading</div>
-        }else if (!isLoaded) {
-            return <div>Loading ...</div>
-        }else{
+
             return(
-            	<div>huuuuuuu</div>
+            	<div>
+            		{}
+            	</div>
 
             );
-        }
+        
       
     }
 
