@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import '../Components.css';
 class GetOnlinePosts extends Component {
-=======
-import './GetMainElements.css';
-class GetMainElements extends Component {
->>>>>>> a723977a485e56a297e8d894d6a23c3d214824e9
     constructor(props){
         super(props);
         this.state = {
@@ -15,7 +10,7 @@ class GetMainElements extends Component {
         };
     }
     componentDidMount() {
-        fetch(".netlify/functions/main")
+        fetch(".netlify/functions/lambda")
       .then( response => response.json())
           .then( (data) => {
             this.setState({
@@ -23,7 +18,7 @@ class GetMainElements extends Component {
                 meow : data,
                 records: data.records
             });
-          console.log('Main Records', data.records)
+          console.log('Mount Records', data.records)
         })
       .catch(err => {
        this.setState({
@@ -42,7 +37,7 @@ class GetMainElements extends Component {
         // This map call produces an array of <div> elements. Alternatively, we could use another
         // type of loop such a for-loop to do this, but React style guides prefer these
         // functional approaches.
-        const mainElements = records.map(record => {
+        const committeeElements = records.map(record => {
             // An alternative way to do this that's preferred in most style guides is:
             // const { fields, id } = record;
             const id = record.id;
@@ -50,16 +45,16 @@ class GetMainElements extends Component {
             // You can also rename in the destructuring call with:
             // const {Description: description, Committees: committees} = fields;
             // https://wesbos.com/destructuring-renaming/
-            const text = fields.Text;
-            const title = fields.Title;
+            const description = fields.Description;
+            const committee = fields.Committees;
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
             // through an loop like this or React will give a warning.
             return (
-                <div id="MainElements" key={id}>
-                        <h3>{title}</h3>
-                        <p>{text}</p>
+                <div key={id}>
+                    <p>{committee}</p>
+                    <p>{description}</p>
                 </div>
             );
         });
@@ -67,16 +62,10 @@ class GetMainElements extends Component {
         // Instead of rendering the variable, we could also have put the entire map call
         // into the brackets inside of this div to produce the same effect. Up to you!
         return(
-            <div id="MainElements">
-                {mainElements}
+            <div>
+                {committeeElements}
             </div>
         );
     }
-<<<<<<< HEAD
   }
   export default GetOnlinePosts;
-=======
-    }
-
-  export default GetMainElements;
->>>>>>> a723977a485e56a297e8d894d6a23c3d214824e9

@@ -3,12 +3,33 @@ import React from 'react';
 // import poster from '../public/cloud9.png';
 import './App.css';
 import GetOnlinePosts from './components/OnlinePosts/GetOnlinePosts';
-import GetMainElements from './components/MainElements/GetMainElements';
 
 const pub = process.env.PUBLIC_URL;
 
 class App extends React.Component {
 
+componentDidMount() {
+        fetch(".netlify/functions/lambda")
+        .then(function(response) {
+//           console.log(response)
+          return response.json();
+        })
+          .then( (data) => {
+          //omits projects tagged as private
+            this.setState({
+                isLoaded : true,
+                posts : data
+            });
+//           console.log(data)
+
+        }).catch(err => {
+			 this.setState({
+                isLoaded: true,
+                err
+            });
+			console.log(err)
+		});
+    }
 
 render() {
 
@@ -21,7 +42,6 @@ render() {
 
       </header>
       <GetOnlinePosts/>
-      <GetMainElements/>
       </div>
 
 

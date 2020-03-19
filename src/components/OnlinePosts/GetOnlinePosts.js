@@ -18,7 +18,7 @@ class GetOnlinePosts extends Component {
                 meow : data,
                 records: data.records
             });
-          console.log('Committee Records', data.records)
+          console.log('Mount Records', data.records)
         })
       .catch(err => {
        this.setState({
