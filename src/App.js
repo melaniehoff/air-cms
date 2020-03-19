@@ -5,7 +5,6 @@ import './App.css';
 import GetOnlinePosts from './components/OnlinePosts/GetOnlinePosts';
 
 const pub = process.env.PUBLIC_URL;
-let air = "CLOUD9";
 
 class App extends React.Component {
 
@@ -38,7 +37,10 @@ render() {
 
 
       <div className="App">
-      <h1>{air}</h1>
+      <header className="App-header">
+      	<img src={pub + 'logo.png'} />
+
+      </header>
       <GetOnlinePosts/>
       </div>
 

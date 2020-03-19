@@ -1,8 +1,19 @@
 
 .App {
   width: 100vw;
-  text-align: center;
+
 }
+
+.App-header img {
+  z-index: 0;
+  width: 15em;
+  position: fixed;
+  margin: 3em auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+
+}
+
 
 
 
