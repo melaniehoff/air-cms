@@ -37,7 +37,7 @@ render() {
 
 
       <div className="App">
-      <header className="App-header">
+        <header className="App-header">
       	<img src={pub + 'cloud9-logo.png'} />
 
       </header>

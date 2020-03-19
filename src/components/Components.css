@@ -1,4 +1,13 @@
 
+/* GLOBAL */
+
+* {
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
 
 /* FONTS */
 
@@ -100,7 +109,7 @@
 
 #root {
   /* text-align: center; */
-  height: calc(100% - 8px);
+  height: calc(100% );
   overflow: auto;
 }
 
@@ -118,8 +127,12 @@
   box-sizing: border-box;
   box-shadow: 1px 0px 10px rgba(35,108,225,60);
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
+#Event:hover {
+  box-shadow: 1px 0px 10px rgba(255,255,255,60);
+}
 
 .calender {
 	display: block;
@@ -246,4 +259,8 @@ a.join {
   border: 2px solid #2F73A1;
   border-radius: 100%;
   padding: 20px;
+}
+
+a.join:hover {
+  background: #fff;
 }

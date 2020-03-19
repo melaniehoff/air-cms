@@ -4,12 +4,24 @@
 
 }
 
-.App-header img {
-  z-index: 0;
+
+.App-header {
+  width: 30vw;
   height: 50vh;
+  text-align: center;
   position: fixed;
-  margin: 3em auto; /* Will not center vertically and won't work in IE6/7. */
+  margin: 0px auto;
+  /* margin: 3em auto;  */
+  /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
+  top: 25vh;
+  z-index: -1;
+}
+.App-header img {
+  z-index: 0;
+  height: 100%;
+  width: auto;
+
 
 }
