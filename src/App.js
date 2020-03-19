@@ -38,7 +38,7 @@ render() {
 
       <div className="App">
       <header className="App-header">
-      	<img src={pub + 'logo.png'} />
+      	<img src={pub + 'cloud9-logo.png'} />
 
       </header>
       <GetOnlinePosts/>
@@ -48,7 +48,7 @@ render() {
 
 
     );
-  } 
+  }
 }
 
 export default App;

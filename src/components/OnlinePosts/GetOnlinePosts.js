@@ -53,8 +53,12 @@ class GetOnlinePosts extends Component {
             // through an loop like this or React will give a warning.
             return (
                 <div key={id}>
+                    <div class="break"></div>
+
                     <h3>{committee}</h3>
-                    <p>{description}</p>
+                    <p class="Light-Text">{description}</p>
+
+
                 </div>
             );
         });
@@ -62,8 +66,87 @@ class GetOnlinePosts extends Component {
         // Instead of rendering the variable, we could also have put the entire map call
         // into the brackets inside of this div to produce the same effect. Up to you!
         return(
-            <div id="Committees">
-                {committeeElements}
+            <div class="Content">
+
+              <div id="Calendar">
+                <h3>This Week</h3>
+                <h2>3/19</h2> <h2>—</h2> <h2>3/26</h2>
+
+                <div class="break"></div>
+                <h3>Monday</h3>
+
+                <div id="Event" class="Red-Fill">
+                    <h5>Time</h5>
+                    <h4>Name of session with Facilitator</h4>
+                </div>
+
+
+                <div id="Event" class="Yellow-Fill">
+                    <h5>Time</h5>
+                    <h4>Name of session with Facilitator</h4>
+
+
+                    <div class="EventInfo">
+                        <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                        </p>
+
+                        <div class="footer">
+
+                          <div class="footerLeft">
+                            <h5>Venmo <span>@venmouser</span></h5>
+                          </div>
+
+                          <div class="footerRight">
+                            <a href="LINK" class="join">
+                              Join Session
+                            </a>
+                          </div>
+
+                          <div class="clear"> </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="break"></div>
+                <h3>Monday</h3>
+                <h2>3/19</h2>
+
+                <div id="Event" class="Green-Fill">
+                    <h5>Time</h5>
+                    <h4>Name of session with Facilitator</h4>
+                </div>
+
+
+                <div class="break"></div>
+                <h3>Tuesday</h3>
+                <h2>3/20</h2>
+
+                <div id="Event" class="Blue-Fill">
+                    <h5>Time</h5>
+                    <h4>Name of session with Facilitator</h4>
+                </div>
+                <div id="Event" class="Pink-Fill">
+                    <h5>Time</h5>
+                    <h4>Name of session with Facilitator</h4>
+                </div>
+
+
+
+
+
+
+
+              </div>
+
+
+
+              <div id="Committees">
+                  {committeeElements}
+              </div>
+
             </div>
         );
     }

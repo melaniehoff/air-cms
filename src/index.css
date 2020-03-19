@@ -9,17 +9,11 @@ html {
 body {
   margin: 0;
   font-family: 'Sen', sans-serif;
-  background: url('https://wordpress.accuweather.com/wp-content/uploads/2019/05/fire-rainbow.png') no-repeat fixed; 
+  background: url('./img/cloud1.png') no-repeat fixed , url('./img/blue-bg.png') no-repeat fixed ;
   background-size: cover;
   background-color: skyblue;
   width: 100%;
   font-family: sans-serif;
   height: 100%;
   overflow: hidden;
-}
-
-#root {
-  text-align: center;
-  height: calc(100% - 8px);
-  overflow: auto;
 }

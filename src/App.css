@@ -6,16 +6,10 @@
 
 .App-header img {
   z-index: 0;
-  width: 15em;
+  height: 50vh;
   position: fixed;
   margin: 3em auto; /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
 
 }
-
-
-
-
-
-
