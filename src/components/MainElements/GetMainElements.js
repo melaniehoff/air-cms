@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './GetMainElements.css';
-class GetOnlinePosts extends Component {
+class GetMainElements extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -37,5 +37,5 @@ class GetOnlinePosts extends Component {
             );
         }
     }
-    
+
   export default GetMainElements;
