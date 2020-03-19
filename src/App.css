@@ -1,32 +1,10 @@
-body {
-  margin: 0;
-  font-family: 'Sen', sans-serif;
-}
 
 .App {
+  width: 100vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vh;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: rgba(227, 147, 255, 1);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-}
 
-.App-header img {
-  max-width: 50vw;
-}
 
-.App-link {
-  color: #61dafb;
-}
+

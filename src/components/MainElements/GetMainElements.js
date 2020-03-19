@@ -53,7 +53,7 @@ class GetOnlinePosts extends Component {
             // through an loop like this or React will give a warning.
             return (
                 <div key={id}>
-                    <h3>{committee}</h3>
+                    <p>{committee}</p>
                     <p>{description}</p>
                 </div>
             );
@@ -62,7 +62,7 @@ class GetOnlinePosts extends Component {
         // Instead of rendering the variable, we could also have put the entire map call
         // into the brackets inside of this div to produce the same effect. Up to you!
         return(
-            <div id="Committees">
+            <div>
                 {committeeElements}
             </div>
         );

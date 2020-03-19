@@ -1,13 +1,25 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+
+body {
+  margin: 0;
+  font-family: 'Sen', sans-serif;
+  background: url('https://wordpress.accuweather.com/wp-content/uploads/2019/05/fire-rainbow.png') no-repeat fixed; 
+  background-size: cover;
+  background-color: skyblue;
+  width: 100%;
+  font-family: sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  text-align: center;
+  height: calc(100% - 8px);
+  overflow: auto;
+}
