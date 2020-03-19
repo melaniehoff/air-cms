@@ -66,7 +66,9 @@ class GetOnlinePosts extends Component {
         // Instead of rendering the variable, we could also have put the entire map call
         // into the brackets inside of this div to produce the same effect. Up to you!
         return(
+
             <div class="Content">
+
 
               <div id="Calendar">
                 <h3>This Week</h3>
