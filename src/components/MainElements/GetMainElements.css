@@ -1,4 +1,13 @@
-p {
-	color: pink;
-	width: 30vw;
+#MainElements {
+	float: left;
+	margin: 1em;
+	margin-left: 2em;
+	width: 20vw;
+}
+
+
+#MainElements p {
+	color: white;
+	width: 20vw;
+	
 }
