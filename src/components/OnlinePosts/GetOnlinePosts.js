@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../components.css';
+import Media from 'react-media';
 class GetOnlinePosts extends Component {
     constructor(props){
         super(props);
@@ -53,10 +54,10 @@ class GetOnlinePosts extends Component {
             // through an loop like this or React will give a warning.
             return (
                 <div key={id}>
-                    <div class="break"></div>
+                    <div className="break"></div>
 
                     <h3>{committee}</h3>
-                    <p class="Light-Text">{description}</p>
+                    <p className="Light-Text">{description}</p>
 
 
                 </div>
@@ -67,56 +68,56 @@ class GetOnlinePosts extends Component {
         // into the brackets inside of this div to produce the same effect. Up to you!
         return(
 
-            <div class="Content">
+            <div className="Content">
 
 
               <div id="Calendar">
                 <h1>This Week</h1>
                 <h2>3/19</h2> <h2>—</h2> <h2>3/26</h2>
 
-                <div id="CalendarLink" class="White-Fill">
+                <div id="CalendarLink" className="White-Fill">
 
 
-                    <div class="footer">
+                    <div className="footer">
 
-                      <div class="footerLeft">
+                      <div className="footerLeft">
                         <h5>View Full Calendar</h5>
                       </div>
 
-                      <div class="footerRight">
-                        <span class="arrow">↝</span>
+                      <div className="footerRight">
+                        <span className="arrow">↝</span>
                       </div>
 
-                      <div class="clear"> </div>
+                      <div className="clear"> </div>
                     </div>
 
                 </div>
 
 
-                <div class="break"></div>
+                <div className="break"></div>
                 <h3>Monday</h3>
 
-                <table id="Event" class="Red-Fill">
+                <table id="Event" className="Red-Fill">
                   <tr>
-                    <td class="accordion">
+                    <td className="accordion">
                       <details>
-                          <summary class="eventTitle">
+                          <summary className="eventTitle">
                             <h5>Time</h5>
                             <h4>Name of session with Facilitator</h4>
                           </summary>
-                          <div class="content EventInfo">
-                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                          <div className="content EventInfo">
+                              <p className="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
                               </p>
-                              <div class="footer">
-                                  <div class="footerLeft">
+                              <div className="footer">
+                                  <div className="footerLeft">
                                     <h5>Venmo <span>@venmouser</span></h5>
                                   </div>
-                                  <div class="footerRight">
-                                    <a href="LINK" class="join">
+                                  <div className="footerRight">
+                                    <a href="LINK" className="join">
                                       Join Session
                                     </a>
                                   </div>
-                                  <div class="clear"> </div>
+                                  <div className="clear"> </div>
                               </div>
                           </div>
                       </details>
@@ -124,27 +125,27 @@ class GetOnlinePosts extends Component {
                   </tr>
                 </table>
 
-                <table id="Event" class="Yellow-Fill">
+                <table id="Event" className="Yellow-Fill">
                   <tr>
-                    <td class="accordion">
+                    <td className="accordion">
                       <details>
-                          <summary class="eventTitle">
+                          <summary className="eventTitle">
                             <h5>Time</h5>
                             <h4>Name of session with Facilitator</h4>
                           </summary>
-                          <div class="content EventInfo">
-                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                          <div className="content EventInfo">
+                              <p className="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
                               </p>
-                              <div class="footer">
-                                  <div class="footerLeft">
+                              <div className="footer">
+                                  <div className="footerLeft">
                                     <h5>Venmo <span>@venmouser</span></h5>
                                   </div>
-                                  <div class="footerRight">
-                                    <a href="LINK" class="join">
+                                  <div className="footerRight">
+                                    <a href="LINK" className="join">
                                       Join Session
                                     </a>
                                   </div>
-                                  <div class="clear"> </div>
+                                  <div className="clear"> </div>
                               </div>
                           </div>
                       </details>
@@ -156,31 +157,31 @@ class GetOnlinePosts extends Component {
 
 
 
-                <div class="break"></div>
+                <div className="break"></div>
                 <h3>Monday</h3>
                 <h2>3/19</h2>
 
-                <table id="Event" class="Green-Fill">
+                <table id="Event" className="Green-Fill">
                   <tr>
-                    <td class="accordion">
+                    <td className="accordion">
                       <details>
-                          <summary class="eventTitle">
+                          <summary className="eventTitle">
                             <h5>Time</h5>
                             <h4>Name of session with Facilitator</h4>
                           </summary>
-                          <div class="content EventInfo">
-                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                          <div className="content EventInfo">
+                              <p className="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
                               </p>
-                              <div class="footer">
-                                  <div class="footerLeft">
+                              <div className="footer">
+                                  <div className="footerLeft">
                                     <h5>Venmo <span>@venmouser</span></h5>
                                   </div>
-                                  <div class="footerRight">
-                                    <a href="LINK" class="join">
+                                  <div className="footerRight">
+                                    <a href="LINK" className="join">
                                       Join Session
                                     </a>
                                   </div>
-                                  <div class="clear"> </div>
+                                  <div className="clear"> </div>
                               </div>
                           </div>
                       </details>
@@ -189,31 +190,31 @@ class GetOnlinePosts extends Component {
                 </table>
 
 
-                <div class="break"></div>
+                <div className="break"></div>
                 <h3>Tuesday</h3>
                 <h2>3/20</h2>
 
-                <table id="Event" class="Blue-Fill">
+                <table id="Event" className="Blue-Fill">
                   <tr>
-                    <td class="accordion">
+                    <td className="accordion">
                       <details>
-                          <summary class="eventTitle">
+                          <summary className="eventTitle">
                             <h5>Time</h5>
                             <h4>Name of session with Facilitator</h4>
                           </summary>
-                          <div class="content EventInfo">
-                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                          <div className="content EventInfo">
+                              <p className="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
                               </p>
-                              <div class="footer">
-                                  <div class="footerLeft">
+                              <div className="footer">
+                                  <div className="footerLeft">
                                     <h5>Venmo <span>@venmouser</span></h5>
                                   </div>
-                                  <div class="footerRight">
-                                    <a href="LINK" class="join">
+                                  <div className="footerRight">
+                                    <a href="LINK" className="join">
                                       Join Session
                                     </a>
                                   </div>
-                                  <div class="clear"> </div>
+                                  <div className="clear"> </div>
                               </div>
                           </div>
                       </details>
@@ -221,27 +222,27 @@ class GetOnlinePosts extends Component {
                   </tr>
                 </table>
 
-                <table id="Event" class="Pink-Fill">
+                <table id="Event" className="Pink-Fill">
                   <tr>
-                    <td class="accordion">
+                    <td className="accordion">
                       <details>
-                          <summary class="eventTitle">
+                          <summary className="eventTitle">
                             <h5>Time</h5>
                             <h4>Name of session with Facilitator</h4>
                           </summary>
-                          <div class="content EventInfo">
-                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                          <div className="content EventInfo">
+                              <p className="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
                               </p>
-                              <div class="footer">
-                                  <div class="footerLeft">
+                              <div className="footer">
+                                  <div className="footerLeft">
                                     <h5>Venmo <span>@venmouser</span></h5>
                                   </div>
-                                  <div class="footerRight">
-                                    <a href="LINK" class="join">
+                                  <div className="footerRight">
+                                    <a href="LINK" className="join">
                                       Join Session
                                     </a>
                                   </div>
-                                  <div class="clear"> </div>
+                                  <div className="clear"> </div>
                               </div>
                           </div>
                       </details>
@@ -256,7 +257,7 @@ class GetOnlinePosts extends Component {
 
 
 
-              <div class="bigBreak"></div>
+              <div className="bigBreak"></div>
               <div id="About">
                 <h1>About</h1>
                   <p>ho hum</p>
@@ -265,7 +266,7 @@ class GetOnlinePosts extends Component {
 
 
 
-              <div class="bigBreak"></div>
+              <div className="bigBreak"></div>
               <div id="Guidelines">
                 <h1>Community Guidelines</h1>
                   <p>ho hum</p>
@@ -276,13 +277,13 @@ class GetOnlinePosts extends Component {
 
 
 
-              <div class="bigBreak"></div>
+              <div className="bigBreak"></div>
               <div id="Resources">
                 <h1>Resources</h1>
                   <p>ho hum</p>
               </div>
 
-              <div class="bigBreak"></div>
+              <div className="bigBreak"></div>
               <div id="Committees">
                 <h1>Contribute</h1>
                   {committeeElements}

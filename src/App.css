@@ -23,3 +23,31 @@
   height: 100%;
   width: auto;
 }
+
+
+
+
+
+@media (max-width: 1024px) {
+
+  .App-header {
+    width: 80vw;
+    height: 50vh;
+    text-align: center;
+    position: fixed;
+    margin: 0px auto;
+    /* margin: 3em auto;  */
+    /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+    top: 5vh;
+    z-index: -1;
+  }
+
+  .App-header img {
+    z-index: 0;
+    height: auto;
+    width: 100%;
+  }
+
+}
