@@ -96,64 +96,158 @@ class GetOnlinePosts extends Component {
                 <div class="break"></div>
                 <h3>Monday</h3>
 
-                <div id="Event" class="Red-Fill">
-                    <h5>Time</h5>
-                    <h4>Name of session with Facilitator</h4>
-                </div>
-
-
-                <div id="Event" class="Yellow-Fill">
-                    <h5>Time</h5>
-                    <h4>Name of session with Facilitator</h4>
-
-
-                    <div class="EventInfo">
-                        <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
-                        </p>
-
-                        <div class="footer">
-
-                          <div class="footerLeft">
-                            <h5>Venmo <span>@venmouser</span></h5>
+                <table id="Event" class="Red-Fill">
+                  <tr>
+                    <td class="accordion">
+                      <details>
+                          <summary class="eventTitle">
+                            <h5>Time</h5>
+                            <h4>Name of session with Facilitator</h4>
+                          </summary>
+                          <div class="content EventInfo">
+                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                              </p>
+                              <div class="footer">
+                                  <div class="footerLeft">
+                                    <h5>Venmo <span>@venmouser</span></h5>
+                                  </div>
+                                  <div class="footerRight">
+                                    <a href="LINK" class="join">
+                                      Join Session
+                                    </a>
+                                  </div>
+                                  <div class="clear"> </div>
+                              </div>
                           </div>
+                      </details>
+                    </td>
+                  </tr>
+                </table>
 
-                          <div class="footerRight">
-                            <a href="LINK" class="join">
-                              Join Session
-                            </a>
+                <table id="Event" class="Yellow-Fill">
+                  <tr>
+                    <td class="accordion">
+                      <details>
+                          <summary class="eventTitle">
+                            <h5>Time</h5>
+                            <h4>Name of session with Facilitator</h4>
+                          </summary>
+                          <div class="content EventInfo">
+                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                              </p>
+                              <div class="footer">
+                                  <div class="footerLeft">
+                                    <h5>Venmo <span>@venmouser</span></h5>
+                                  </div>
+                                  <div class="footerRight">
+                                    <a href="LINK" class="join">
+                                      Join Session
+                                    </a>
+                                  </div>
+                                  <div class="clear"> </div>
+                              </div>
                           </div>
+                      </details>
+                    </td>
+                  </tr>
+                </table>
 
-                          <div class="clear"> </div>
-                        </div>
 
-                    </div>
 
-                </div>
 
 
                 <div class="break"></div>
                 <h3>Monday</h3>
                 <h2>3/19</h2>
 
-                <div id="Event" class="Green-Fill">
-                    <h5>Time</h5>
-                    <h4>Name of session with Facilitator</h4>
-                </div>
+                <table id="Event" class="Green-Fill">
+                  <tr>
+                    <td class="accordion">
+                      <details>
+                          <summary class="eventTitle">
+                            <h5>Time</h5>
+                            <h4>Name of session with Facilitator</h4>
+                          </summary>
+                          <div class="content EventInfo">
+                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                              </p>
+                              <div class="footer">
+                                  <div class="footerLeft">
+                                    <h5>Venmo <span>@venmouser</span></h5>
+                                  </div>
+                                  <div class="footerRight">
+                                    <a href="LINK" class="join">
+                                      Join Session
+                                    </a>
+                                  </div>
+                                  <div class="clear"> </div>
+                              </div>
+                          </div>
+                      </details>
+                    </td>
+                  </tr>
+                </table>
 
 
                 <div class="break"></div>
                 <h3>Tuesday</h3>
                 <h2>3/20</h2>
 
-                <div id="Event" class="Blue-Fill">
-                    <h5>Time</h5>
-                    <h4>Name of session with Facilitator</h4>
-                </div>
-                <div id="Event" class="Pink-Fill">
-                    <h5>Time</h5>
-                    <h4>Name of session with Facilitator</h4>
-                </div>
+                <table id="Event" class="Blue-Fill">
+                  <tr>
+                    <td class="accordion">
+                      <details>
+                          <summary class="eventTitle">
+                            <h5>Time</h5>
+                            <h4>Name of session with Facilitator</h4>
+                          </summary>
+                          <div class="content EventInfo">
+                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                              </p>
+                              <div class="footer">
+                                  <div class="footerLeft">
+                                    <h5>Venmo <span>@venmouser</span></h5>
+                                  </div>
+                                  <div class="footerRight">
+                                    <a href="LINK" class="join">
+                                      Join Session
+                                    </a>
+                                  </div>
+                                  <div class="clear"> </div>
+                              </div>
+                          </div>
+                      </details>
+                    </td>
+                  </tr>
+                </table>
 
+                <table id="Event" class="Pink-Fill">
+                  <tr>
+                    <td class="accordion">
+                      <details>
+                          <summary class="eventTitle">
+                            <h5>Time</h5>
+                            <h4>Name of session with Facilitator</h4>
+                          </summary>
+                          <div class="content EventInfo">
+                              <p class="Event">About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already. About the sesh here this is a time for all of us to utilize our platforms to make sure folks are getting access to the information and resources they need! We want to uplift the incredible work folks in our communities are doing already.
+                              </p>
+                              <div class="footer">
+                                  <div class="footerLeft">
+                                    <h5>Venmo <span>@venmouser</span></h5>
+                                  </div>
+                                  <div class="footerRight">
+                                    <a href="LINK" class="join">
+                                      Join Session
+                                    </a>
+                                  </div>
+                                  <div class="clear"> </div>
+                              </div>
+                          </div>
+                      </details>
+                    </td>
+                  </tr>
+                </table>
 
 
               </div>

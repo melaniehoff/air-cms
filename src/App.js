@@ -78,7 +78,7 @@ render() {
           <div id="MainElements" class="about-bubble bubble Blue-Outline">
             <div>
             <h5 class="light">About</h5>
-            <p>Join Us &amp; lets share stories, strategies, wisdom, sweetness, &amp; online space Now is a time fortify our networks of care &lt;3 We will be holding free online programs with you for you</p>
+            <p>Join Us &amp; lets share stories, strategies, wisdom, sweetness, &amp; online space Now is a time fortify our networks of care &lt;3 We will be holding free online programs with you for you. <u><i>Learn more!</i></u></p>
             </div>
           </div>
         </a>
@@ -87,7 +87,7 @@ render() {
           <div id="MainElements" class="donate-bubble bubble Green-Outline">
             <div>
             <h5 class="light">Donate</h5>
-            <p>We are gathering funds // taking donations in these sessions to pay // uplift community who are being impacted by this pandemic. Support!</p>
+            <p>We are gathering funds // taking donations in these sessions to pay // uplift community who are being impacted by this pandemic. <u><i>Support!</i></u></p>
             </div>
           </div>
         </a>

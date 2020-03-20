@@ -305,14 +305,14 @@
    align-items: center;
 	 padding: 1%;
 	 position: absolute;
-	 top: 64%;
+	 top: 63%;
    left: 21%;
    text-align: center;
 }
 
 
 .resources-bubble:hover {
-  top: 63%;
+  top: 62%;
   z-index: 1;
 }
 
@@ -357,7 +357,25 @@
   z-index: 1;
 }
 
+details, summary, .eventTitle {
+  display: block;
+  width: 100%;
+}
 
+summary {
+  list-style-image: none;
+  display: block;
+  margin: 0px;
+  width: 100%;
+}
+
+summary::-webkit-details-marker {
+  background: none;
+  color: transparent;
+  display: block;
+  margin: 0px;
+  height: 0px;
+}
 
 
 
@@ -552,3 +570,17 @@ a.join:hover {
   color: #2F73A1;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAKE RESPONSIVE */
