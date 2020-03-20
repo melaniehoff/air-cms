@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Components.css';
+import '../components.css';
 class GetOnlinePosts extends Component {
     constructor(props){
         super(props);
