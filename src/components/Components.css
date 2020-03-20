@@ -38,6 +38,22 @@
 	}
 }
 
+@keyframes float3 {
+	0% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+	50% {
+		/* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+		transform: translatey(-12px);
+	}
+	100% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+}
+
+
 
 
 
@@ -344,7 +360,7 @@ details p, details .footer {
 	position: absolute;
 	bottom: 2%;
 	left: 5%;
-    animation: float2 6s ease-in-out infinite;
+    animation: float3 6s ease-in-out infinite;
 }
 
 .donate-bubble div {
@@ -413,7 +429,7 @@ details p, details .footer {
 	 top: 10%;
    left: 25%;
    text-align: center;
-     animation: float2 6s ease-in-out infinite;
+     animation: float3 6s ease-in-out infinite;
 }
 
 .calendar-bubble:hover {
