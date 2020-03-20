@@ -71,8 +71,27 @@ class GetOnlinePosts extends Component {
 
 
               <div id="Calendar">
-                <h3>This Week</h3>
+                <h1>This Week</h1>
                 <h2>3/19</h2> <h2>—</h2> <h2>3/26</h2>
+
+                <div id="CalendarLink" class="White-Fill">
+
+
+                    <div class="footer">
+
+                      <div class="footerLeft">
+                        <h5>View Full Calendar</h5>
+                      </div>
+
+                      <div class="footerRight">
+                        <span class="arrow">↝</span>
+                      </div>
+
+                      <div class="clear"> </div>
+                    </div>
+
+                </div>
+
 
                 <div class="break"></div>
                 <h3>Monday</h3>
@@ -137,17 +156,45 @@ class GetOnlinePosts extends Component {
 
 
 
-
-
-
-
               </div>
 
 
 
+
+
+              <div class="bigBreak"></div>
+              <div id="About">
+                <h1>About</h1>
+                  <p>ho hum</p>
+              </div>
+
+
+
+
+              <div class="bigBreak"></div>
+              <div id="Guidelines">
+                <h1>Community Guidelines</h1>
+                  <p>ho hum</p>
+              </div>
+
+
+
+
+
+
+              <div class="bigBreak"></div>
+              <div id="Resources">
+                <h1>Resources</h1>
+                  <p>ho hum</p>
+              </div>
+
+              <div class="bigBreak"></div>
               <div id="Committees">
+                <h1>Contribute</h1>
                   {committeeElements}
               </div>
+
+
 
             </div>
         );

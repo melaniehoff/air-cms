@@ -38,9 +38,17 @@ render() {
 
       <div className="App">
 
+        {/* LOGO */}
+        <header className="App-header">
+          <img src={pub + 'cloud9-logo.png'} />
+        </header>
+
+
+
+        {/* CALENDAR KEY */}
         <div class="Key">
             <div class="keyLine">
-              <div class="bullet Red-Fill"></div> <span> Community Checkins</span>
+              <div class="bullet Red-Fill"></div> <span> Community Check-ins</span>
               <div class="bullet Orange-Fill"></div> <span> Meditations</span>
             </div>
             <div class="keyLine">
@@ -55,40 +63,66 @@ render() {
         </div>
 
 
-        <header className="App-header">
-      	<img src={pub + 'cloud9-logo.png'} />
 
-      </header>
-      <GetOnlinePosts/> 
-      
+
+      {/* CONTENT */}
+      <GetOnlinePosts/>
+
+
+
+
+      {/* NAVIGATION */}
       <div id="MainElements" >
-        <div id="MainElements" class="about-bubble">
-          <div>
-          <h3>About</h3>
-          <p>Join Us &amp; lets share stories, strategies, wisdom, sweetness, &amp; online space Now is a time fortify our networks of care &lt;3 We will be holding free online programs with you for you</p>
+
+        <a href="#About">
+          <div id="MainElements" class="about-bubble bubble Blue-Outline">
+            <div>
+            <h5 class="light">About</h5>
+            <p>Join Us &amp; lets share stories, strategies, wisdom, sweetness, &amp; online space Now is a time fortify our networks of care &lt;3 We will be holding free online programs with you for you</p>
+            </div>
           </div>
-        </div>
-        <div id="MainElements" class="donate-bubble">
-          <div>
-          <h3>Donate</h3>
-          <p>We are gathering funds // taking donations in these sessions to pay // uplift community who are being impacted by this pandemic. Support!</p>
+        </a>
+
+        <a href="">
+          <div id="MainElements" class="donate-bubble bubble Green-Outline">
+            <div>
+            <h5 class="light">Donate</h5>
+            <p>We are gathering funds // taking donations in these sessions to pay // uplift community who are being impacted by this pandemic. Support!</p>
+            </div>
           </div>
-        </div>
-        <div id="MainElements" class="guidelines-bubble Orange-Outline">
-          <div>
-          <h3>Community Guidelines</h3>
-          <p>We are crowdsourcing community agreements with our Cloud9 community to make sure our efforts during this virus are as healthy, honest and materially constructive as they would be in any physical space we would hold together &lt;33</p>
+        </a>
+
+        <a href="#Guidelines">
+          <div id="MainElements" class="guidelines-bubble Orange-Outline bubble">
+            <div>
+            <h5 class="light">Community Guidelines</h5>
+            <p>We are crowdsourcing community agreements with our Cloud9 community to make sure our efforts during this virus are as healthy, honest and materially constructive as they would be in any physical space we would hold together &lt;33</p>
+            </div>
           </div>
-        </div>
-        <div id="MainElements" class="contribute-bubble">
-          <h3>Contribute</h3>
-          <p></p>
-        </div>
-        <div id="MainElements" class="resources-bubble">
-          <h3>Resources</h3>
-          <p></p>
-        </div>
+        </a>
+
+        <a href="#Committees">
+          <div id="MainElements" class="contribute-bubble bubble Pink-Outline">
+            <h5 class="light">Contribute</h5>
+          </div>
+        </a>
+
+        <a href="#Resources">
+          <div id="MainElements" class="resources-bubble bubble Red-Outline">
+            <h5 class="light">Resources</h5>
+          </div>
+        </a>
+
+        <a href="#Calendar">
+          <div id="MainElements" class="calendar-bubble bubble Yellow-Outline">
+            <h5 class="light">Calendar</h5>
+          </div>
+        </a>
+
       </div>
+
+
+
 
       {/* <GetMainElements/> */}
       </div>

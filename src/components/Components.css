@@ -9,6 +9,12 @@
 }
 
 
+
+
+
+
+
+
 /* FONTS */
 
 @font-face {
@@ -38,6 +44,12 @@
 
 
 
+
+
+
+
+
+
 /*  COLORS */
 
 .Red-Fill {
@@ -45,7 +57,7 @@
 }
 
 .Red-Outline {
-  border-color: #FF8B8E;
+  border: 3px solid #FF8B8E;
 }
 
 .Orange-Fill {
@@ -53,7 +65,7 @@
 }
 
 .Orange-Outline {
-  border-color: #FFBEA1;
+  border: 3px solid #FFBEA1;
 }
 
 .Yellow-Fill {
@@ -61,7 +73,7 @@
 }
 
 .Yellow-Outline {
-  border-color: #E7F4AC;
+  border: 3px solid #E7F4AC;
 }
 
 .Green-Fill {
@@ -69,7 +81,7 @@
 }
 
 .Green-Outline {
-  border-color: #00FFAA;
+  border: 3px solid #00FFAA;
 }
 
 .Blue-Fill {
@@ -77,7 +89,7 @@
 }
 
 .Blue-Outline {
-  border-color: #00EEFC;
+  border: 3px solid #00EEFC;
 }
 
 .Purple-Fill {
@@ -85,7 +97,7 @@
 }
 
 .Purple-Outline {
-  border-color: #8CABFF;
+  border: 3px solid #8CABFF;
 }
 
 .Pink-Fill {
@@ -93,15 +105,26 @@
 }
 
 .Pink-Outline {
-  border-color: #FDC2F8;
+  border: 3px solid #FDC2F8;
 }
+
+.White-Fill {
+  background-color: #fff;
+}
+
+
+
+
+
+
+
 
 
 
 /* DIV STYLES */
 
 .Content {
-  padding: 20px 0px;
+  padding: 0px 0px 20px 0px;
 	float: right;
   margin: 1em;
 	margin-right: 2em;
@@ -110,7 +133,6 @@
 }
 
 #root {
-  /* text-align: center; */
   height: calc(100% );
   overflow: auto;
 }
@@ -119,6 +141,23 @@
 #Committees {
 	float: left;
 
+}
+
+
+#CalendarLink {
+  display: block;
+  width: 100%;
+  border-radius: 32px;
+  padding: 10px 14px 7px 14px;
+  box-sizing: border-box;
+  box-shadow: 1px 0px 10px rgba(35,108,225,60);
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#CalendarLink:hover {
+  box-shadow: 1px 0px 10px rgba(255,255,255,60);
 }
 
 #Event {
@@ -178,6 +217,153 @@
   box-shadow: 1px 0px 10px rgba(35,108,225,60);
 }
 
+.bubble {
+  cursor: pointer;
+  background-color:  rgb(120, 160, 190);
+}
+
+.bubble:hover {
+  box-shadow: 1px 0px 20px rgba(255,255,255,40);
+}
+
+
+.about-bubble {
+	border-radius: 50%;
+	padding: 1%;
+	max-width: 280px;
+	height: 280px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	position: absolute;
+	top: 2%;
+  left: 2%;
+  text-align: center;
+}
+
+
+.about-bubble:hover {
+  top: 1%;
+  z-index: 1;
+}
+
+.guidelines-bubble {
+	border-radius: 50%;
+	padding: 2%;
+  box-sizing: border-box;
+	max-width: 370px;
+	height: 370px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	position: absolute;
+	top: 25%;
+  left: 10%;
+  text-align: center;
+}
+
+.guidelines-bubble div {
+	 flex: 0 0 330px;
+}
+
+.guidelines-bubble:hover {
+  top: 24%;
+  z-index: 1;
+}
+
+.donate-bubble {
+  border-radius: 50%;
+	padding: 2%;
+  box-sizing: border-box;
+	max-width: 270px;
+	height: 270px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+	position: absolute;
+	bottom: 2%;
+	left: 5%;
+}
+
+.donate-bubble div {
+	 flex: 0 0 250px;
+}
+
+.donate-bubble:hover {
+  bottom: 3%;
+  z-index: 1;
+}
+
+.resources-bubble {
+   box-sizing: border-box;
+	 width: 150px;
+   height: 150px;
+	 border-radius: 50%;
+	 display: flex;
+   justify-content: center;
+   align-items: center;
+	 padding: 1%;
+	 position: absolute;
+	 top: 64%;
+   left: 21%;
+   text-align: center;
+}
+
+
+.resources-bubble:hover {
+  top: 63%;
+  z-index: 1;
+}
+
+.contribute-bubble {
+   box-sizing: border-box;
+	 width: 120px;
+   height: 120px;
+	 border-radius: 50%;
+	 display: flex;
+   justify-content: center;
+   align-items: center;
+	 padding: 1%;
+	 position: absolute;
+	 top: 43%;
+   left: 5%;
+   text-align: center;
+}
+
+.contribute-bubble:hover {
+  top:42%;
+  z-index: 1;
+}
+
+
+.calendar-bubble {
+   box-sizing: border-box;
+	 width: 100px;
+   height: 100px;
+	 border-radius: 50%;
+	 display: flex;
+   justify-content: center;
+   align-items: center;
+	 padding: 1%;
+	 position: absolute;
+	 top: 10%;
+   left: 25%;
+   text-align: center;
+}
+
+.calendar-bubble:hover {
+  top:9%;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -192,6 +378,18 @@ p {
   color: #fff;
   text-shadow: 1px 0px 10px rgba(47,115,161,20);
   margin: 0px;
+}
+
+.bubble p {
+  font-family: 'Helvetica Medium';
+  font-size: 16px;
+	width: 100%;
+	line-height: 1.4;
+  color: #fff;
+  text-shadow: 1px 0px 10px rgba(47,115,161,20);
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0% 6%;
 }
 
 p.Event {
@@ -210,6 +408,30 @@ p.Event {
   width: 100%;
   height: 10px;
   margin: 20px 10px 30px 0px;
+}
+
+
+.bigBreak {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+
+
+/* title headings italic title all caps*/
+h1 {
+  font-family: 'Helvetica Medium';
+  font-weight: lighter;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-shadow: 1px 0px 10px rgba(47,115,161,20);
+  margin: 0px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 /* big number */
@@ -267,6 +489,19 @@ h5 span {
   display: block;
 }
 
+h5.light {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  display: block;
+  margin: 0px;
+  padding-bottom: 3px;
+  color: #fff;
+  text-shadow: 1px 0px 10px rgba(47,115,161,20);
+  padding: 10px 0px;
+}
+
 a.join {
   font-size: 14px;
   font-weight: bold;
@@ -297,185 +532,23 @@ a.join:hover {
 }
 
 
-
-.about-bubble {
-	background-color: rgb(120, 160, 190);
-	border: 2px solid #00EEFC;
-	border-radius: 50%;
-	padding: 1%;
-	
-	max-width: 300px;
-	height: 300px;
-	
-	display: flex;
-  justify-content: center;
-  align-items: center;
-	
-	position: absolute;
-	top: 1%;
-  left: 1%;
-  
-  text-align: center;
-}
-
-.about-bubble h3 {
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-}
-
-.about-bubble:hover {
-  top: 0.5%;
-  z-index: 1;
-}
-
-.guidelines-bubble {
-	background-color:  rgb(120, 160, 190);
-	border: 2px solid orange;
-	border-radius: 50%;
-	padding: 2%;
-	
-	max-width: 290px;
-	height: 290px;
-	
-	display: flex;
-  justify-content: center;
-  align-items: center;
-	
-	
-	position: absolute;
-	top: 25%;
-  left: 10%;
-
-  text-align: center;
-}
-
-.guidelines-bubble h3 {
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-}
-
-.guidelines-bubble div {
-	 flex: 0 0 290px;
-}
-
-.guidelines-bubble:hover {
-  top: 24%;
-  z-index: 1;
-}
-
-.donate-bubble {
-  background-color:  rgb(120, 160, 190);
-	border: 2px solid rgb(0, 255, 180);
-	border-radius: 50%;
-	padding: 1%;
-	
-	max-width: 260px;
-	height: 260px;
-	
-	display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  text-align: center;
-
-	position: absolute;
-	top: 60%;
-	left: 1%;
-	
-}
-
-.donate-bubble h3 {
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-}
-
-.donate-bubble div {
-	 flex: 0 0 260px;
-}
-
-.donate-bubble:hover {
-  top: 59%;
-  z-index: 1;
-}
-
-.resources-bubble {
-	 background-color:  rgb(120, 160, 190);
-	 border: 2px solid rgb(255, 150, 150);
-	
-	 max-width: 120px;
-   height: 120px;
-	
-	 border-radius: 50%; 
-	
-	 display: flex;
-   justify-content: center;
-   align-items: center;
-	
-	 padding: 1%;
-	
-	 position: absolute;
-	 top: 65%;
-   left: 21%;
-   
-   text-align: center;
-}
-
-.resources-bubble h3 {
+.resources-bubble h5 {
 	text-align: center;
 	vertical-align: middle;
-	line-height: 120px; 
-  
+	line-height: 120px;
 	flex: 0 0 120px;
-	
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
 }
 
-.resources-bubble:hover {
-  top: 64%;
-  z-index: 1;
-}
-
-.contribute-bubble {
-	 background-color:  rgb(120, 160, 190);
-	 border: 2px solid rgb(250, 180, 250);
-	
-	 max-width: 120px;
-   height: 120px;
-	
-	 border-radius: 50%; 
-	
-	 display: flex;
-   justify-content: center;
-   align-items: center;
-	
-	 padding: 1%;
-	
-	 position: absolute;
-	 top: 40%;
-   left: 3%;
-   
-   text-align: center;
-}
-
-.contribute-bubble h3 {
+.contribute-bubble h5 {
 	text-align: center;
 	vertical-align: middle;
-	line-height: 120px; 
-  
+	line-height: 120px;
 	flex: 0 0 120px;
-  
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-	text-transform: uppercase;
-	
 }
 
-.contribute-bubble:hover {
-  top: 39%;
-  z-index: 1;
+.arrow {
+  font-size: 30px;
+  line-height: 10px;
+  color: #2F73A1;
+
 }
