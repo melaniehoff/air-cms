@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Components.css';
+import '../components.css';
 class GetOnlinePosts extends Component {
     constructor(props){
         super(props);
@@ -18,7 +18,7 @@ class GetOnlinePosts extends Component {
                 meow : data,
                 records: data.records
             });
-          console.log('Mount Records', data.records)
+          console.log('Committee Records', data.records)
         })
       .catch(err => {
        this.setState({
