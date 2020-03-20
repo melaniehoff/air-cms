@@ -6,11 +6,11 @@ class GetMainElements extends Component {
         this.state = {
             err : null,
             isLoaded : false,
-            records : []
+            records : []        
         };
     }
     componentDidMount() {
-        fetch(".netlify/functions/lambda")
+        fetch(".netlify/functions/main")
       .then( response => response.json())
           .then( (data) => {
             this.setState({
@@ -18,7 +18,7 @@ class GetMainElements extends Component {
                 meow : data,
                 records: data.records
             });
-          console.log('Main records', data.records)
+          console.log('MAIN Records', data.records)
         })
       .catch(err => {
        this.setState({
@@ -31,7 +31,7 @@ class GetMainElements extends Component {
   render() {
       // An alternative way to do this that's preferred in most style guides is:
         // const { records } = this.state;
-        // See the object destructuring section:
+        // See the object destructuring section: 
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
       const { records } = this.state;
         // This map call produces an array of <div> elements. Alternatively, we could use another
@@ -53,19 +53,20 @@ class GetMainElements extends Component {
             // through an loop like this or React will give a warning.
             return (
                 <div key={id}>
-                    <p>{title}</p>
-                    <p>{text}</p>
+                        <h3>{title}</h3>
+                        <p>{text}</p>
                 </div>
             );
         });
-        // We're rendering the array of mainElements in our final output!
+        // We're rendering the array of committeeElements in our final output!
         // Instead of rendering the variable, we could also have put the entire map call
         // into the brackets inside of this div to produce the same effect. Up to you!
         return(
-            <div>
+            <div id="MainElements">
                 {mainElements}
             </div>
         );
     }
-  }
+    }
+
   export default GetMainElements;

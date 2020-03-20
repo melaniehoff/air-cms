@@ -49,8 +49,6 @@ render() {
       <GetOnlinePosts/>
 
 
-
-
       {/* NAVIGATION */}
 
       <GetMainElements/>
