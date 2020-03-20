@@ -164,8 +164,8 @@
   display: block;
   width: 100%;
   border-radius: 32px;
-  padding: 20px 14px;
-  box-sizing: border-box;
+  /* padding: 20px 14px;
+  box-sizing: border-box; */
   box-shadow: 1px 0px 10px rgba(35,108,225,60);
   margin-bottom: 10px;
   cursor: pointer;
@@ -175,6 +175,34 @@
 #Event:hover {
   box-shadow: 1px 0px 10px rgba(255,255,255,60);
 }
+
+details, summary, .eventTitle {
+  display: block;
+  width: 100%;
+}
+
+summary {
+  list-style-image: none;
+  display: block;
+  margin: 0px;
+  width: 100%;
+  padding: 20px 14px;
+  box-sizing: border-box;
+}
+
+summary::-webkit-details-marker {
+  background: none;
+  color: transparent;
+  display: block;
+  margin: 0px;
+  height: 0px;
+}
+
+details p, details .footer {
+  padding: 0px 14px 20px 14px;
+  box-sizing: border-box;
+}
+
 
 .calender {
 	display: block;
@@ -357,25 +385,6 @@
   z-index: 1;
 }
 
-details, summary, .eventTitle {
-  display: block;
-  width: 100%;
-}
-
-summary {
-  list-style-image: none;
-  display: block;
-  margin: 0px;
-  width: 100%;
-}
-
-summary::-webkit-details-marker {
-  background: none;
-  color: transparent;
-  display: block;
-  margin: 0px;
-  height: 0px;
-}
 
 
 
@@ -571,8 +580,9 @@ a.join:hover {
 
 }
 
-
-
+summary:hover  h5, summary:hover  h4 {
+  color: #224C69;
+}
 
 
 
