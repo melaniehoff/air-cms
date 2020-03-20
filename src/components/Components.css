@@ -324,6 +324,11 @@ a.join:hover {
   font-style: normal;
 }
 
+.about-bubble:hover {
+  top: 0.5%;
+  z-index: 1;
+}
+
 .guidelines-bubble {
 	background-color:  rgb(120, 160, 190);
 	border: 2px solid orange;
@@ -355,7 +360,10 @@ a.join:hover {
 	 flex: 0 0 290px;
 }
 
-
+.guidelines-bubble:hover {
+  top: 24%;
+  z-index: 1;
+}
 
 .donate-bubble {
   background-color:  rgb(120, 160, 190);
@@ -386,6 +394,11 @@ a.join:hover {
 
 .donate-bubble div {
 	 flex: 0 0 260px;
+}
+
+.donate-bubble:hover {
+  top: 59%;
+  z-index: 1;
 }
 
 .resources-bubble {
@@ -422,6 +435,10 @@ a.join:hover {
   font-style: normal;
 }
 
+.resources-bubble:hover {
+  top: 64%;
+  z-index: 1;
+}
 
 .contribute-bubble {
 	 background-color:  rgb(120, 160, 190);
@@ -456,4 +473,9 @@ a.join:hover {
   font-style: normal;
 	text-transform: uppercase;
 	
+}
+
+.contribute-bubble:hover {
+  top: 39%;
+  z-index: 1;
 }
