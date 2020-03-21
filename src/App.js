@@ -4,6 +4,7 @@ import React from 'react';
 import './App.css';
 import GetOnlinePosts from './components/OnlinePosts/GetOnlinePosts';
 import GetMainElements from './components/MainElements/GetMainElements';
+import GetMainElementsInfo from './components/MainElementsInfo/GetMainElementsInfo';
 
 const pub = process.env.PUBLIC_URL;
 
@@ -46,6 +47,7 @@ render() {
 
 
       {/* CONTENT */}
+      <GetMainElementsInfo/>
       <GetOnlinePosts/>
 
 
