@@ -61,7 +61,8 @@ class GetMainElements extends Component {
                 </div>
                 </a>
             );
-        });https://docs.google.com/document/u/0/d/1ksMK-gnnQLGigRNz5ajegWLegtqNJlO8qAp2L4QgS4c/mobilebasic
+        });
+        //https://docs.google.com/document/u/0/d/1ksMK-gnnQLGigRNz5ajegWLegtqNJlO8qAp2L4QgS4c/mobilebasic
         // We're rendering the array of committeeElements in our final output!
         // Instead of rendering the variable, we could also have put the entire map call
         // into the brackets inside of this div to produce the same effect. Up to you!
