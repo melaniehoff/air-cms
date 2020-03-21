@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GetMainElements from '../MainElements/GetMainElements';
 import '../Components.css';
 import Media from 'react-media';
 class GetOnlinePosts extends Component {
@@ -69,41 +70,16 @@ class GetOnlinePosts extends Component {
         return(
 
             <div className="Content">
-
           <div className="bigBreak"></div>
               <div id="About">
                 <h1>About</h1>
                   <p>ho hum</p>
               </div>
 
-
-
-
-              <div className="bigBreak"></div>
-              <div id="Guidelines">
-                <h1>Community Guidelines</h1>
-                  <p>ho hum</p>
-              </div>
-
-
-
-
-
-
-              <div className="bigBreak"></div>
-              <div id="Resources">
-                <h1>Resources</h1>
-                  <p>ho hum</p>
-              </div>
-
-              <div className="bigBreak"></div>
               <div id="Committees">
-                <h1>Contribute</h1>
+                <h1>Committees</h1>
                   {committeeElements}
               </div>
-
-
-
             </div>
         );
     }
