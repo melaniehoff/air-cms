@@ -49,6 +49,10 @@ class GetMainElementsInfo extends Component {
             const title = fields.Title;
             const info = fields.Info;
             const link = fields.Link;
+            console.log(link);
+
+            // const linkNoHash = link.substring(1)
+
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
@@ -58,7 +62,7 @@ class GetMainElementsInfo extends Component {
 
          <div key={id}>
             <div className="bigBreak"></div>
-              <div id={title}>
+              <div id={link}>
                 <h1>{title}</h1>
                   <p>{info}</p>
               </div>
