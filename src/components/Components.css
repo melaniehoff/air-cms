@@ -279,6 +279,7 @@ details p, details .footer {
 .bubble {
   cursor: pointer;
   background-color:  rgb(120, 160, 190);
+  background: url('./img/cloud1.png') no-repeat fixed , url('./img/blue-bg.png') no-repeat fixed ;
 
 }
 
@@ -301,7 +302,8 @@ details p, details .footer {
   left: 5%;
   text-align: center;
   animation: float 6s ease-in-out infinite;
-  border: 3px solid #3c7ccf;
+  border: 3px solid #5290B5;
+
 }
 .bubble:nth-child(2):hover {
   top: 26%;
@@ -324,7 +326,7 @@ details p, details .footer {
     left: 15%;
     text-align: center;
     animation: float2 6s ease-in-out infinite;
-    border: 3px solid #7af9ff;
+    border: 3px solid #C2E3F7;
 }
 .bubble:nth-child(3):hover {
   top: 64%;
@@ -348,7 +350,7 @@ details p, details .footer {
   top: 6%;
   left: 15%;
   animation: float 6s ease-in-out infinite;
-   border: 3px solid #6786c9;
+   border: 3px solid #257EAE;
 }
 .bubble:nth-child(4):hover {
   top: 5%;
@@ -356,7 +358,7 @@ details p, details .footer {
 }
 
 
-/*Submit an Idea*/
+/*Get Involved*/
 .bubble:nth-child(6) {
   z-index: 1;
    box-sizing: border-box;
@@ -372,7 +374,7 @@ details p, details .footer {
    left: 2%;
    text-align: center;
    animation: float2 6s ease-in-out infinite;
-   border: 3px solid #85a1ff;
+   border: 3px solid #8EC2DF;
 }
 
 .bubble:nth-child(6):hover {
@@ -397,7 +399,7 @@ details p, details .footer {
    left: 23%;
    text-align: center;
      animation: float2 6s ease-in-out infinite;
-      border: 3px solid #3eabe6;
+      border: 3px solid #3C87B2;
 }
 .bubble:nth-child(5):hover {
   top:16%;
@@ -421,7 +423,7 @@ details p, details .footer {
    left: 7%;
    text-align: center;
      animation: float3 6s ease-in-out infinite;
-      border: 3px solid #d2fafc;
+      border: 3px solid #A3CFE9;
 }
 .bubble:nth-child(1):hover {
   bottom:13%;
