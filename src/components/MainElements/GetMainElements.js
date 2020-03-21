@@ -54,7 +54,6 @@ class GetMainElements extends Component {
             // through an loop like this or React will give a warning.
             return (
 
-
                 <a className="bubble" href={link} key={id}>
                 <div>
                 <h5 class="light">{title}</h5>
