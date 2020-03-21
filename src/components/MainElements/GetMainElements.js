@@ -47,6 +47,7 @@ class GetMainElements extends Component {
             // https://wesbos.com/destructuring-renaming/
             const text = fields.Text;
             const title = fields.Title;
+            const info = fields.Info;
             const link = fields.Link;
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
@@ -56,10 +57,13 @@ class GetMainElements extends Component {
 
                 <a className="bubble" href={link} key={id}>
                 <div>
-                <h5 class="light">{title}</h5>
+                <h5 className="light">{title}</h5>
                 <p>{text}</p>
                 </div>
                 </a>
+
+
+
             );
         });
         //https://docs.google.com/document/u/0/d/1ksMK-gnnQLGigRNz5ajegWLegtqNJlO8qAp2L4QgS4c/mobilebasic
