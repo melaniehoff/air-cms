@@ -343,17 +343,11 @@ details p, details .footer {
   justify-content: center;
   align-items: center;
 	position: absolute;
-<<<<<<< HEAD
 	top: 25%;
   left: 10%;
   text-align: center;
     animation: float2 6s ease-in-out infinite;
      border: 3px solid #7af9ff;
-=======
-	bottom: 2%;
-	left: 5%;
-    animation: float3 6s ease-in-out infinite;
->>>>>>> b1590adc18af5a7e75f79ceb9cba162e712ce754
 }
 .bubble:nth-child(3):hover {
   top: 24%;

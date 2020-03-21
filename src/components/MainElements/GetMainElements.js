@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../components.css';
+import '../Components.css';
 class GetMainElements extends Component {
     constructor(props){
         super(props);

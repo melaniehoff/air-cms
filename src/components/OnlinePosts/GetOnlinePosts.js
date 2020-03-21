@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../components.css';
+import '../Components.css';
 import Media from 'react-media';
 class GetOnlinePosts extends Component {
     constructor(props){
