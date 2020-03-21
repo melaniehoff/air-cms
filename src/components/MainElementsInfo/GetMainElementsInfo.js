@@ -6,7 +6,7 @@ class GetMainElementsInfo extends Component {
         this.state = {
             err : null,
             isLoaded : false,
-            records : []        
+            records : []
         };
     }
     componentDidMount() {
@@ -31,7 +31,7 @@ class GetMainElementsInfo extends Component {
   render() {
       // An alternative way to do this that's preferred in most style guides is:
         // const { records } = this.state;
-        // See the object destructuring section: 
+        // See the object destructuring section:
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
       const { records } = this.state;
         // This map call produces an array of <div> elements. Alternatively, we could use another
@@ -49,9 +49,7 @@ class GetMainElementsInfo extends Component {
             const title = fields.Title;
             const info = fields.Info;
             const link = fields.Link;
-            console.log(link);
-
-            // const linkNoHash = link.substring(1)
+            const linkNoHash = link.substring(1)
 
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
@@ -62,7 +60,7 @@ class GetMainElementsInfo extends Component {
 
          <div key={id}>
             <div className="bigBreak"></div>
-              <div id={link}>
+              <div id={linkNoHash}>
                 <h1>{title}</h1>
                   <p>{info}</p>
               </div>
