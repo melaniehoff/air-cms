@@ -47,17 +47,22 @@ class GetMainElements extends Component {
             // https://wesbos.com/destructuring-renaming/
             const text = fields.Text;
             const title = fields.Title;
+            const link = fields.Link;
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
             // through an loop like this or React will give a warning.
             return (
-                <div key={id}>
-                        <h3>{title}</h3>
-                        <p>{text}</p>
+
+
+                <a className="bubble" href={link} key={id}>
+                <div>
+                <h5 class="light">{title}</h5>
+                <p>{text}</p>
                 </div>
+                </a>
             );
-        });
+        });https://docs.google.com/document/u/0/d/1ksMK-gnnQLGigRNz5ajegWLegtqNJlO8qAp2L4QgS4c/mobilebasic
         // We're rendering the array of committeeElements in our final output!
         // Instead of rendering the variable, we could also have put the entire map call
         // into the brackets inside of this div to produce the same effect. Up to you!

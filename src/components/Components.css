@@ -152,6 +152,10 @@
 
 /* DIV STYLES */
 
+.meow {
+  text-decoration: underline;
+}
+
 .Content {
   padding: 0px 0px 20px 0px;
 	float: right;
@@ -286,26 +290,51 @@ details p, details .footer {
 }
 
 
-.about-bubble {
-	border-radius: 50%;
-	padding: 1%;
-	max-width: 280px;
-	height: 280px;
-	display: flex;
+.bubble:nth-child(1) {
+  border-radius: 50%;
+  padding: 1%;
+  max-width: 280px;
+  height: 280px;
+  display: flex;
   justify-content: center;
   align-items: center;
-	position: absolute;
-	top: 2%;
+  position: absolute;
+  top: 2%;
   left: 2%;
   text-align: center;
   animation: float 6s ease-in-out infinite;
 }
 
-
-.about-bubble:hover {
+.bubble:nth-child(1):hover {
   top: 1%;
   z-index: 1;
 }
+
+
+
+.bubble:nth-child(2) {
+  background: red;
+}
+.bubble:nth-child(3) {
+  background: red;
+}
+.bubble:nth-child(4) {
+  background: red;
+}
+.bubble:nth-child(5) {
+  background: red;
+}
+.bubble:nth-child(6) {
+  background: red;
+}
+.bubble:nth-child(7) {
+  background: red;
+}
+
+
+
+
+
 
 .guidelines-bubble {
 	border-radius: 50%;
