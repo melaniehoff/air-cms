@@ -60,7 +60,6 @@ class GetOnlinePosts extends Component {
                     <h3>{committee}</h3>
                     <p className="Light-Text">{description}</p>
 
-
                 </div>
             );
         });
@@ -70,11 +69,7 @@ class GetOnlinePosts extends Component {
         return(
 
             <div className="Content">
-          <div className="bigBreak"></div>
-              <div id="About">
-                <h1>About</h1>
-                  <p>ho hum</p>
-              </div>
+
 
               <div id="Committees">
                 <h1>Committees</h1>
