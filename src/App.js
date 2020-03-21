@@ -47,8 +47,10 @@ render() {
 
 
       {/* CONTENT */}
+      <div className="Content">
       <GetMainElementsInfo/>
       <GetOnlinePosts/>
+      </div>
 
 
       {/* NAVIGATION */}
