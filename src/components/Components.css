@@ -59,9 +59,6 @@
 
 
 
-
-
-
 /* FONTS */
 
 @font-face {
@@ -278,6 +275,7 @@ details p, details .footer {
   box-shadow: 1px 0px 10px rgba(35,108,225,60);
 }
 
+
 .bubble {
   cursor: pointer;
   background-color:  rgb(120, 160, 190);
@@ -289,138 +287,144 @@ details p, details .footer {
 }
 
 /*About*/
-.bubble:nth-child(1) {
+.bubble:nth-child(2) {
+  z-index: 1;
   border-radius: 50%;
   padding: 1%;
-  max-width: 280px;
-  height: 280px;
+  max-width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 2%;
-  left: 2%;
+  top: 30%;
+  left: 5%;
   text-align: center;
   animation: float 6s ease-in-out infinite;
   border: 3px solid #3c7ccf;
 }
-.bubble:nth-child(1):hover {
-  top: 1%;
+.bubble:nth-child(2):hover {
+  top: 29%;
   z-index: 1;
 }
 
 /*Donate*/
-.bubble:nth-child(2) {
+.bubble:nth-child(3) {
+  z-index: 2;
   border-radius: 50%;
-  padding: 2%;
-  box-sizing: border-box;
-  max-width: 270px;
-  height: 270px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: absolute;
-  bottom: 2%;
-  left: 5%;
-  animation: float2 6s ease-in-out infinite;
-   border: 3px solid #6786c9;
+   padding: 2%;
+    box-sizing: border-box;
+   max-width: 230px;
+   height:230px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   position: absolute;
+    top: 65%;
+    left: 15%;
+    text-align: center;
+    animation: float2 6s ease-in-out infinite;
+    border: 3px solid #7af9ff;
 }
-.bubble:nth-child(2):hover {
-  bottom: 3%;
+.bubble:nth-child(3):hover {
+  top: 64%;
   z-index: 1;
 }
 
 
 /*Community Guidelines*/
-.bubble:nth-child(3) {
-	border-radius: 50%;
-	padding: 2%;
+.bubble:nth-child(4) {
+  z-index: 2;
+  border-radius: 50%;
+  padding: 2%;
   box-sizing: border-box;
-	max-width: 370px;
-	height: 370px;
-	display: flex;
+  width: 150px;
+  height: 150px;
+  display: flex;
   justify-content: center;
   align-items: center;
-	position: absolute;
-	top: 25%;
-  left: 10%;
   text-align: center;
-    animation: float2 6s ease-in-out infinite;
-     border: 3px solid #7af9ff;
+  position: absolute;
+  top: 4%;
+  left: 15%;
+  animation: float3 6s ease-in-out infinite;
+   border: 3px solid #6786c9;
 }
-.bubble:nth-child(3):hover {
-  top: 24%;
+.bubble:nth-child(4):hover {
+  top: 3%;
   z-index: 1;
 }
 
 
 /*Submit an Idea*/
-.bubble:nth-child(4) {
+.bubble:nth-child(5) {
+  z-index: 1;
    box-sizing: border-box;
-	 width: 150px;
-   height: 150px;
+	 width: 130px;
+   height: 130px;
 	 border-radius: 50%;
 	 display: flex;
    justify-content: center;
    align-items: center;
 	 padding: 1%;
 	 position: absolute;
-	 top: 63%;
-   left: 21%;
+	 top: 60%;
+   left: 2%;
    text-align: center;
-  animation: float 6s ease-in-out infinite;
+   animation: float2 6s ease-in-out infinite;
    border: 3px solid #85a1ff;
 }
 
-.bubble:nth-child(4):hover {
-  top: 62%;
+.bubble:nth-child(5):hover {
+  top: 59%;
   z-index: 1;
 }
 
 
 /*HELP*/
-.bubble:nth-child(5) {
+.bubble:nth-child(6) {
+  z-index: 2;
    box-sizing: border-box;
-	 width: 120px;
-   height: 120px;
+	 width: 140px;
+   height: 140px;
 	 border-radius: 50%;
 	 display: flex;
    justify-content: center;
    align-items: center;
 	 padding: 1%;
 	 position: absolute;
-	 top: 43%;
-   left: 5%;
+   top: 10%;
+   left: 25%;
    text-align: center;
-     animation: float 6s ease-in-out infinite;
+     animation: float3 6s ease-in-out infinite;
       border: 3px solid #3eabe6;
 }
-.bubble:nth-child(5):hover {
-  top:42%;
+.bubble:nth-child(6):hover {
+  top:9%;
   z-index: 1;
 }
 
 
 /*Calendar*/
-.bubble:nth-child(6) {
+.bubble:nth-child(1) {
+  z-index: 2;
    box-sizing: border-box;
-	 width: 100px;
-   height: 100px;
+	 width: 110px;
+   height: 110px;
 	 border-radius: 50%;
 	 display: flex;
    justify-content: center;
    align-items: center;
 	 padding: 1%;
 	 position: absolute;
-	 top: 10%;
-   left: 25%;
+   bottom: 12%;
+   left: 7%;
    text-align: center;
-     animation: float2 6s ease-in-out infinite;
+     animation: float3 6s ease-in-out infinite;
       border: 3px solid #d2fafc;
 }
-.bubble:nth-child(6):hover {
-  top:9%;
+.bubble:nth-child(1):hover {
+  bottom:11%;
   z-index: 1;
 }
 
@@ -548,7 +552,7 @@ h4 {
 h5 {
   font-size: 14px;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.3;
   text-transform: uppercase;
   display: block;
   margin: 0px;
@@ -564,7 +568,7 @@ h5 span {
 h5.light {
   font-size: 14px;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.3;
   text-transform: uppercase;
   display: block;
   margin: 0px;
@@ -572,6 +576,10 @@ h5.light {
   color: #fff;
   text-shadow: 1px 0px 10px rgba(47,115,161,20);
   padding: 10px 0px;
+}
+
+a.bubble {
+  text-decoration: none;
 }
 
 a.join {
@@ -630,7 +638,10 @@ summary:hover  h5, summary:hover  h4 {
 }
 
 
-
+p span {
+  text-decoration: underline;
+  font-style: italic;
+}
 
 
 
