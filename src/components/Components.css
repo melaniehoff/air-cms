@@ -357,7 +357,7 @@ details p, details .footer {
 
 
 /*Submit an Idea*/
-.bubble:nth-child(5) {
+.bubble:nth-child(6) {
   z-index: 1;
    box-sizing: border-box;
 	 width: 130px;
@@ -375,14 +375,14 @@ details p, details .footer {
    border: 3px solid #85a1ff;
 }
 
-.bubble:nth-child(5):hover {
+.bubble:nth-child(6):hover {
   top: 56%;
   z-index: 1;
 }
 
 
 /*HELP*/
-.bubble:nth-child(6) {
+.bubble:nth-child(5) {
   z-index: 2;
    box-sizing: border-box;
 	 width: 130px;
@@ -399,7 +399,7 @@ details p, details .footer {
      animation: float2 6s ease-in-out infinite;
       border: 3px solid #3eabe6;
 }
-.bubble:nth-child(6):hover {
+.bubble:nth-child(5):hover {
   top:16%;
   z-index: 1;
 }

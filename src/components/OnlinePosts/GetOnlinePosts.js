@@ -72,7 +72,6 @@ class GetOnlinePosts extends Component {
 
 
               <div id="Committees">
-                <h1>Committees</h1>
                   {committeeElements}
               </div>
 
