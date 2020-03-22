@@ -47,6 +47,10 @@ render() {
 
 
       {/* CONTENT */}
+
+
+      <div className="cloudbg">
+      </div>
       <div className="Content">
         <GetMainElementsInfo/>
         <GetOnlinePosts/>
