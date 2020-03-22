@@ -730,13 +730,16 @@ p span {
      display: flex;
       justify-content: center;
       align-items: center;
-      top: 65%;
-      left: 15%;
+      bottom: 17%;
+      right: 5%;
+      left: auto;
+      top: auto;
       animation: float2 6s ease-in-out infinite;
       border: 3px solid #C2E3F7;
   }
   .bubble:nth-child(3):hover {
-    top: 64%;
+    top: auto;
+    bottom: 17%;
     z-index: 1;
   }
 
@@ -755,13 +758,14 @@ p span {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 6%;
-    left: 15%;
+    top: 7%;
+    left: auto;
+    right: 10%;
     animation: float 6s ease-in-out infinite;
      border: 3px solid #257EAE;
   }
   .bubble:nth-child(4):hover {
-    top: 5%;
+    top: 7%;
     z-index: 1;
   }
 
@@ -777,14 +781,16 @@ p span {
      justify-content: center;
      align-items: center;
   	 padding: 1%;
-  	 top: 67%;
-     left: 2%;
+  	 bottom: 12%;
+     left: 7%;
+     top: auto;
      animation: float2 6s ease-in-out infinite;
      border: 3px solid #8EC2DF;
   }
 
   .bubble:nth-child(6):hover {
-    top: 56%;
+    top: auto;
+    bottom: 12%;
     z-index: 1;
   }
 
@@ -800,13 +806,13 @@ p span {
      justify-content: center;
      align-items: center;
   	 padding: 1%;
-     top: 17%;
-     left: 23%;
+     top: 1%;
+     left: 12%;
        animation: float2 6s ease-in-out infinite;
         border: 3px solid #3C87B2;
   }
   .bubble:nth-child(5):hover {
-    top:16%;
+    top:1%;
     z-index: 1;
   }
 
@@ -822,13 +828,13 @@ p span {
      justify-content: center;
      align-items: center;
   	 padding: 1%;
-     bottom: 7%;
-     left: 15%;
+     bottom: 2%;
+     left: 27%;
        animation: float3 6s ease-in-out infinite;
         border: 3px solid #A3CFE9;
   }
   .bubble:nth-child(1):hover {
-    bottom:13%;
+    bottom:2%;
     z-index: 1;
   }
 
