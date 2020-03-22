@@ -6,7 +6,7 @@ class GetMainElements extends Component {
         this.state = {
             err : null,
             isLoaded : false,
-            records : []        
+            records : []
         };
     }
     componentDidMount() {
@@ -31,7 +31,7 @@ class GetMainElements extends Component {
   render() {
       // An alternative way to do this that's preferred in most style guides is:
         // const { records } = this.state;
-        // See the object destructuring section: 
+        // See the object destructuring section:
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
       const { records } = this.state;
         // This map call produces an array of <div> elements. Alternatively, we could use another
@@ -49,6 +49,7 @@ class GetMainElements extends Component {
             const title = fields.Title;
             const info = fields.Info;
             const link = fields.Link;
+            const learn = fields.Learn;
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
@@ -58,7 +59,7 @@ class GetMainElements extends Component {
                 <a className="bubble" href={link} key={id}>
                 <div>
                 <h5 className="light">{title}</h5>
-                <p>{text}</p>
+                <p>{text} <span>{learn}</span></p>
                 </div>
                 </a>
 

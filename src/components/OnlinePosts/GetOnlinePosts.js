@@ -68,14 +68,13 @@ class GetOnlinePosts extends Component {
         // into the brackets inside of this div to produce the same effect. Up to you!
         return(
 
-            <div className="Content">
+
 
 
               <div id="Committees">
-                <h1>Committees</h1>
                   {committeeElements}
               </div>
-            </div>
+
         );
     }
   }

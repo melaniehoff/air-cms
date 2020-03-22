@@ -1,4 +1,6 @@
 
+
+
 .App {
   width: 100vw;
 
@@ -28,19 +30,21 @@
 
 
 
+
 @media (max-width: 1024px) {
 
   .App-header {
-    width: 80vw;
-    height: 50vh;
+    max-width: 300px;
+    width: 70vw;
+    height: auto;
     text-align: center;
-    position: fixed;
+    position: absolute;
     margin: 0px auto;
     /* margin: 3em auto;  */
     /* Will not center vertically and won't work in IE6/7. */
     left: 0;
     right: 0;
-    top: 5vh;
+    top: 10vh;
     z-index: -1;
   }
 
