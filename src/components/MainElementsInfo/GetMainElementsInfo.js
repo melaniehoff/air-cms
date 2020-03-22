@@ -1,39 +1,13 @@
 import React, { Component } from 'react';
 import '../Components.css';
+
 class GetMainElementsInfo extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            err : null,
-            isLoaded : false,
-            records : []
-        };
-    }
-    componentDidMount() {
-        fetch(".netlify/functions/main")
-      .then( response => response.json())
-          .then( (data) => {
-            this.setState({
-                isLoaded : true,
-                meow : data,
-                records: data.records
-            });
-          console.log('MAIN (info) Records', data.records)
-        })
-      .catch(err => {
-       this.setState({
-                isLoaded: true,
-                err
-            });
-      console.log(err)
-    });
-    }
   render() {
       // An alternative way to do this that's preferred in most style guides is:
         // const { records } = this.state;
         // See the object destructuring section:
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-      const { records } = this.state;
+      const { records } = this.props;
         // This map call produces an array of <div> elements. Alternatively, we could use another
         // type of loop such a for-loop to do this, but React style guides prefer these
         // functional approaches.
@@ -50,14 +24,11 @@ class GetMainElementsInfo extends Component {
             const info = fields.Info;
             const link = fields.Link;
             const linkNoHash = link.substring(1)
-
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
             // through an loop like this or React will give a warning.
             return (
-
-
          <div key={id}>
             <div className="bigBreak"></div>
               <div id={linkNoHash}>
@@ -65,9 +36,6 @@ class GetMainElementsInfo extends Component {
                   <p>{info}</p>
               </div>
               </div>
-
-
-
             );
         });
         //https://docs.google.com/document/u/0/d/1ksMK-gnnQLGigRNz5ajegWLegtqNJlO8qAp2L4QgS4c/mobilebasic
@@ -81,5 +49,4 @@ class GetMainElementsInfo extends Component {
         );
     }
     }
-
   export default GetMainElementsInfo;
