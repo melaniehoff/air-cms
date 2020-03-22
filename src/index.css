@@ -2,11 +2,11 @@
 @keyframes cloudmove {
 	0% {
 		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
-		transform: translatex(0px);
+		transform: translatex(-100vw);
 	}
 	50% {
 		/* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
-		transform: translatex(50vw);
+		transform: translatex(0vw);
 	}
 	100% {
 		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
@@ -36,10 +36,15 @@ body {
 }
 
 .cloudbg {
-  background: url('./img/cloud1.png') no-repeat fixed ;
-  animation: cloudmove 6s ease-in-out infinite;
+  background: url('./img/cloud2.png') no-repeat fixed ;
+  background-size: contain;
+  animation: cloudmove 60s linear infinite;
   position: fixed;
   left: 0px;
   top: 0px;
   z-index: -1;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  opacity: .35;
 }
