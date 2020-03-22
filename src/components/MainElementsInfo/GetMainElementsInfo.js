@@ -24,16 +24,17 @@ class GetMainElementsInfo extends Component {
             const info = fields.Info;
             const link = fields.Link;
             const linkNoHash = link.substring(1)
+            const linkId = (linkNoHash + "Container");
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
             // through an loop like this or React will give a warning.
             return (
-         <div key={id}>
-            <div className="bigBreak"></div>
+         <div key={id} id={linkId}>
               <div id={linkNoHash}>
                 <h1>{title}</h1>
                   <p>{info}</p>
+              <div className="bigBreak"></div>
               </div>
               </div>
             );

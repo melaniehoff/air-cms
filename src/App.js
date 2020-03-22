@@ -52,7 +52,7 @@ render() {
       <GetOnlinePosts/>
       </div>
       {/* NAVIGATION */}
-      <GetMainElements/>
+      <GetMainElements records={records}/>
       </div>
 
     );

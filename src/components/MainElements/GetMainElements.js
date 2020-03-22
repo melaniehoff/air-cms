@@ -1,39 +1,13 @@
 import React, { Component } from 'react';
 import '../Components.css';
+
 class GetMainElements extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            err : null,
-            isLoaded : false,
-            records : []
-        };
-    }
-    componentDidMount() {
-        fetch(".netlify/functions/main")
-      .then( response => response.json())
-          .then( (data) => {
-            this.setState({
-                isLoaded : true,
-                meow : data,
-                records: data.records
-            });
-          console.log('MAIN Records', data.records)
-        })
-      .catch(err => {
-       this.setState({
-                isLoaded: true,
-                err
-            });
-      console.log(err)
-    });
-    }
   render() {
       // An alternative way to do this that's preferred in most style guides is:
         // const { records } = this.state;
         // See the object destructuring section:
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-      const { records } = this.state;
+      const { records } = this.props;
         // This map call produces an array of <div> elements. Alternatively, we could use another
         // type of loop such a for-loop to do this, but React style guides prefer these
         // functional approaches.
@@ -62,8 +36,6 @@ class GetMainElements extends Component {
                 <p>{text} <span>{learn}</span></p>
                 </div>
                 </a>
-
-
 
             );
         });
