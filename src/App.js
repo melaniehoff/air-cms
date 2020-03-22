@@ -27,7 +27,7 @@ render() {
 
 
         {/* CALENDAR KEY */}
-        <div class="Key">
+        {/* <div class="Key">
             <div class="keyLine">
               <div class="bullet Red-Fill"></div> <span> Community Check-ins</span>
               <div class="bullet Orange-Fill"></div> <span> Meditations</span>
@@ -41,15 +41,15 @@ render() {
               <div class="bullet Purple-Fill"></div> <span> Frontline PSAs</span>
               <div class="bullet Pink-Fill"></div> <span> Digital Security</span>
             </div>
-        </div>
+        </div> */}
 
 
 
 
       {/* CONTENT */}
       <div className="Content">
-      <GetMainElementsInfo/>
-      <GetOnlinePosts/>
+        <GetMainElementsInfo/>
+        <GetOnlinePosts/>
       </div>
 
 

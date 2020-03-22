@@ -1,3 +1,19 @@
+@keyframes cloudmove {
+	0% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatex(0px);
+	}
+	50% {
+		/* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+		transform: translatey(50vw);
+	}
+	100% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(100vw);
+	}
+}
+
+
 
 .App {
   width: 100vw;
@@ -28,19 +44,20 @@
 
 
 
+
 @media (max-width: 1024px) {
 
   .App-header {
     width: 80vw;
     height: 50vh;
     text-align: center;
-    position: fixed;
+    position: absolute;
     margin: 0px auto;
     /* margin: 3em auto;  */
     /* Will not center vertically and won't work in IE6/7. */
     left: 0;
     right: 0;
-    top: 5vh;
+    top: 15vh;
     z-index: -1;
   }
 
