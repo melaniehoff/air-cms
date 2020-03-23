@@ -1,6 +1,10 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import poster from '../public/cloud9.png';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
 import GetOnlinePosts from './components/OnlinePosts/GetOnlinePosts';
 import GetMainElements from './components/MainElements/GetMainElements';
@@ -37,12 +41,16 @@ class App extends React.Component {
 render() {
     const { records } = this.state;
     return (
+      <Router>
       <div className="App">
 
         {/* LOGO */}
         <header className="App-header">
           <img src={pub + 'cloud9-logo.png'} />
         </header>
+        <nav>
+              <Link to="/calendar">Calendar</Link>
+        </nav>
 
       {/* CONTENT */}
       <div className="cloudbg">
@@ -53,8 +61,16 @@ render() {
       </div>
       {/* NAVIGATION */}
       <GetMainElements records={records}/>
-      </div>
 
+
+
+          <Switch>
+          <Route path="/calendar">
+          
+          </Route>
+        </Switch>
+      </div>
+</Router>
     );
   }
 }
