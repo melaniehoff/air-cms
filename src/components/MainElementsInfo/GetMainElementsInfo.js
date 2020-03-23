@@ -25,6 +25,7 @@ class GetMainElementsInfo extends Component {
             const link = fields.Link;
             const linkNoHash = link.substring(1)
             const container = (linkNoHash + "Container");
+            const url = fields.Url;
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
@@ -32,7 +33,7 @@ class GetMainElementsInfo extends Component {
             return (
          <div key={id} id={container}>
               <div id={linkNoHash}>
-                <h1>{title}</h1>
+                <a href={url}><h1>{title}</h1></a>
                   <p>{info}</p>
               <div className="bigBreak"></div>
               </div>

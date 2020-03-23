@@ -642,8 +642,17 @@ p span {
 }
 
 
+a[href^="https://"] h1 {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  width: 
+}
 
-
+a[href^="https://"] h1:hover {
+  background-color: yellow;
+  text-decoration: none;
+}
 
 
 
