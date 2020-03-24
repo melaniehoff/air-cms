@@ -39,6 +39,7 @@ class App extends React.Component {
     console.log(err)
   });
   }
+
 render() {
     const { records } = this.state;
     return (
@@ -50,7 +51,7 @@ render() {
           </header>
           {/* CALENDAR SEPARATE PAGE */}
           <nav>
-                <Link to="/calendar">Calendar</Link>
+          <Link to="/calendar">Calendar</Link>
           </nav>
           {/* CONTENT */}
 
@@ -84,9 +85,11 @@ function Home(props) {
 }
 function Calendar() {
   return (
-    <div className="cloudbg">
+    <div>
+    <div className="cloudbg"></div>
       <GetCalendar/>
-    </div>
+      </div>
+
   );
 }
 export default App;
