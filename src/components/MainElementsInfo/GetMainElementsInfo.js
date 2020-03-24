@@ -33,7 +33,7 @@ class GetMainElementsInfo extends Component {
             return (
          <div key={id} id={container}>
               <div id={linkNoHash}>
-                <a href={url}><h1>{title}</h1></a>
+                <a href={url} target="_blank"><h1>{title}</h1></a>
                   <p>{info}</p>
               <div className="bigBreak"></div>
               </div>
