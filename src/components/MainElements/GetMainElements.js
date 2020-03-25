@@ -3,6 +3,9 @@ import '../Components.css';
 
 class GetMainElements extends Component {
   render() {
+
+            console.log("GetMainElement Props", this.props)
+
       // An alternative way to do this that's preferred in most style guides is:
         // const { records } = this.state;
         // See the object destructuring section:
