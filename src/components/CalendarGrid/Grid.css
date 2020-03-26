@@ -140,6 +140,7 @@
   right: -.05em;
   transition: .25s ease-out;
   letter-spacing: -.07em;
+  z-index: -1;
 }
 
 .calendar .body .cell:hover .bg, .calendar .body .selected .bg  {

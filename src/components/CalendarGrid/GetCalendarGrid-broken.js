@@ -83,11 +83,9 @@ class GetCalendarGrid extends React.Component {
 	  			eventNames += element.fields.Event + " "
 	eventlinks.push(
           <div
-            className={`eventlink`}
+            className={`eventbox`}
+            id={element.id}
             key={day}
-            onClick={() => {
-            	console.log(element.id)
-            }}
           >
             { element.fields.Event }
           </div>
@@ -104,11 +102,11 @@ class GetCalendarGrid extends React.Component {
                 : isSameDay(day, selectedDate) ? "selected" : ""
             }`}
             key={day}
-            
+            onClick={() => this.onDateClick(parse(cloneDay))}
           >
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
-            {eventlinks}
+            {eventNames}
           </div>
         );
         day = addDays(day, 1);
