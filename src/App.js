@@ -103,8 +103,8 @@ function Calendar(props) {
   return (
     <div>
       <div className="cloudbg"></div>
-      <GetCalendar calendarRecords={props.calendarRecords} records={props.records}/>
-      <GetCalendarGrid calendarRecords={props.calendarRecords} />
+    {/* <GetCalendar calendarRecords={props.calendarRecords} records={props.records}/> */}
+      <GetCalendarGrid calendarRecords={props.calendarRecords} records={props.records}/>
     </div>  
 
   );
