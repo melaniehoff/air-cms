@@ -64,9 +64,9 @@ render() {
       <Router>
         <div className="App">
           {/* LOGO */}
-          <header className="App-header">
+          {/* <header className="App-header">
             <img src={pub + 'cloud9-logo.png'} />
-          </header>
+          </header> */}
 
           {/* CONTENT */}
 
@@ -88,6 +88,11 @@ render() {
 function Home(props) {
   return (
     <div>
+      {/* LOGO */}
+      <header className="App-header">
+        <img src={pub + 'cloud9-logo.png'} />
+      </header>
+
       <div className="cloudbg">
         </div>
         <div className="Content">
