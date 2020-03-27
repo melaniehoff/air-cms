@@ -3,10 +3,3 @@
   publish = "build/"
   command = "npm run build"
 
-[[redirects]]
-  from = "/calendar"
-  to = "/calendar"
-  status = 301
-  force = false
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
