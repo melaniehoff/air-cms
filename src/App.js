@@ -93,8 +93,9 @@ function Home(props) {
         <div className="Content">
           <GetMainElementsInfo records={props.records} />
           <GetOnlinePosts/>
-         <GetMainElements records={props.records}/>
+
         </div>
+        <GetMainElements records={props.records}/>
       </div>
   );
 }
@@ -104,7 +105,7 @@ function Calendar(props) {
       <div className="cloudbg"></div>
     {/* <GetCalendar calendarRecords={props.calendarRecords} records={props.records}/> */}
       <GetCalendarGrid calendarRecords={props.calendarRecords} records={props.records}/>
-    </div>  
+    </div>
 
   );
 }
