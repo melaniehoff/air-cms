@@ -49,6 +49,8 @@ class GetOnlinePosts extends Component {
             // https://wesbos.com/destructuring-renaming/
             const description = fields.Description;
             const committee = fields.Committees;
+            const url = fields.Url;
+            const linkname = fields.LinkName;
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
@@ -59,6 +61,11 @@ class GetOnlinePosts extends Component {
 
                     <h4>{committee}</h4>
                     <p className="Light-Text">{description}</p>
+                    <div className="footer">
+                      <div className="footerLeft"></div>
+                      <div className="footerRight"> <a href={url} target="_blank" class="joinLight">{linkname}</a> </div>
+                    </div>
+                    <div className="clear"></div>
 
                 </div>
             );
@@ -71,9 +78,9 @@ class GetOnlinePosts extends Component {
 
 
 
-              <div id="Committees">
-              <h1>Committees</h1>
-              <p id="CommitteeDesc">CLOU9 is a living collection of committees made up of collaborators from all over the world. Reach out to [email] if you'd like to join us.</p>
+              <div id="CommitteesInfo">
+              {/* <h1>Committees</h1> */}
+              {/* <p id="CommitteeDesc">CLOU9 is a living collection of committees made up of collaborators from all over the world. Reach out to [email] if you'd like to join us.</p> */}
                   {committeeElements}
               </div>
 

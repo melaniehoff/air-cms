@@ -172,6 +172,11 @@
 	float: left;
 }
 
+#CommitteesInfo {
+  float: left;
+  margin-top: -200px;
+}
+
 
 #CalendarLink {
   display: block;
@@ -189,9 +194,7 @@
   box-shadow: 1px 0px 10px rgba(255,255,255,60);
 }
 
-#AboutContainer {
-  display: none;
-}
+
 
 #Event {
   display: block;
@@ -236,6 +239,10 @@ details p, details .footer {
   box-sizing: border-box;
 }
 
+.footer {
+  padding: 20px 14px 20px 14px;
+  box-sizing: border-box;
+}
 
 .calender {
 	display: block;
@@ -544,6 +551,7 @@ h4 {
   display: block;
   margin-bottom: 10px;
   color: white;
+  text-shadow: 1px 0px 10px rgba(47,115,161,20);
 }
 
 /* small all caps title */
@@ -576,6 +584,39 @@ h5.light {
   padding: 10px 0px;
 }
 
+
+#Link {
+  display: block;
+  width: 100%;
+  border-radius: 32px;
+  box-shadow: 1px 0px 10px rgba(35,108,225,60);
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 28px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  padding-left: 10px;
+  color: #2F73A1;
+}
+
+#Link:hover {
+  box-shadow: 1px 0px 10px rgba(255,255,255,60);
+  color: rgba(35,108,225);
+}
+
+
+#Link span {
+  float: right;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
 a.bubble {
   text-decoration: none;
 }
@@ -598,6 +639,29 @@ a.join {
 a.join:hover {
   background: #fff;
 }
+
+a.joinLight {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  display: block;
+  margin: 0px;
+  padding-bottom: 3px;
+  color: #fff !important;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  padding: 20px;
+}
+
+a.joinLight:hover {
+  background: #fff;
+  color: #2F73A1 !important;
+  border: 2px solid #2F73A1;
+}
+
+
 
 .Key span {
   font-family: 'Helvetica Medium';
@@ -646,7 +710,7 @@ a[href^="https://"] h1 {
   display: inline-block;
   text-decoration: underline;
   text-decoration-color: yellow;
-  width: 
+  width:
 }
 
 a[href^="https://"] h1:hover  {
@@ -670,8 +734,8 @@ a:visited {
 }
 
 #CommitteeDesc {
-  font-style: italic;
-  color: yellow;
+  /* font-style: italic; */
+  /* color: yellow; */
 }
 
 
