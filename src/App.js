@@ -9,7 +9,6 @@ import './App.css';
 import GetOnlinePosts from './components/OnlinePosts/GetOnlinePosts';
 import GetMainElements from './components/MainElements/GetMainElements';
 import GetMainElementsInfo from './components/MainElementsInfo/GetMainElementsInfo';
-import GetCalendar from './components/Calendar/GetCalendar';
 import GetCalendarGrid from './components/CalendarGrid/GetCalendarGrid';
 
 const pub = process.env.PUBLIC_URL;
