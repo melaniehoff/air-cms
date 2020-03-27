@@ -17,14 +17,14 @@ class GetCalendarGrid extends React.Component {
       <div className="header row flex-middle">
         <div className="col col-start">
           <div className="icon" onClick={this.prevMonth}>
-            chevron_left
+            Previous Month
           </div>
         </div>
         <div className="col col-center">
           <span>{ format(this.state.currentMonth, dateFormat)}</span>
         </div>
         <div className="col col-end" onClick={this.nextMonth}>
-          <div className="icon">chevron_right</div>
+          <div className="icon">Next Month</div>
         </div>
       </div>
     );
