@@ -47,6 +47,13 @@ class GetCalendarGrid extends React.Component {
     return <div className="days row">{days}</div>;
   }
 
+
+// CELLS // CELLS // CELLS // CELLS // CELLS
+  // CELLS // CELLS // CELLS // CELLS // CELLS
+    // CELLS // CELLS // CELLS // CELLS // CELLS
+      // CELLS // CELLS // CELLS // CELLS // CELLS
+        // CELLS // CELLS // CELLS // CELLS // CELLS 
+
   renderCells() {
 
 
@@ -107,6 +114,9 @@ class GetCalendarGrid extends React.Component {
             }`}
             // id={formattedDate}
             key={day}
+            onClick={() => {
+            console.log({selectedDate});
+            }}
 
           >
             <span className="number">{formattedDate}</span>
@@ -126,7 +136,21 @@ class GetCalendarGrid extends React.Component {
     return <div className="body">{rows}</div>;
   }
 
+// CELLS // CELLS // CELLS // CELLS // CELLS
+  // CELLS // CELLS // CELLS // CELLS // CELLS
+    // CELLS // CELLS // CELLS // CELLS // CELLS
+      // CELLS // CELLS // CELLS // CELLS // CELLS
+        // CELLS // CELLS // CELLS // CELLS // CELLS
 
+
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
 
   renderPopups() {
 
@@ -165,10 +189,22 @@ class GetCalendarGrid extends React.Component {
     return <div className="eventboxes">{eventboxes}</div>;
   }
 
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
+
+
+
   onDateClick = day => {
     this.setState({
       selectedDate: day
     });
+
   };
 
   nextMonth = () => {
