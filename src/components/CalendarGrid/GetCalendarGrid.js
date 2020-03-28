@@ -57,9 +57,7 @@ class GetCalendarGrid extends React.Component {
 
   renderCells() {
 
-  	// console.log("YOOOOOO", this.props.calendarRecords[0].fields.StartDateTime)
-  	// console.log("YOOOOOO", parseISO(this.props.calendarRecords[0].fields.StartDateTime))
-
+  	
     function togglePopup(e, popupId) {
       
       if(popupId){
@@ -67,22 +65,26 @@ class GetCalendarGrid extends React.Component {
       } else {
         var y = "popup" + e.target.closest('.cell').id;
       }
-      let eb = document.getElementsByClassName("popup");
-      console.log(eb)
-      Array.prototype.forEach.call(eb, function(element) {
-          // Do stuff here
-           if(element.id != y){
-              element.style.display = 'none'
-            } 
-      });
-      
-      
       var x = document.getElementById(y);
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
+      if(x.querySelectorAll(".fullEvent").length > 0){
+        let eb = document.getElementsByClassName("popup");
+   
+        Array.prototype.forEach.call(eb, function(element) {
+            // Do stuff here
+             if(element.id != y){
+                element.style.display = 'none'
+              } 
+        });
+        
+        
+       
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
       }
+      
     }
 
     const { currentMonth, selectedDate } = this.state;
