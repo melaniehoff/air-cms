@@ -82,24 +82,32 @@ class GetCalendarGrid extends React.Component {
         formattedDate = format(day, dateFormat);
         const cloneDay = day;
         let eventlinks = [];
+        // let StartTimeOfDay = element.fields.StartDateTime
 
-        var eventNames = ""
+        let eventNames = ""
+
+
 	  	this.props.calendarRecords.forEach((element) => {
 	  		if(isSameDay(day, parseISO(element.fields.StartDateTime))) {
-	  			console.log("there is an event on this day: ", day, "and vent is ", element)
-	  			console.log(element.fields.Event)
+	  			// console.log("there is an event on this day: ", day, "and event is ", element)
 	  			eventNames += element.fields.Event + " "
-	eventlinks.push(
-          <div
-            className={`eventlink`}
-            // id={type}
-            key={day}
-            onClick={() => {
-            	console.log(element.id)
-            }}
-          >
-            { element.fields.Event }
-          </div>
+
+          let e_fields = element.fields
+          let start_time = parseISO(e_fields.StartDateTime).toString()
+
+	         eventlinks.push(
+                <div
+                  className={`eventlink`}
+                  // id={type}
+                  key={day}
+                  onClick={() => {
+                  	console.log(element.id)
+                    console.log(start_time);
+
+                  }}
+                  >
+                  { element.fields.Event } { start_time } 
+                </div>
         );
 	  		}
 
@@ -204,7 +212,6 @@ class GetCalendarGrid extends React.Component {
     this.setState({
       selectedDate: day
     });
-
   };
 
   nextMonth = () => {
