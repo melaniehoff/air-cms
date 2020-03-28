@@ -215,13 +215,17 @@
   background: #E7F4AC;
   font-style: italic;
   line-height: 1;
-  padding: 8px;
+  padding: 20px;
+  overflow: hidden;
   font-size: 14px;
   color: #2F73A1;
   font-weight: bold;
   box-shadow: 1px 0px 10px rgba(35,108,225,60);
 
 
+}
+.eventlink:hover{
+  border:2px solid white;
 }
 
 .calendar .body .cell:hover .eventlink {
@@ -232,6 +236,7 @@
 
 .gridStartTime {
   float: right;
+  margin-top:5px;
 }
 
 
