@@ -61,16 +61,12 @@ class GetCalendarGrid extends React.Component {
   	// console.log("YOOOOOO", parseISO(this.props.calendarRecords[0].fields.StartDateTime))
 
     function togglePopup(e, popupId) {
-
+      console.log('firing')
       if(popupId){
         var y = ("popup" + popupId);
       } else {
-        console.log(e.target)
         var y = "popup" + e.target.closest('.cell').id;
       }
-      
-
-      console.log(y);
       var x = document.getElementById(y);
       if (x.style.display === "none") {
         x.style.display = "block";
@@ -93,7 +89,9 @@ class GetCalendarGrid extends React.Component {
     let day = startDate;
     let formattedDate = "";
     let formattedDateId = ""
-
+    const divStyle = {
+          display: 'none'
+        };
 
     while (day <= endDate) {
       for (let i = 0; i < 7; i++) {
@@ -167,6 +165,7 @@ class GetCalendarGrid extends React.Component {
 
             <div 
             className="popup"
+            style={divStyle}
             id={formattedDateId}
             >
 
