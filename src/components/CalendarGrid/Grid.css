@@ -51,8 +51,17 @@
   font-weight: 700;
   font-size: 115%;
   padding: 1.5em 0;
-  border-bottom: 1px solid var(--border-color);
-  color: #17374D;
+  /* border-bottom: 1px solid var(--border-color);  */
+  font-family: 'Helvetica Medium';
+  font-weight: lighter;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-shadow: 1px 0px 10px rgba(47,115,161,20);
+  margin: 0px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 .calendar .header .icon {
@@ -61,7 +70,7 @@
 }
 
 .calendar .header .icon:hover {
-  transform: scale(1.75);
+  transform: scale(1.1);
   transition: .25s ease-out;
   color: var(--main-color);
 }
@@ -113,6 +122,7 @@
 
 .calendar .body .selected span.number{
   color: #fff;
+  text-shadow: 1px 0px 10px rgba(47,115,161,20);
 }
 
 
