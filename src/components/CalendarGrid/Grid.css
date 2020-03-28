@@ -1,5 +1,8 @@
 
 /* GRID */
+:root {
+  --border-color: pink;
+}
 
 .row {
   margin: 0;
@@ -41,7 +44,8 @@
 .calendar {
   display: block;
   position: relative;
-  width: 100%;
+  width: 90%;
+  max-width: 1800px;
   background: var(--neutral-color);
   border: 1px solid var(--border-color);
 }
