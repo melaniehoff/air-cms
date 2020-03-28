@@ -105,6 +105,7 @@ class GetCalendarGrid extends React.Component {
                 ? "disabled"
                 : isSameDay(day, selectedDate) ? "selected" : ""
             }`}
+            // id={formattedDate}
             key={day}
 
           >
@@ -195,6 +196,7 @@ class GetCalendarGrid extends React.Component {
         );
     } else {
 	    return (
+        <div className="calendarContainer">
 	      <div className="calendar">
           {this.renderHeader()}
 
@@ -217,8 +219,9 @@ class GetCalendarGrid extends React.Component {
 
 	        {this.renderDays()}
 	        {this.renderCells()}
-	        {this.renderPopups()}
 	      </div>
+            {this.renderPopups()}
+        </div>
 	    );
 	}
   }
