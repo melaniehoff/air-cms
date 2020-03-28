@@ -90,6 +90,9 @@
   font-size: 70%;
   padding: .75em 0;
   border-bottom: 1px solid var(--border-color);
+  color: #fff;
+  text-shadow: 1px 0px 10px rgba(47,115,161,20);
+  font-family: 'Cloister';
 }
 
 .calendar .body .cell {
@@ -152,13 +155,15 @@
 
 .calendar .body .cell .number {
   position: absolute;
-  font-size: 90%;
+  font-size: 95%;
   line-height: 1;
   top: .75em;
   right: .75em;
   font-weight: 700;
   font-family: 'Cloister';
-  color: #17374D;
+  /* color: #17374D; */
+  color: #fff;
+  text-shadow: 1px 0px 10px rgba(47,115,161,20);
 }
 
 .calendar .body .disabled {
