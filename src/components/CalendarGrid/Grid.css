@@ -43,6 +43,8 @@
 
 .calendar {
   display: block;
+  margin: auto;
+  margin-top: 4em;
   position: relative;
   width: 90%;
   max-width: 1800px;
