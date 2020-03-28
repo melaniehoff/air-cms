@@ -221,7 +221,8 @@
   background: #E7F4AC;
   font-style: italic;
   line-height: 1;
-  padding: 8px;
+  padding: 20px;
+  overflow:hidden;
   font-size: 14px;
   color: #2F73A1;
   font-weight: bold;
@@ -238,6 +239,7 @@
 
 .gridStartTime {
   float: right;
+  margin-top:15px;
 }
 
 .popup {

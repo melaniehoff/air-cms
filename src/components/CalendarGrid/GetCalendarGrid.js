@@ -60,8 +60,16 @@ class GetCalendarGrid extends React.Component {
   	// console.log("YOOOOOO", this.props.calendarRecords[0].fields.StartDateTime)
   	// console.log("YOOOOOO", parseISO(this.props.calendarRecords[0].fields.StartDateTime))
 
-    function togglePopup(popupId) {
-      var y = ("popup" + popupId);
+    function togglePopup(e, popupId) {
+
+      if(popupId){
+        var y = ("popup" + popupId);
+      } else {
+        console.log(e.target)
+        var y = "popup" + e.target.closest('.cell').id;
+      }
+      
+
       console.log(y);
       var x = document.getElementById(y);
       if (x.style.display === "none") {
@@ -90,7 +98,7 @@ class GetCalendarGrid extends React.Component {
     while (day <= endDate) {
       for (let i = 0; i < 7; i++) {
         formattedDate = format(day, dateFormat);
-        formattedDateId = "popup" + day;
+        formattedDateId = "popup" + day.toString().split(' ').join('');
 
         const cloneDay = day;
         let eventlinks = [];
@@ -146,9 +154,9 @@ class GetCalendarGrid extends React.Component {
                 ? ""
                 : isSameDay(day, selectedDate) ? "selected" : ""
             }`}
-            id={day}
-            key={day}
-            onClick={e => togglePopup(e.target.id)}
+            id={day.toString().split(' ').join('')}
+            key={day.toString().split(' ').join('')}
+            onClick={e => togglePopup(e, e.target.id)}
             >
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
