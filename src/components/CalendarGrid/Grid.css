@@ -1,6 +1,10 @@
 
 /* GRID */
 
+:root {
+  --border-color: pink;
+}
+
 .row {
   margin: 0;
   padding: 0;
@@ -41,7 +45,10 @@
 .calendar {
   display: block;
   position: relative;
-  width: 100%;
+  max-width: 1500px;
+  width: 90%;
+  margin: auto;
+  margin-top: 4em;
   background: var(--neutral-color);
   border: 1px solid var(--border-color);
 }
