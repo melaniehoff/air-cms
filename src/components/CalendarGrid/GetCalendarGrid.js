@@ -56,11 +56,8 @@ class GetCalendarGrid extends React.Component {
 
   renderCells() {
 
-
-
-  	console.log("YOOOOOO", this.props.calendarRecords[0].fields.StartDateTime)
-  	console.log("YOOOOOO", parseISO(this.props.calendarRecords[0].fields.StartDateTime))
-
+  	// console.log("YOOOOOO", this.props.calendarRecords[0].fields.StartDateTime)
+  	// console.log("YOOOOOO", parseISO(this.props.calendarRecords[0].fields.StartDateTime))
 
     const { currentMonth, selectedDate } = this.state;
     const monthStart = startOfMonth(currentMonth);
@@ -82,8 +79,6 @@ class GetCalendarGrid extends React.Component {
         formattedDate = format(day, dateFormat);
         const cloneDay = day;
         let eventlinks = [];
-        // let StartTimeOfDay = element.fields.StartDateTime
-
         let eventNames = ""
 
 
@@ -105,8 +100,6 @@ class GetCalendarGrid extends React.Component {
                   key={day}
                   onClick={() => {
                   	console.log(element.id)
-                    console.log(start_time);
-                    console.log(start_time_formatted)
 
                   }}
                   >
