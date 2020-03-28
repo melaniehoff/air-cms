@@ -91,9 +91,12 @@ class GetCalendarGrid extends React.Component {
 	  		if(isSameDay(day, parseISO(element.fields.StartDateTime))) {
 	  			// console.log("there is an event on this day: ", day, "and event is ", element)
 	  			eventNames += element.fields.Event + " "
-
           let e_fields = element.fields
           let start_time = parseISO(e_fields.StartDateTime).toString()
+          let start_time_formatted = format(
+            parseISO(e_fields.StartDateTime),
+            "h a"
+          )
 
 	         eventlinks.push(
                 <div
@@ -103,10 +106,14 @@ class GetCalendarGrid extends React.Component {
                   onClick={() => {
                   	console.log(element.id)
                     console.log(start_time);
+                    console.log(start_time_formatted)
 
                   }}
                   >
-                  { element.fields.Event } { start_time } 
+                  { element.fields.Event } 
+                  <span className="gridStartTime">
+                  { " " + start_time_formatted } 
+                  </span>
                 </div>
         );
 	  		}
