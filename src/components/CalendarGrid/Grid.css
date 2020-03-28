@@ -241,12 +241,34 @@
   float: right;
   margin-top:15px;
 }
+.close-popup{
+  display: block;
+  text-align: right;
+  font-size:25px;
+  margin-top:-10px;
+  font-style: normal;
+}
 
 .popup {
   display: none;
+  box-shadow: 1px 0px 10px rgba(255,255,255);
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #E7F4AC;
+  font-size: 20px;
+  font-weight:bold;
+  font-style: italic;
+  padding:20px;
+  color: #2F73A1;
+  border-radius: 16px;
 }
-
-
+.popup .fullEvent{
+  margin-bottom:2rem;
+}
+.popup .gridStartTime{
+  margin-top:20px;
+}
 
 @media (max-width: 1024px) {
 

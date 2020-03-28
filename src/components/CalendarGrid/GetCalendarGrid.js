@@ -168,7 +168,13 @@ class GetCalendarGrid extends React.Component {
             style={divStyle}
             id={formattedDateId}
             >
-
+            <a
+            className='close-popup'
+            onClick={() => {
+                    let wizard = document.getElementById(formattedDateId);
+                    wizard.classList.remove('on')
+                  }}
+            >x</a>
           {eventDays}
 
 
