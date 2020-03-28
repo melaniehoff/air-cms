@@ -17,14 +17,14 @@ class GetCalendarGrid extends React.Component {
       <div className="header row flex-middle">
         <div className="col col-start">
           <div className="icon" onClick={this.prevMonth}>
-            Previous Month
+            Previous
           </div>
         </div>
         <div className="col col-center">
           <span>{ format(this.state.currentMonth, dateFormat)}</span>
         </div>
         <div className="col col-end" onClick={this.nextMonth}>
-          <div className="icon">Next Month</div>
+          <div className="icon">Next </div>
         </div>
       </div>
     );
@@ -63,6 +63,7 @@ class GetCalendarGrid extends React.Component {
 
     const dateFormat = "d";
     const rows = [];
+    // const type = fields.EventType;
 
     let days = [];
     let day = startDate;
@@ -84,6 +85,7 @@ class GetCalendarGrid extends React.Component {
 	eventlinks.push(
           <div
             className={`eventlink`}
+            // id={type}
             key={day}
             onClick={() => {
             	console.log(element.id)
@@ -104,7 +106,7 @@ class GetCalendarGrid extends React.Component {
                 : isSameDay(day, selectedDate) ? "selected" : ""
             }`}
             key={day}
-            
+
           >
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
