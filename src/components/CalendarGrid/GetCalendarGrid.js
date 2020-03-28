@@ -97,7 +97,7 @@ class GetCalendarGrid extends React.Component {
                 <div
                   className={`eventlink`}
                   // id={type}
-                  key={day}
+                  key={day + element.id}
                   onClick={() => {
                   	console.log(element.id)
 
@@ -185,7 +185,7 @@ class GetCalendarGrid extends React.Component {
           <div
             className={`eventbox`}
             id={element.id}
-            key={day}
+            key={day + element.id}
           >
             { element.fields.Event }
           </div>
