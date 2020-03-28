@@ -30,6 +30,7 @@ class GetCalendarGrid extends React.Component {
     );
   }
 
+
   renderDays() {
     const dateFormat = "dddd";
     const days = [];
@@ -59,6 +60,17 @@ class GetCalendarGrid extends React.Component {
   	// console.log("YOOOOOO", this.props.calendarRecords[0].fields.StartDateTime)
   	// console.log("YOOOOOO", parseISO(this.props.calendarRecords[0].fields.StartDateTime))
 
+    function togglePopup(popupId) {
+      var y = ("popup" + popupId);
+      console.log(y);
+      var x = document.getElementById(y);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
     const { currentMonth, selectedDate } = this.state;
     const monthStart = startOfMonth(currentMonth);
     const monthEnd = endOfMonth(monthStart);
@@ -72,13 +84,17 @@ class GetCalendarGrid extends React.Component {
     let days = [];
     let day = startDate;
     let formattedDate = "";
+    let formattedDateId = ""
 
 
     while (day <= endDate) {
       for (let i = 0; i < 7; i++) {
         formattedDate = format(day, dateFormat);
+        formattedDateId = "popup" + day;
+
         const cloneDay = day;
         let eventlinks = [];
+        let eventDays = []
         let eventNames = ""
 
 
@@ -98,10 +114,20 @@ class GetCalendarGrid extends React.Component {
                   className={`eventlink`}
                   // id={type}
                   key={day}
-                  onClick={() => {
-                  	console.log(element.id)
-
-                  }}
+                  >
+                  { element.fields.Event } 
+                  <span className="gridStartTime">
+                  { " " + start_time_formatted } 
+                  </span>
+                </div>
+        );
+         eventDays.push(
+                <div
+                  className={`fullEvent`}
+                  key={`x`}
+                  // onClick={() => {
+                  //   console.log(element.id)
+                  // }}
                   >
                   { element.fields.Event } 
                   <span className="gridStartTime">
@@ -117,20 +143,31 @@ class GetCalendarGrid extends React.Component {
           <div
             className={`col cell ${
               !isSameMonth(day, monthStart)
-                ? "disabled"
+                ? ""
                 : isSameDay(day, selectedDate) ? "selected" : ""
             }`}
-            // id={formattedDate}
+            id={day}
             key={day}
-            onClick={() => {
-            console.log({selectedDate});
-            }}
-
-          >
+            onClick={e => togglePopup(e.target.id)}
+            >
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
-            {eventlinks}
+
+            <div>
+          {eventlinks}
+            </div>
+
+            <div 
+            className="popup"
+            id={formattedDateId}
+            >
+
+          {eventDays}
+
+
           </div>
+          </div>
+
         );
         day = addDays(day, 1);
       }
@@ -160,42 +197,48 @@ class GetCalendarGrid extends React.Component {
 // POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
 // POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
 
-  renderPopups() {
+ //  renderPopups() {
 
 
-    const { currentMonth, selectedDate } = this.state;
-    const monthStart = startOfMonth(currentMonth);
-    const monthEnd = endOfMonth(monthStart);
-    const startDate = startOfWeek(monthStart);
-    const endDate = endOfWeek(monthEnd);
-
-    const dateFormat = "d";
-    const rows = [];
-
-    let eventboxes = [];
-    let day = startDate;
-    let formattedDate = "";
-    let eventNames = "";
-	this.props.calendarRecords.forEach((element) => {
-
-	  	eventNames += element.fields.Event + " "
 
 
-	  	 eventboxes.push(
-          <div
-            className={`eventbox`}
-            id={element.id}
-            key={day}
-          >
-            { element.fields.Event }
-          </div>
-        );
+
+ //    const { currentMonth, selectedDate } = this.state;
+ //    const monthStart = startOfMonth(currentMonth);
+ //    const monthEnd = endOfMonth(monthStart);
+ //    const startDate = startOfWeek(monthStart);
+ //    const endDate = endOfWeek(monthEnd);
+
+ //    const dateFormat = "d";
+ //    const rows = [];
+
+ //    let eventboxes = [];
+ //    let days2 = [];
+ //    let day = startDate;
+ //    let formattedDate = "";
+ //    let eventNames = "";
 
 
-	});
+	// this.props.calendarRecords.forEach((element) => {
 
-    return <div className="eventboxes">{eventboxes}</div>;
-  }
+	//   	eventNames += element.fields.Event + " "
+
+
+	//   	 eventboxes.push(
+ //          <div
+ //            className={`eventbox`}
+ //            id={element.id}
+ //            key={day}
+ //          >
+ //            { element.fields.Event }
+ //          </div>
+ //        );
+
+
+	// });
+
+ //    return <div className="eventboxes">{eventboxes}</div>;
+ //  }
 
 // POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
 // POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
@@ -205,7 +248,6 @@ class GetCalendarGrid extends React.Component {
 // POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
 // POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
 // POPUPS// POPUPS// POPUPS// POPUPS// POPUPS// POPUPS
-
 
 
   onDateClick = day => {
@@ -263,7 +305,7 @@ class GetCalendarGrid extends React.Component {
 	        {this.renderDays()}
 	        {this.renderCells()}
 	      </div>
-            {this.renderPopups()}
+        {/* {this.renderPopups()} */}   
         </div>
 	    );
 	}
