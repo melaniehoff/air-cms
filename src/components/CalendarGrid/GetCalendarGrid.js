@@ -94,12 +94,24 @@ class GetCalendarGrid extends React.Component {
           )
 
 	         eventlinks.push(
+
                 <div
                   className={`eventlink`}
                   // id={type}
                   key={day + element.id}
                   onClick={() => {
-                  	console.log(element.id)
+                    let eb = document.getElementsByClassName("eventbox");
+                    for (i = 0; i < eb.length; i++) {
+                      eb[i].classList.remove('on')
+                    }
+                    let wizard = document.getElementById(element.id);
+                    if(wizard.classList[1]){
+                      wizard.classList.remove('on')
+                      console.log('mew')
+                    } else {
+                      wizard.classList.add('on')
+                      console.log(wizard.classList[1])
+                    }
 
                   }}
                   >
@@ -187,6 +199,12 @@ class GetCalendarGrid extends React.Component {
             id={element.id}
             key={day + element.id}
           >
+            <a className="eventbox-close"
+               onClick={() => {
+                    let wizard = document.getElementById(element.id);
+                    wizard.classList.remove('on')
+                  }}
+            >x</a>
             { element.fields.Event }
           </div>
         );

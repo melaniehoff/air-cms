@@ -228,6 +228,7 @@
   border:2px solid white;
 }
 
+
 .calendar .body .cell:hover .eventlink {
  /* .eventlink:hover{ */
   box-shadow: 1px 0px 10px rgba(255,255,255);
@@ -239,7 +240,34 @@
   margin-top:5px;
 }
 
-
+/* EVENT BOX Styling*/
+.eventbox{
+  display: none;
+}
+.eventbox.on{
+  display: block;
+  background:#E7F4AC;
+  position: fixed;
+  left:20px;
+  top:20px;
+  padding:25px;
+  border-radius: 16px;
+  box-shadow: 1px 0px 10px rgba(255,255,255);
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1;
+  color: #2F73A1;
+  font-weight: bold;
+}
+.eventbox-close{
+  float: right;
+    top: 0;
+    right: 0;
+    padding-left: 25px;
+    margin-top: -15px;
+    font-size: 20px;
+    cursor: pointer;
+}
 
 @media (max-width: 1024px) {
 
