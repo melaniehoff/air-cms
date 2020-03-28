@@ -270,13 +270,14 @@ details p, details .footer {
 
 
 .Key {
-  width: 33vw;
-  position: fixed;
-  top: 20px;
-  left: 33vw;
+  width: 100%;
+  /* position: fixed; */
+  /* top: 20px; */
+  /* left: 33vw; */
   display: block;
   z-index: -1;
   text-align: center;
+  margin: 20px auto;
 }
 
 .bullet {
@@ -763,9 +764,9 @@ a:visited {
 
   .Key {
     width: 94vw;
-    position: fixed;
-    top: 20px;
-    left: 3vw;
+    /* position: fixed; */
+    /* top: 20px; */
+    /* left: 3vw; */
     display: block;
     text-align: center;
   }
