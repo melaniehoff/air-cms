@@ -61,12 +61,22 @@ class GetCalendarGrid extends React.Component {
   	// console.log("YOOOOOO", parseISO(this.props.calendarRecords[0].fields.StartDateTime))
 
     function togglePopup(e, popupId) {
-      console.log('firing')
+      
       if(popupId){
         var y = ("popup" + popupId);
       } else {
         var y = "popup" + e.target.closest('.cell').id;
       }
+      let eb = document.getElementsByClassName("popup");
+      console.log(eb)
+      Array.prototype.forEach.call(eb, function(element) {
+          // Do stuff here
+           if(element.id != y){
+              element.style.display = 'none'
+            } 
+      });
+      
+      
       var x = document.getElementById(y);
       if (x.style.display === "none") {
         x.style.display = "block";
