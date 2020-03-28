@@ -244,17 +244,17 @@ class GetCalendarGrid extends React.Component {
           {this.renderHeader()}
 
           {/* CALENDAR KEY */}
-          <div class="Key">
-              <div class="keyLine">
-                <div class="bullet Red-Fill"></div> <span> Community Check-ins</span>
-                <div class="bullet Orange-Fill"></div> <span> Meditations</span>
+          <div className="Key">
+              <div className="keyLine">
+                <div className="bullet Red-Fill"></div> <span> Community Check-ins</span>
+                <div className="bullet Orange-Fill"></div> <span> Meditations</span>
 
-                <div class="bullet Yellow-Fill"></div> <span> Skillshares</span>
-                <div class="bullet Green-Fill"></div> <span> Movement</span>
-                <div class="bullet Blue-Fill"></div> <span> Nightlife</span>
+                <div className="bullet Yellow-Fill"></div> <span> Skillshares</span>
+                <div className="bullet Green-Fill"></div> <span> Movement</span>
+                <div className="bullet Blue-Fill"></div> <span> Nightlife</span>
 
-                <div class="bullet Purple-Fill"></div> <span> Frontline PSAs</span>
-                <div class="bullet Pink-Fill"></div> <span> Digital Security</span>
+                <div className="bullet Purple-Fill"></div> <span> Frontline PSAs</span>
+                <div className="bullet Pink-Fill"></div> <span> Digital Security</span>
               </div>
           </div>
 
