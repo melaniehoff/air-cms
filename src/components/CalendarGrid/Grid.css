@@ -39,11 +39,12 @@
 /* Calendar */
 
 .calendar {
-  display: block;
-  position: relative;
-  width: 100%;
-  background: var(--neutral-color);
-  border: 1px solid var(--border-color);
+    display: block;
+    position: relative;
+    /* max-width: 1500px; */
+    width: 94%;
+    margin: 2em auto;
+    border: 1px solid white;
 }
 
 .calendar .header {
@@ -70,9 +71,10 @@
 }
 
 .calendar .header .icon:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   transition: .25s ease-out;
   color: var(--main-color);
+  text-shadow: 1px 0px 10px rgba(255,255,255);
 }
 
 .calendar .header .icon:first-of-type {
@@ -142,7 +144,7 @@
 }
 
 .calendar .body .row {
-  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid #fff;
 }
 
 .calendar .body .row:last-child {
@@ -239,9 +241,16 @@
     height: 12px;
     display: inline-block;
 
-
   }
 
+
+  .calendar {
+      display: block;
+      position: relative;
+      width: 96%;
+      margin: 20px auto auto;
+      border: 0px solid white;
+  }
 
 
 
