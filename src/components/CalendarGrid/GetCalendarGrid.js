@@ -53,14 +53,14 @@ class GetCalendarGrid extends React.Component {
   // CELLS // CELLS // CELLS // CELLS // CELLS
     // CELLS // CELLS // CELLS // CELLS // CELLS
       // CELLS // CELLS // CELLS // CELLS // CELLS
-        // CELLS // CELLS // CELLS // CELLS // CELLS 
+        // CELLS // CELLS // CELLS // CELLS // CELLS
 
   renderCells() {
 
-  	
+
     function togglePopup(e, popupId) {
       console.log("uhhh", popupId)
-      
+
       if(popupId){
         var y = popupId;
       } else {
@@ -70,23 +70,23 @@ class GetCalendarGrid extends React.Component {
       var x = document.getElementById(y);
       if(x.querySelectorAll(".fullEvent").length > 0){
         let eb = document.getElementsByClassName("popup");
-   
+
         Array.prototype.forEach.call(eb, function(element) {
             // Do stuff here
              if(element.id != y){
                 element.style.display = 'none'
-              } 
+              }
         });
-        
-        
-       
+
+
+
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
           x.style.display = "none";
         }
       }
-      
+
     }
 
     const { currentMonth, selectedDate } = this.state;
@@ -135,10 +135,13 @@ class GetCalendarGrid extends React.Component {
                   // id={type}
                   key={day}
                   >
-                  { element.fields.Event } 
-                  <span className="gridStartTime">
-                  { " " + start_time_formatted } 
-                  </span>
+
+                  <h5 className="gridStartTime">
+                  { " " + start_time_formatted }
+                </h5>
+
+                { element.fields.Event }
+
                 </div>
         );
          eventDays.push(
@@ -149,10 +152,13 @@ class GetCalendarGrid extends React.Component {
                   //   console.log(element.id)
                   // }}
                   >
-                  { element.fields.Event } 
-                  <span className="gridStartTime">
-                  { " " + start_time_formatted } 
-                  </span>
+
+                  <h5 className="gridStartTime">
+                  { " " + start_time_formatted }
+                </h5>
+
+                  { element.fields.Event }
+
                 </div>
         );
 	  		}
@@ -177,7 +183,7 @@ class GetCalendarGrid extends React.Component {
           {eventlinks}
             </div>
 
-            <div 
+            <div
             className="popup"
             style={divStyle}
             id={formattedDateId}
@@ -254,15 +260,17 @@ class GetCalendarGrid extends React.Component {
           {/* CALENDAR KEY */}
           <div class="Key">
               <div class="keyLine">
-                <div class="bullet Red-Fill"></div> <span> Community Check-ins</span>
-                <div class="bullet Orange-Fill"></div> <span> Meditations</span>
+                <div class="bullet Red-Fill"></div> <span> Meetup</span>
+                <div class="bullet Orange-Fill"></div> <span> Film</span>
 
-                <div class="bullet Yellow-Fill"></div> <span> Skillshares</span>
-                <div class="bullet Green-Fill"></div> <span> Movement</span>
-                <div class="bullet Blue-Fill"></div> <span> Nightlife</span>
+                <div class="bullet Yellow-Fill"></div> <span> Nightlife</span>
+                <div class="bullet Green-Fill"></div> <span> MovementMeditation</span>
+                <div class="bullet Blue-Fill"></div> <span> KnowledgeShare</span>
 
-                <div class="bullet Purple-Fill"></div> <span> Frontline PSAs</span>
-                <div class="bullet Pink-Fill"></div> <span> Digital Security</span>
+                <div class="bullet Purple-Fill"></div> <span> SongCircle</span>
+                <div class="bullet Pink-Fill"></div> <span> Checkin</span>
+                <div class="bullet Pink-Fill"></div> <span> Community Collab</span>
+                <div class="bullet Pink-Fill"></div> <span> FrontlinePSA</span>
               </div>
           </div>
 
@@ -271,7 +279,7 @@ class GetCalendarGrid extends React.Component {
 	        {this.renderDays()}
 	        {this.renderCells()}
 	      </div>
-        {/* {this.renderPopups()} */}   
+        {/* {this.renderPopups()} */}
         </div>
 	    );
 	}
