@@ -129,7 +129,7 @@ class GetCalendarGrid extends React.Component {
             parseISO(e_fields.StartDateTime),
             "h a"
           )
-          eventType += element.fields.EventType
+          eventType = e_fields.EventType
 
 	         eventlinks.push(
                 <div
@@ -167,9 +167,9 @@ class GetCalendarGrid extends React.Component {
                   //   console.log(element.id)
                   // }}
                   >
-                  { element.fields.Event } 
+                  { element.fields.Event }
                   <h5 className="gridStartTime">
-                  { " " + start_time_formatted } 
+                  { " " + start_time_formatted }
                   </h5>
                   <img src=
                   {imageUrl}/>
