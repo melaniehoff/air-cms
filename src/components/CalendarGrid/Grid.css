@@ -284,39 +284,39 @@
 
 
 
-.Red-Fill, #Meetup {
+.Red-Fill, #Meetup, .Meetup {
   background-color: #FF8B8E;
 }
 
-.Orange-Fill, #Film {
+.Orange-Fill, #Film, .Film {
   background-color: #FFBEA1;
 }
 
-.Yellow-Fill, #Nightlife{
+.Yellow-Fill, #Nightlife, .Nightlife{
   background-color: #E7F4AC;
 }
 
-.Green-Fill, #MovementMeditation {
+.Green-Fill, #MovementMeditation, .MovementMeditation {
   background-color: #A6F876;
 }
 
-.Teal-Fill, #KnowledgeShare {
+.Teal-Fill, #KnowledgeShare, .KnowledgeShare {
   background-color: #00FFBB;
 }
 
-.Blue-Fill, #SongCircle {
+.Blue-Fill, #SongCircle, .SongCircle {
   background-color: #00EEFC;
 }
 
-.Indigo-Fill, #CheckIn {
+.Indigo-Fill, #CheckIn, .CheckIn {
   background-color: #45C2FF;
 }
 
-.Purple-Fill, #CommunityCollab {
+.Purple-Fill, #CommunityCollab, .CommunityCollab {
   background-color: #A4BDFF;
 }
 
-.Pink-Fill, #FrontlinePSA {
+.Pink-Fill, #FrontlinePSA, .FrontlinePSA {
   background-color: #FDC2F8;
 }
 
