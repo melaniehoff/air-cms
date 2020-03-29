@@ -82,7 +82,7 @@ class GetCalendarGrid extends React.Component {
 
 
     function togglePopup(e, popupId) {
-      
+
       /* check if e.target is the column itself or something inside of it*/
       if(popupId && ((' ' + e.target.className + ' ').indexOf(' ' + 'cell' + ' ') > -1)){
         var y = "popup" + popupId;
@@ -191,22 +191,41 @@ class GetCalendarGrid extends React.Component {
                   <h5 className="gridStartTime">
                   { " " + start_time_formatted }
                   </h5>
-                  { element.fields.Event }
 
-                  <img src=
-                  {imageUrl}/>
-                  <div>
+                  <h4>{ element.fields.Event }  with <a href={ element.fields.HostSocialMediaUrl}>{ element.fields.HostName}</a>
+                  </h4>
+
+                  <center> <img src=
+                  {imageUrl}/> </center>
+
+                  <p>
                   { element.fields.Description }
-                  </div>
-                  <div> With 
-                  <a href={ element.fields.HostSocialMediaUrl}>{ element.fields.HostName}</a>
-                  </div>
-                  <div> 
-                  <a href={ element.fields.StreamingLink} target="_blank">Stream Here</a>
-                  </div>
-                  <div> 
-                  <a href={ element.fields.DonateLInk} target="_blank">DONATE</a>
-                  </div>
+                  </p>
+
+
+                  <div className="footer">
+
+                     <div className="footerLeft">
+
+
+                     </div>
+
+                     <div className="footerRight">
+                       <a href={ element.fields.StreamingLink} target="_blank" class="join">
+                         Join Session
+                       </a>
+
+                       <a href={ element.fields.DonateLInk} target="_blank" class="join">
+                         Donate
+                       </a>
+                     </div>
+
+                     <div className="clear"> </div>
+                   </div>
+
+
+
+
 
                 </div>
         );
@@ -237,6 +256,8 @@ class GetCalendarGrid extends React.Component {
             style={divStyle}
             id={formattedDateId}
             >
+              <h2>{formattedDate}</h2>
+
             <a
             className='close-popup'
             onClick={() => {
