@@ -2,7 +2,17 @@
 /* GRID */
 
 :root {
-  --border-color: pink;
+  --border-color: #fff;
+}
+
+
+#load {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: italic;
 }
 
 .row {
@@ -121,7 +131,7 @@
 }
 
 .calendar .body .cell:hover {
-  background: var(--bg-color);
+  /* background: var(--bg-color); */
   transition: 0.5s ease-out;
   /* border: 2px solid #fff; */
 }
@@ -130,9 +140,10 @@
   /* border-left: 10px solid transparent;
   border-image: linear-gradient(45deg, #1a8fff 0%,#53cbf1 40%);
   border-image-slice: 1; */
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   /* box-shadow: 1px 0px 10px rgba(35,108,225,60); */
   /* background: rgba(255,255,255,100); */
+   background-color: rgba(47,115,161,20);
 }
 
 .calendar .body .selected span.number{
@@ -221,7 +232,7 @@
   background: #E7F4AC;
   font-style: italic;
   line-height: 1;
-  padding: 20px;
+  padding: 12px;
   overflow:hidden;
   font-size: 14px;
   color: #2F73A1;
@@ -238,8 +249,9 @@
 
 
 .gridStartTime {
-  float: right;
-  margin-top:15px;
+  font-style: normal;
+  /* float: right;
+  margin-top:15px; */
 }
 .close-popup{
   display: block;
@@ -270,6 +282,51 @@
   margin-top:20px;
 }
 
+
+
+.Red-Fill, .Meetup {
+  background-color: #FF8B8E;
+}
+
+.Orange-Fill, .Film {
+  background-color: #FFBEA1;
+}
+
+.Yellow-Fill, .Nightlife{
+  background-color: #E7F4AC;
+}
+
+.Green-Fill, .MovementMeditation {
+  background-color: #A6F876;
+}
+
+.Teal-Fill, .KnowledgeShare {
+  background-color: #00FFBB;
+}
+
+.Blue-Fill, .SongCircle {
+  background-color: #00EEFC;
+}
+
+.Indigo-Fill, .Checkin {
+  background-color: #38BEFF;
+}
+
+.Purple-Fill, .CommunityCollab {
+  background-color: #8CABFF;
+}
+
+.Pink-Fill, .FrontlinePSA {
+  background-color: #FDC2F8;
+}
+
+.White-Fill {
+  background-color: #fff;
+}
+
+
+
+
 @media (max-width: 1024px) {
 
 
@@ -294,6 +351,9 @@
       border: 0px solid white;
   }
 
+  .eventlink h5 {
+     display: none;
+   }
 
 
 }
