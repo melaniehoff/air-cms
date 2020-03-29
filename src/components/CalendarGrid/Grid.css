@@ -110,7 +110,7 @@
   color: #17374D;
   font-size: 70%;
   padding: .75em 0;
-  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
   color: #fff;
   text-shadow: 1px 0px 10px rgba(47,115,161,20);
   font-family: 'Cloister';
@@ -229,7 +229,7 @@
   margin-bottom: 10px;
   cursor: pointer;
   box-sizing: border-box;
-  background: #E7F4AC;
+  /* background: #E7F4AC; */
   font-style: italic;
   line-height: 1;
   padding: 12px;
@@ -284,39 +284,39 @@
 
 
 
-.Red-Fill, .Meetup {
+.Red-Fill, #Meetup {
   background-color: #FF8B8E;
 }
 
-.Orange-Fill, .Film {
+.Orange-Fill, #Film {
   background-color: #FFBEA1;
 }
 
-.Yellow-Fill, .Nightlife{
+.Yellow-Fill, #Nightlife{
   background-color: #E7F4AC;
 }
 
-.Green-Fill, .MovementMeditation {
+.Green-Fill, #MovementMeditation {
   background-color: #A6F876;
 }
 
-.Teal-Fill, .KnowledgeShare {
+.Teal-Fill, #KnowledgeShare {
   background-color: #00FFBB;
 }
 
-.Blue-Fill, .SongCircle {
+.Blue-Fill, #SongCircle {
   background-color: #00EEFC;
 }
 
-.Indigo-Fill, .Checkin {
-  background-color: #38BEFF;
+.Indigo-Fill, #CheckIn {
+  background-color: #45C2FF;
 }
 
-.Purple-Fill, .CommunityCollab {
-  background-color: #8CABFF;
+.Purple-Fill, #CommunityCollab {
+  background-color: #A4BDFF;
 }
 
-.Pink-Fill, .FrontlinePSA {
+.Pink-Fill, #FrontlinePSA {
   background-color: #FDC2F8;
 }
 

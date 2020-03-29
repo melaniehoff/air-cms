@@ -17,7 +17,7 @@ class GetCalendarGrid extends React.Component {
       <div className="header row flex-middle">
         <div className="col col-start">
           <div className="icon" onClick={this.prevMonth}>
-            Previous
+            Prev
           </div>
         </div>
         <div className="col col-center">
@@ -116,6 +116,7 @@ class GetCalendarGrid extends React.Component {
         let eventlinks = [];
         let eventDays = []
         let eventNames = ""
+        let eventType = ""
 
 
 	  	this.props.calendarRecords.forEach((element) => {
@@ -128,12 +129,14 @@ class GetCalendarGrid extends React.Component {
             parseISO(e_fields.StartDateTime),
             "h a"
           )
+          eventType += element.fields.EventType
 
 	         eventlinks.push(
                 <div
                   className={`eventlink`}
                   // id={type}
                   key={day}
+                  id={eventType}
                   >
 
                   <h5 className="gridStartTime">
