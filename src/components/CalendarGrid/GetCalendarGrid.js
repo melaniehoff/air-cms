@@ -154,10 +154,11 @@ class GetCalendarGrid extends React.Component {
           console.log(imageUrl)
         }
 
+        var thisclass = element.fields.EventType[0];
 
          eventDays.push(
                 <div
-                  className={`fullEvent`}
+                  className={`fullEvent ${thisclass}`}
                   key={`x`}
                   // onClick={() => {
                   //   console.log(element.id)
