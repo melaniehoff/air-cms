@@ -198,8 +198,8 @@ class GetCalendarGrid extends React.Component {
                   <div>
                   { element.fields.Description }
                   </div>
-                  <div> With 
-                  <a href={ element.fields.HostSocialMediaUrl}>{ element.fields.HostName}</a>
+                  <div> With  
+                  <a href={ element.fields.HostSocialMediaUrlOrWebsite} target="_blank"> { element.fields.HostName}</a>
                   </div>
                   <div> 
                   <a href={ element.fields.StreamingLink} target="_blank">Stream Here</a>
