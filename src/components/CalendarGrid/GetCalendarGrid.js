@@ -82,14 +82,15 @@ class GetCalendarGrid extends React.Component {
 
 
     function togglePopup(e, popupId) {
-      console.log("uhhh", popupId)
+      
 
-      if(popupId){
+      if(popupId && ((' ' + e.target.className + ' ').indexOf(' ' + 'cell' + ' ') > -1)){
         var y = popupId;
       } else {
         var y = "popup" + e.target.closest('.cell').id;
       }
       console.log(y);
+
       var x = document.getElementById(y);
       if(x.querySelectorAll(".fullEvent").length > 0){
         let eb = document.getElementsByClassName("popup");
