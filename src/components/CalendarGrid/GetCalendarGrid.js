@@ -177,6 +177,7 @@ class GetCalendarGrid extends React.Component {
         }
 
         var thisclass = element.fields.EventType[0];
+        console.log(element.fields)
 
          eventDays.push(
                 <div
@@ -194,6 +195,19 @@ class GetCalendarGrid extends React.Component {
 
                   <img src=
                   {imageUrl}/>
+                  <div>
+                  { element.fields.Description }
+                  </div>
+                  <div> With 
+                  <a href={ element.fields.HostSocialMediaUrl}>{ element.fields.HostName}</a>
+                  </div>
+                  <div> 
+                  <a href={ element.fields.StreamingLink}>Stream Here</a>
+                  </div>
+                  <div> 
+                  <a href={ element.fields.DonateLInk}>DONATE</a>
+                  </div>
+
                 </div>
         );
 	  		}
