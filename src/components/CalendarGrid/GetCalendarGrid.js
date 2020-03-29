@@ -249,7 +249,7 @@ class GetCalendarGrid extends React.Component {
         console.log("LOADING!!!!")
         return(
 
-                <div>
+                <div id="load">
                   LOADING
                 </div>
 
