@@ -15,17 +15,40 @@ class GetCalendarGrid extends React.Component {
 
     return (
       <div className="header row flex-middle">
-        <div className="col col-start">
-          <div className="icon" onClick={this.prevMonth}>
-            Prev
+
+          <div className="col col-start">
+            <div className="icon" onClick={this.prevMonth}>
+              Prev
+            </div>
           </div>
-        </div>
-        <div className="col col-center">
-          <span>{ format(this.state.currentMonth, dateFormat)}</span>
-        </div>
-        <div className="col col-end" onClick={this.nextMonth}>
-          <div className="icon">Next </div>
-        </div>
+          <div className="col col-center">
+            <span>{ format(this.state.currentMonth, dateFormat)}</span>
+          </div>
+          <div className="col col-end" onClick={this.nextMonth}>
+            <div className="icon">Next </div>
+          </div>
+
+          <div className="clear"></div>
+
+
+          <div className="Key">
+              <div class="keyLine">
+                <div class="bullet Red-Fill Meetup"></div> <span> Meetup</span>
+                <div class="bullet Orange-Fill Film"></div> <span> Film</span>
+
+                <div class="bullet Yellow-Fill Nightlife"></div> <span> Nightlife</span>
+                <div class="bullet Green-Fill MovementMeditation"></div> <span> Movement / Meditation</span>
+                <div class="bullet Teal-Fill KnowledgeShare"></div> <span> Knowledge Share</span>
+
+                <div class="bullet Blue-Fill SongCircle"></div> <span> Song Circle</span>
+                <div class="bullet Indigo-Fill Checkin"></div> <span> Check-in</span>
+                <div class="bullet Purple-Fill CommunityCollab"></div> <span> Community Collab</span>
+                <div class="bullet Pink-Fill FrontlinePSA"></div> <span> Frontline PSA</span>
+              </div>
+          </div>
+
+          <div className="clear"></div>
+
       </div>
     );
   }
@@ -167,10 +190,12 @@ class GetCalendarGrid extends React.Component {
                   //   console.log(element.id)
                   // }}
                   >
-                  { element.fields.Event }
+
                   <h5 className="gridStartTime">
                   { " " + start_time_formatted }
                   </h5>
+                  { element.fields.Event }
+
                   <img src=
                   {imageUrl}/>
                 </div>
@@ -193,7 +218,7 @@ class GetCalendarGrid extends React.Component {
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
 
-            <div>
+            <div className="dayevents">
           {eventlinks}
             </div>
 
@@ -272,7 +297,7 @@ class GetCalendarGrid extends React.Component {
           {this.renderHeader()}
 
           {/* CALENDAR KEY */}
-          <div class="Key">
+          {/* <div class="Key">
               <div class="keyLine">
                 <div class="bullet Red-Fill Meetup"></div> <span> Meetup</span>
                 <div class="bullet Orange-Fill Film"></div> <span> Film</span>
@@ -286,7 +311,7 @@ class GetCalendarGrid extends React.Component {
                 <div class="bullet Purple-Fill CommunityCollab"></div> <span> Community Collab</span>
                 <div class="bullet Pink-Fill FrontlinePSA"></div> <span> Frontline PSA</span>
               </div>
-          </div>
+          </div> */}
 
 
 

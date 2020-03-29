@@ -32,11 +32,11 @@
   flex-grow: 1;
   flex-basis: 0;
   max-width: 100%;
- z-index: 50 !important;
+ /* z-index: 50 !important; */
 }
 
 .col .cell {
- z-index: 50 !important;
+ /* z-index: 50 !important; */
 }
 
 .col-start {
@@ -61,10 +61,39 @@
     display: block;
     position: relative;
     width: 94%;
-    margin: 2em auto;
+    margin: 0px auto 40px auto;
     border: 1px solid white;
 
 }
+
+
+.calendar .flex-middle {
+  position: fixed;
+  width: 94%;
+  margin: 30px auto;
+  top: 0px;
+  z-index: 100000 !important;
+}
+
+
+.Key {
+  text-transform: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  margin-left: 20px;
+  box-shadow: 1px 0px 10px rgba(35,108,225,60);
+}
+
+
 
 .calendar .header {
   text-transform: uppercase;
@@ -80,8 +109,14 @@
   letter-spacing: 1px;
   text-shadow: 1px 0px 10px rgba(47,115,161,20);
   margin: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   padding-top: 20px;
+  /* border: 1px solid #fff; */
+  box-sizing: border-box;
+  background-color:  rgb(120, 160, 190);
+  background: url('../../img/cloud1.png') no-repeat fixed , url('./img/blue-bg.png') no-repeat fixed ;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .calendar .header .icon {
@@ -114,6 +149,7 @@
   color: #fff;
   text-shadow: 1px 0px 10px rgba(47,115,161,20);
   font-family: 'Cloister';
+  margin-top: 100px;
 }
 
 .calendar .body .cell {
@@ -127,7 +163,7 @@
   border: 2px solid transparent;
   box-sizing: border-box;
   padding: 35px 6px 6px 6px;
-  z-index: 100 !important;
+  /* z-index: 1 !important; */
 }
 
 .calendar .body .cell:hover {
@@ -163,6 +199,8 @@
   /* box-shadow: 1px 0px 10px rgba(35,108,225,60);
   background: #fff; */
 }
+
+
 
 .calendar .body .row {
   border-top: 1px solid #fff;
@@ -207,6 +245,7 @@
   letter-spacing: -.07em;
   z-index: -1;
   font-family: 'Cloister';
+  z-index: 1 !important;
 }
 
 .calendar .body .cell:hover .bg, .calendar .body .selected .bg  {
@@ -218,6 +257,10 @@
   flex-grow: 0;
   flex-basis: calc(100%/7);
   width: calc(100%/7);
+}
+
+.dayevents {
+  z-index: 2 !important;
 }
 
 .eventlink {
@@ -240,6 +283,7 @@
   box-shadow: 1px 0px 10px rgba(35,108,225,60);
 
 
+
 }
 
 .calendar .body .cell:hover .eventlink {
@@ -255,31 +299,55 @@
 }
 .close-popup{
   display: block;
-  text-align: right;
-  font-size:25px;
+  float: right;
+  font-size:35px;
   margin-top:-10px;
+  margin-bottom: 10px;
   font-style: normal;
+  color: #fff;
+  font-weight: lighter;
+  font-family: 'Cloister';
 }
 
 .popup {
   display: none;
   box-shadow: 1px 0px 10px rgba(255,255,255);
   position: fixed;
-  top: 20px;
-  left: 20px;
-  background: #E7F4AC;
+  width: 50%;
+  top: 100px;
+  left: 25%;
+  background: rgba(47,115,161);
   font-size: 20px;
   font-weight:bold;
   font-style: italic;
   padding:20px;
   color: #2F73A1;
-  border-radius: 16px;
+z-index: 100000 !important;
+  /* border-radius: 16px; */
 }
+
 .popup .fullEvent{
-  margin-bottom:2rem;
+  display: block;
+  width: 100%;
+  border-radius:16px;
+  /* padding: 20px 14px;
+  box-sizing: border-box; */
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  /* background: #E7F4AC; */
+  font-style: italic;
+  line-height: 1;
+  padding: 12px;
+  overflow:hidden;
+  font-size: 14px;
+  color: #2F73A1;
+  font-weight: bold;
+  box-shadow: 1px 0px 10px rgba(35,108,225,60);
 }
+
 .popup .gridStartTime{
-  margin-top:20px;
+  /* margin-top:20px; */
 }
 
 .popup img {
@@ -353,6 +421,14 @@
       width: 96%;
       margin: 20px auto auto;
       border: 0px solid white;
+  }
+
+  .calendar .flex-middle {
+    position: fixed;
+    width: 96%;
+    margin: 0px auto;
+    top: 0px;
+    z-index: 100000 !important;
   }
 
   .eventlink h5 {
