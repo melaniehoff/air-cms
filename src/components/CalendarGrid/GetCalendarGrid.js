@@ -141,6 +141,17 @@ class GetCalendarGrid extends React.Component {
                   </span>
                 </div>
         );
+
+      let imageUrl = ""
+      if ( element.fields.EventImage  == undefined) {
+          imageUrl = undefined
+          console.log(imageUrl)
+        } else {
+          imageUrl = element.fields.EventImage[0].url
+          console.log(imageUrl)
+        }
+
+
          eventDays.push(
                 <div
                   className={`fullEvent`}
@@ -149,10 +160,13 @@ class GetCalendarGrid extends React.Component {
                   //   console.log(element.id)
                   // }}
                   >
+
                   { element.fields.Event } 
                   <span className="gridStartTime">
                   { " " + start_time_formatted } 
                   </span>
+                  <img src=
+                  {imageUrl}/>
                 </div>
         );
 	  		}
