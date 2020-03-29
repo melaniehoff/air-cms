@@ -282,6 +282,10 @@
   margin-top:20px;
 }
 
+.popup img {
+  width: 300px;
+}
+
 
 
 .Red-Fill, #Meetup, .Meetup {
