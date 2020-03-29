@@ -85,7 +85,7 @@ class GetCalendarGrid extends React.Component {
       
 
       if(popupId && ((' ' + e.target.className + ' ').indexOf(' ' + 'cell' + ' ') > -1)){
-        var y = popupId;
+        var y = "popup" + popupId;
       } else {
         var y = "popup" + e.target.closest('.cell').id;
       }
