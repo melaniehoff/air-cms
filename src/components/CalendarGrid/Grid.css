@@ -282,6 +282,51 @@
   margin-top:20px;
 }
 
+
+
+.Red-Fill, .Meetup {
+  background-color: #FF8B8E;
+}
+
+.Orange-Fill, .Film {
+  background-color: #FFBEA1;
+}
+
+.Yellow-Fill, .Nightlife{
+  background-color: #E7F4AC;
+}
+
+.Green-Fill, .MovementMeditation {
+  background-color: #A6F876;
+}
+
+.Teal-Fill, .KnowledgeShare {
+  background-color: #00FFBB;
+}
+
+.Blue-Fill, .SongCircle {
+  background-color: #00EEFC;
+}
+
+.Indigo-Fill, .Checkin {
+  background-color: #38BEFF;
+}
+
+.Purple-Fill, .CommunityCollab {
+  background-color: #8CABFF;
+}
+
+.Pink-Fill, .FrontlinePSA {
+  background-color: #FDC2F8;
+}
+
+.White-Fill {
+  background-color: #fff;
+}
+
+
+
+
 @media (max-width: 1024px) {
 
 

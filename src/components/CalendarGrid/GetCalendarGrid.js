@@ -260,17 +260,17 @@ class GetCalendarGrid extends React.Component {
           {/* CALENDAR KEY */}
           <div class="Key">
               <div class="keyLine">
-                <div class="bullet Red-Fill"></div> <span> Meetup</span>
-                <div class="bullet Orange-Fill"></div> <span> Film</span>
+                <div class="bullet Red-Fill Meetup"></div> <span> Meetup</span>
+                <div class="bullet Orange-Fill Film"></div> <span> Film</span>
 
-                <div class="bullet Yellow-Fill"></div> <span> Nightlife</span>
-                <div class="bullet Green-Fill"></div> <span> MovementMeditation</span>
-                <div class="bullet Blue-Fill"></div> <span> KnowledgeShare</span>
+                <div class="bullet Yellow-Fill Nightlife"></div> <span> Nightlife</span>
+                <div class="bullet Green-Fill MovementMeditation"></div> <span> Movement / Meditation</span>
+                <div class="bullet Teal-Fill KnowledgeShare"></div> <span> Knowledge Share</span>
 
-                <div class="bullet Purple-Fill"></div> <span> SongCircle</span>
-                <div class="bullet Pink-Fill"></div> <span> Checkin</span>
-                <div class="bullet Pink-Fill"></div> <span> Community Collab</span>
-                <div class="bullet Pink-Fill"></div> <span> FrontlinePSA</span>
+                <div class="bullet Blue-Fill SongCircle"></div> <span> Song Circle</span>
+                <div class="bullet Indigo-Fill Checkin"></div> <span> Check-in</span>
+                <div class="bullet Purple-Fill CommunityCollab"></div> <span> Community Collab</span>
+                <div class="bullet Pink-Fill FrontlinePSA"></div> <span> Frontline PSA</span>
               </div>
           </div>
 
