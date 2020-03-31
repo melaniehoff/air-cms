@@ -99,11 +99,15 @@ class GetCalendarGrid extends React.Component {
               }
         });
         /* if this popup is already open, hide otherwise show */
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
+   
+          if((!x.contains(e.target)) || (e.target.classList[0] == 'close-popup')){
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+        
       }
 
     }
@@ -261,7 +265,7 @@ class GetCalendarGrid extends React.Component {
 
             <a
             className='close-popup'
-            onClick={() => {
+            onClick={(e) => {
                     let wizard = document.getElementById(formattedDateId);
                     wizard.classList.remove('on')
                   }}
