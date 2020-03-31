@@ -25,7 +25,7 @@ html {
 body {
   margin: 0;
   font-family: 'Sen', sans-serif;
-  background: url('./img/cloud1.png') no-repeat fixed , url('./img/blue-bg.png') no-repeat fixed ;
+  background: url('./img/cloud1.png') no-repeat fixed , url('./img/blue-bg.jpg') no-repeat fixed ;
   background-size: cover;
   background-color: skyblue;
   width: 100%;

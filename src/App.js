@@ -55,7 +55,7 @@ class App extends React.Component {
         });
         console.log(err)
       });
-      
+
   }
 
 render() {
@@ -99,9 +99,9 @@ function Home(props) {
         </div>
         <div className="Content">
         <div className="right-header">
-        <video id="vid" controls={false} autoPlay muted loop>
+        <center> <video id="vid" controls={false} autoPlay muted loop>
         <source src={pub + 'promo.mp4'} type="video/mp4"/>
-        </video>
+      </video> </center>
         </div>
           <GetMainElementsInfo records={props.records} />
           <GetOnlinePosts/>
