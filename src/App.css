@@ -27,8 +27,16 @@
 }
 
 
+.right-header {
+  float: right;
+  text-align: right;
+}
 
-
+#vid {
+    width: 30vw;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
 
 
 @media (max-width: 1024px) {

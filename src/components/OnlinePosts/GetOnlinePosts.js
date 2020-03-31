@@ -20,7 +20,7 @@ class GetOnlinePosts extends Component {
                 meow : data,
                 records: data.records
             });
-          console.log('Committee Records', data.records)
+          // console.log('Committee Records', data.records)
         })
       .catch(err => {
        this.setState({
@@ -63,7 +63,7 @@ class GetOnlinePosts extends Component {
                     <p className="Light-Text">{description}</p>
                     <div className="footer">
                       <div className="footerLeft"></div>
-                      <div className="footerRight"> <a href={url} target="_blank" class="joinLight">{linkname}</a> </div>
+                      <div className="footerRight"> <a href={url} target="_blank" className="joinLight">{linkname}</a> </div>
                     </div>
                     <div className="clear"></div>
 

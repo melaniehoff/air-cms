@@ -42,7 +42,7 @@ class App extends React.Component {
                   calendarMeow : data,
                   calendarRecords: data.records
               });
-            console.log('CALENDAR (info) Records', data.records)
+            // console.log('CALENDAR (info) Records', data.records)
           })
 
 
@@ -54,12 +54,12 @@ class App extends React.Component {
         });
         console.log(err)
       });
+      document.getElementById('vid').play();
   }
 
 render() {
     const { records } = this.state;
     const { calendarRecords } = this.state;
-    console.log("CALRECCALCREXXXX", calendarRecords)
     return (
       <Router>
         <div className="App">
@@ -86,6 +86,7 @@ render() {
   }
 }
 function Home(props) {
+
   return (
     <div>
       {/* LOGO */}
@@ -96,10 +97,16 @@ function Home(props) {
       <div className="cloudbg">
         </div>
         <div className="Content">
+        <div className="right-header">
+        <video id="vid" controls={false} autoPlay muted loop>
+        <source src={pub + 'promo.mp4'} type="video/mp4"/>
+        </video>
+        </div>
           <GetMainElementsInfo records={props.records} />
           <GetOnlinePosts/>
 
         </div>
+
         <GetMainElements records={props.records}/>
       </div>
   );
