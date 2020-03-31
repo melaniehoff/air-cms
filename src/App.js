@@ -95,6 +95,10 @@ function Home(props) {
         <img src={pub + 'cloud9-logo.png'} />
       </header>
 
+      <a href="/">
+      <center><button className="button">☁️</button></center>
+      </a>
+
       <div className="cloudbg">
         </div>
         <div className="Content">

@@ -47,7 +47,21 @@
 }
 
 
+@media (min-width: 1024px) {
+
+button.button {
+  display: none;
+}
+}
+
 @media (max-width: 1024px) {
+
+  button.button {
+    display: block;
+    position: fixed !important;
+    top: 5px !important;
+    left: calc(50% - 23px);
+  }
 
   .App-header {
     max-width: 300px;
@@ -73,6 +87,7 @@
   .right-header {
     display: none;
   }
+
 
 
 }

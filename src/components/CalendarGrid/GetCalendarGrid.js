@@ -99,7 +99,7 @@ class GetCalendarGrid extends React.Component {
               }
         });
         /* if this popup is already open, hide otherwise show */
-   
+
           if((!x.contains(e.target)) || (e.target.classList[0] == 'close-popup')){
             if (x.style.display === "none") {
               x.style.display = "block";
@@ -107,7 +107,7 @@ class GetCalendarGrid extends React.Component {
               x.style.display = "none";
             }
           }
-        
+
       }
 
     }
@@ -169,7 +169,7 @@ class GetCalendarGrid extends React.Component {
                   <h5 className="gridStartTime">
                   { " " + start_time_formatted }
                 </h5>
-      
+
                 { element.fields.Event }
 
                 </div>
@@ -180,7 +180,7 @@ class GetCalendarGrid extends React.Component {
       console.log(element.fields.HostName,'mew')
       if(element.fields.HostName){
         eventbyline = eventbyline + ' with'
-      } 
+      }
       if ( element.fields.EventImage  == undefined) {
           imageUrl = undefined
           console.log(imageUrl)
@@ -335,7 +335,7 @@ class GetCalendarGrid extends React.Component {
 	    return (
         <div className="calendarContainer">
         <a href="/">
-        <button>☁️</button>
+        <center><button>☁️</button></center>
         </a>
 	      <div className="calendar">
           {this.renderHeader()}

@@ -60,8 +60,8 @@
 .calendar {
     display: block;
     position: relative;
-    width: 94%;
-    margin: 0px auto 40px auto;
+    width: calc(94% - 60px);
+    margin: 0px 20px 40px auto;
     border: 1px solid white;
 
 }
@@ -69,7 +69,7 @@
 
 .calendar .flex-middle {
   position: fixed;
-  width: 94%;
+  width: calc(94% - 60px);
   margin: 30px auto;
   top: 0px;
   z-index: 100000 !important;
@@ -316,7 +316,7 @@
   position: fixed;
   width: 50%;
   top: 120px;
-  left: 25%;
+  left: calc(25% + 40px);
   background: rgba(47,115,161);
   font-size: 20px;
   font-weight:bold;
@@ -387,10 +387,10 @@ z-index: 100000 !important;
 }
 
 .fullEvent h4 a[href^="http://"]:hover {
-  color: white !important;
+  color: #224C69 !important;
 }
 .fullEvent h4 a[href^="https://"]:hover {
-  color: white !important;
+  color: #224C69 !important;
 }
 
 .fullEvent h4 a[href^="http://"]:visited {
@@ -488,33 +488,42 @@ a.join {
   background-color: #fff;
 }
 
-button {
+
+ button {
+  background-color:  rgb(120, 160, 190);
 /*  background-color:#00EEFC;*/
-    background-color: Transparent;
+    /* background-color: Transparent; */
     background-repeat:no-repeat;
   position: fixed;
+  /* position: absolute; */
+  top: 5px;
+  left: 2px;
+  width: 60px;
+  height: 60px;
   border-radius:100%;
-  border:2px solid #6BDDFE;
+  border:3px solid #fff;
   display:inline-block;
   cursor:pointer;
-  margin: 1em;
-  margin-top: 50%;
+  margin: .5em;
+  /* margin-top: 50%; */
   color:#ffffff;
-  font-size:17px;
-  padding:1em;
+  font-size:30px;
+  line-height: 60px;
+  /* padding:10px; */
+  text-align: center;
   text-decoration:none;
   text-shadow:0px 1px 0px #2f6627;
   z-index: 1000000 !important;
 }
 
 button:hover {
-  background-color:#45C2FF;
+  background-color: rgba(47,115,161,20);
   opacity: .7;
 }
-button:active {
+/* button:active {
   position:relative;
   top:1px;
-}
+} */
 
 
 
@@ -698,6 +707,32 @@ button:active {
 
       .calendar .days {
        border-top: 0px solid var(--border-color);
+       }
+
+
+
+        button {
+       /*  background-color:#00EEFC;*/
+           /* background-color: Transparent; */
+           background-repeat:no-repeat;
+         /* position: fixed; */
+         position: relative;
+         /* top: 5px; */
+         border-radius:100%;
+         border:3px solid #fff;
+         display:inline-block;
+         cursor:pointer;
+         margin: 0px;
+         /* margin-top: 50%; */
+         color:#ffffff;
+         text-align: center;
+         text-decoration:none;
+         text-shadow:0px 1px 0px #2f6627;
+         z-index: 1000000 !important;
+         width: 46px;
+         height: 46px;
+         font-size: 22px;
+         line-height: 42px;
        }
 
 
