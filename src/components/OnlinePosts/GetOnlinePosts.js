@@ -31,10 +31,13 @@ class GetOnlinePosts extends Component {
     });
     }
   render() {
+
       // An alternative way to do this that's preferred in most style guides is:
         // const { records } = this.state;
         // See the object destructuring section:
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+      
+
       const { records } = this.state;
         // This map call produces an array of <div> elements. Alternatively, we could use another
         // type of loop such a for-loop to do this, but React style guides prefer these

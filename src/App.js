@@ -54,7 +54,7 @@ class App extends React.Component {
         });
         console.log(err)
       });
-      document.getElementById('vid').play();
+      
   }
 
 render() {

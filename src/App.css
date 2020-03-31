@@ -36,6 +36,10 @@
     width: 30vw;
     margin-bottom: 2em;
     margin-top: 2em;
+    -webkit-filter: grayscale(100%) brightness(49%) sepia(100%) hue-rotate(-211deg) saturate(700%) contrast(0.8);
+    filter: grayscale(100%) brightness(49%) sepia(100%) hue-rotate(-211deg) saturate(700%) contrast(0.8);
+    border-radius: 32px;
+    box-shadow: 1px 0px 10px #7DB7DD;
 }
 
 
@@ -60,6 +64,28 @@
     z-index: 0;
     height: auto;
     width: 100%;
+  }
+
+  .right-header {
+    display: none;
+  }
+
+
+}
+
+
+
+@media (max-width: 420px) {
+
+    .right-header {
+      display: block;
+    margin: auto;
+    position: absolute;
+  }
+
+  #vid {
+    width: 50vw;
+    margin-top: 0;
   }
 
 }

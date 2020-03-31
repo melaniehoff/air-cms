@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import '../Components.css';
 
 class GetMainElements extends Component {
-  render() {
 
+
+  render() {
             console.log("GetMainElement Props", this.props)
 
       // An alternative way to do this that's preferred in most style guides is:
@@ -36,7 +37,7 @@ class GetMainElements extends Component {
                 <a className="bubble" href={link} key={id}>
                 <div>
                 <h5 className="light">{title}</h5>
-                <p>{text} <span>{learn}</span></p>
+                <p>{text}<span>{learn}</span></p>
                 </div>
                 </a>
 
