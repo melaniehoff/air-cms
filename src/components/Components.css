@@ -429,6 +429,7 @@ details p, details .footer {
      animation: float3 6s ease-in-out infinite;
       border: 3px solid #A6F876;
 }
+
 .bubble:nth-child(1):hover {
   bottom:13%;
   z-index: 1;
