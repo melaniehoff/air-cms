@@ -195,7 +195,7 @@ class GetCalendarGrid extends React.Component {
          eventDays.push(
                 <div
                   className={`fullEvent ${thisclass}`}
-                  key={`x`}
+                  key={day}
                   // onClick={() => {
                   //   console.log(element.id)
                   // }}
@@ -205,7 +205,7 @@ class GetCalendarGrid extends React.Component {
                   { " " + start_time_formatted }
                   { " - " + end_time_formatted }
                   </h5>
-                  <h4>{ eventbyline } <a href={ element.fields.HostSocialMediaUrlOrWebsite}>{ element.fields.HostName}</a>
+                  <h4>{ eventbyline } <a href={ element.fields.HostSocialMediaUrlOrWebsite} target="_blank">{ element.fields.HostName}</a>
                  </h4>
 
                  <center> <img src=
