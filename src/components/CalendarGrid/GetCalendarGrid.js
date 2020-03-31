@@ -191,7 +191,7 @@ class GetCalendarGrid extends React.Component {
                   <h5 className="gridStartTime">
                   { " " + start_time_formatted }
                   </h5>
-                  <h4>{ element.fields.Event }  with <a href={ element.fields.HostSocialMediaUrl}>{ element.fields.HostName}</a>
+                  <h4>{ element.fields.Event }  with <a href={ element.fields.HostSocialMediaUrlOrWebsite}>{ element.fields.HostName}</a>
                  </h4>
 
                  <center> <img src=
