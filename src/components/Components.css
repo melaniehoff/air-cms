@@ -316,7 +316,7 @@ details p, details .footer {
   top: 27%;
   left: 5%;
   animation: float 6s ease-in-out infinite;
-  border: 3px solid #5290B5;
+  border: 3px solid #FFBEA1;
 
 }
 .bubble:nth-child(2):hover {
@@ -338,7 +338,7 @@ details p, details .footer {
     top: 65%;
     left: 15%;
     animation: float2 6s ease-in-out infinite;
-    border: 3px solid #C2E3F7;
+    border: 3px solid #00FFBB;
 }
 .bubble:nth-child(3):hover {
   top: 64%;
@@ -360,7 +360,7 @@ details p, details .footer {
   top: 6%;
   left: 15%;
   animation: float 6s ease-in-out infinite;
-   border: 3px solid #257EAE;
+   border: 3px solid #00EEFC;
 }
 .bubble:nth-child(4):hover {
   top: 5%;
@@ -382,7 +382,7 @@ details p, details .footer {
 	 top: 57%;
    left: 2%;
    animation: float2 6s ease-in-out infinite;
-   border: 3px solid #8EC2DF;
+   border: 3px solid #FDC2F8;
 }
 
 .bubble:nth-child(6):hover {
@@ -405,7 +405,7 @@ details p, details .footer {
    top: 17%;
    left: 23%;
      animation: float2 6s ease-in-out infinite;
-      border: 3px solid #3C87B2;
+      border: 3px solid #E7F4AC;
 }
 .bubble:nth-child(5):hover {
   top:16%;
@@ -427,7 +427,7 @@ details p, details .footer {
    bottom: 14%;
    left: 7%;
      animation: float3 6s ease-in-out infinite;
-      border: 3px solid #A3CFE9;
+      border: 3px solid #A6F876;
 }
 .bubble:nth-child(1):hover {
   bottom:13%;
