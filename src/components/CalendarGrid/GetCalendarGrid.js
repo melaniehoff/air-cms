@@ -334,7 +334,9 @@ class GetCalendarGrid extends React.Component {
     } else {
 	    return (
         <div className="calendarContainer">
-        <a href="/"><button >☁️</button></a>
+        <a href="/">
+        <button>☁️</button>
+        </a>
 	      <div className="calendar">
           {this.renderHeader()}
 

@@ -426,8 +426,8 @@ details p, details .footer {
 	 padding: 1%;
    bottom: 14%;
    left: 7%;
-     animation: float3 6s ease-in-out infinite;
-      border: 3px solid #A6F876;
+    animation: float3 6s ease-in-out infinite;
+    border: 3px solid #A6F876;
 }
 
 .bubble:nth-child(1):hover {
