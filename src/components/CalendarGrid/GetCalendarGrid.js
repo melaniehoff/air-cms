@@ -148,6 +148,10 @@ class GetCalendarGrid extends React.Component {
             parseISO(e_fields.StartDateTime),
             "h a"
           )
+          let end_time_formatted = format(
+            parseISO(e_fields.EndDateTime),
+            "h a"
+          )
           eventType = e_fields.EventType
 
 	         eventlinks.push(
@@ -161,7 +165,7 @@ class GetCalendarGrid extends React.Component {
                   <h5 className="gridStartTime">
                   { " " + start_time_formatted }
                 </h5>
-
+      
                 { element.fields.Event }
 
                 </div>
@@ -190,6 +194,7 @@ class GetCalendarGrid extends React.Component {
 
                   <h5 className="gridStartTime">
                   { " " + start_time_formatted }
+                  { " - " + end_time_formatted }
                   </h5>
                   <h4>{ element.fields.Event }  with <a href={ element.fields.HostSocialMediaUrlOrWebsite}>{ element.fields.HostName}</a>
                  </h4>
