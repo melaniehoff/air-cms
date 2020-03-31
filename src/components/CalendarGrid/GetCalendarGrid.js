@@ -176,6 +176,11 @@ class GetCalendarGrid extends React.Component {
         );
 
       let imageUrl = ""
+      let eventbyline = element.fields.Event;
+      console.log(element.fields.HostName,'mew')
+      if(element.fields.HostName){
+        eventbyline = eventbyline + ' with'
+      } 
       if ( element.fields.EventImage  == undefined) {
           imageUrl = undefined
           console.log(imageUrl)
@@ -200,7 +205,7 @@ class GetCalendarGrid extends React.Component {
                   { " " + start_time_formatted }
                   { " - " + end_time_formatted }
                   </h5>
-                  <h4>{ element.fields.Event }  with <a href={ element.fields.HostSocialMediaUrlOrWebsite}>{ element.fields.HostName}</a>
+                  <h4>{ eventbyline } <a href={ element.fields.HostSocialMediaUrlOrWebsite}>{ element.fields.HostName}</a>
                  </h4>
 
                  <center> <img src=
