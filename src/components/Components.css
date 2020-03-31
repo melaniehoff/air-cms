@@ -849,7 +849,6 @@ a:visited {
       left: auto;
       top: auto;
       animation: float2 6s ease-in-out infinite;
-      border: 3px solid #C2E3F7;
   }
   .bubble:nth-child(3):hover {
     top: auto;
@@ -876,7 +875,6 @@ a:visited {
     left: auto;
     right: 10%;
     animation: float 6s ease-in-out infinite;
-     border: 3px solid #257EAE;
   }
   .bubble:nth-child(4):hover {
     top: 7%;
@@ -899,7 +897,6 @@ a:visited {
      left: 7%;
      top: auto;
      animation: float2 6s ease-in-out infinite;
-     border: 3px solid #8EC2DF;
   }
 
   .bubble:nth-child(6):hover {
@@ -923,7 +920,6 @@ a:visited {
      top: 0.5%;
      left: 12%;
        animation: float2 6s ease-in-out infinite;
-        border: 3px solid #3C87B2;
   }
   .bubble:nth-child(5):hover {
     top:0.5%;
@@ -945,7 +941,6 @@ a:visited {
      bottom: 5%;
      left: 27%;
        animation: float3 6s ease-in-out infinite;
-        border: 3px solid #A3CFE9;
   }
   .bubble:nth-child(1):hover {
     bottom:5%;
