@@ -189,7 +189,12 @@ class GetCalendarGrid extends React.Component {
           console.log(imageUrl)
         }
 
-        var thisclass = element.fields.EventType[0];
+      if(element.fields.EventType == undefined) {
+          var thisclass = "";
+      } else  {
+          var thisclass = element.fields.EventType[0];
+      }
+
         console.log(element.fields)
 
          eventDays.push(
