@@ -84,7 +84,7 @@
     .right-header {
     display: block;
     margin: auto;
-    position: absolute;
+    float: left;
   }
 
   #vid {

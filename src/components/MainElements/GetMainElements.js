@@ -36,8 +36,11 @@ class GetMainElements extends Component {
 
                 <a className="bubble" href={link} key={id}>
                 <div>
-                <h5 className="light">{title}</h5>
-                <p>{text}<span>{learn}</span></p>
+                <h5 className="light">
+                {title}
+                </h5>
+                <p>{text}<span>{learn}</span>
+                </p>
                 </div>
                 </a>
 

@@ -36,7 +36,7 @@ class GetMainElementsInfo extends Component {
          <div key={id} id={container}>
               <div id={linkNoHash}>
                 <h1>{title}</h1>
-                  <p>{info}</p>
+                  <p dangerouslySetInnerHTML={{ __html: info }} />
 
                   <a href={url} target="_blank" id="Link">{linkname} <span>{linkicon}</span></a>
 
