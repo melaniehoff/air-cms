@@ -150,11 +150,11 @@ class GetCalendarGrid extends React.Component {
           let start_time = parseISO(e_fields.StartDateTime).toString()
           let start_time_formatted = format(
             parseISO(e_fields.StartDateTime),
-            "h a"
+            "h:mm a"
           )
           let end_time_formatted = format(
             parseISO(e_fields.EndDateTime),
-            "h a"
+            "h:mm a"
           )
           eventType = e_fields.EventType
 
