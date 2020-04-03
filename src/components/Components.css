@@ -767,8 +767,20 @@ a:visited {
   border-bottom: 2px solid rgba(255,255,255,.30);
 }*/
 
-/* MAKE RESPONSIVE */
 
+#credits {
+  background-color: rgb(255,255,255,.1);
+  border-radius: 10%;
+}
+
+#credits p {
+  font-weight: 500;
+  padding: 2em;
+}
+
+
+
+/* MAKE RESPONSIVE */
 
 
 @media (max-width: 1024px) {

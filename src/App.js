@@ -100,8 +100,7 @@ function Home(props) {
       <center><button className="button">☁️</button></center>
       </a>
 
-      <div className="cloudbg">
-        </div>
+      <div className="cloudbg"></div>
         <div className="Content">
         <div className="right-header">
         <video id="vid" controls={false} autoPlay muted loop>
@@ -116,6 +115,7 @@ function Home(props) {
 
         <GetMainElements records={props.records}/>
       </div>
+
   );
 }
 function Calendar(props) {

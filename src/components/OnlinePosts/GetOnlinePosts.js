@@ -98,6 +98,16 @@ class GetOnlinePosts extends Component {
               <h1 id="committees-header">Committees</h1>
               {/* <p id="CommitteeDesc">CLOU9 is a living collection of committees made up of collaborators from all over the world. Reach out to [email] if you'd like to join us.</p> */}
                   {committeeElements}
+          <div id="credits">
+          <p>This website was made by (alphabetically), <br/>
+          <a href="https://aarati.me/">Aarati Akkapeddi</a><br/>
+          <a href="https://melanie-hoff.com/">Melanie Hoff</a><br/>
+          <a href="https://oross.net/">Olivia Ross</a><br/>
+          <a href="https://zai.zone/">Zainab Aliyu</a><br/><br/>
+          <i>Special thanks to Agnes Cameron, Bomani McClendon, & Dan Taeyoung.</i>
+          </p>
+
+          </div>
               </div>
 
         );
