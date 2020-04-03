@@ -62,8 +62,12 @@ class GetOnlinePosts extends Component {
                 <div key={id}>
                     <div className="break"></div>
 
+
                     <h4>{committee}</h4>
-                    <p className="Light-Text">{description}</p>
+                  
+                    
+                    
+                    <p className="Light-Text" dangerouslySetInnerHTML={{ __html: description }} />
                     <div className="footer">
                       <div className="footerLeft"></div>
                       <div className="footerRight"> <a href={url} target="_blank" className="joinLight">{linkname}</a> </div>
@@ -76,6 +80,7 @@ class GetOnlinePosts extends Component {
         // We're rendering the array of committeeElements in our final output!
         // Instead of rendering the variable, we could also have put the entire map call
         // into the brackets inside of this div to produce the same effect. Up to you!
+        //  <p className="Light-Text" dangerouslySetInnerHTML={{ __html:{description}}}/>
         return(
 
 

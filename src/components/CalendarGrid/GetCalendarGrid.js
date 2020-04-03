@@ -150,11 +150,11 @@ class GetCalendarGrid extends React.Component {
           let start_time = parseISO(e_fields.StartDateTime).toString()
           let start_time_formatted = format(
             parseISO(e_fields.StartDateTime),
-            "h a"
+            "h:mm a"
           )
           let end_time_formatted = format(
             parseISO(e_fields.EndDateTime),
-            "h a"
+            "h:mm a"
           )
           eventType = e_fields.EventType
 
@@ -163,7 +163,7 @@ class GetCalendarGrid extends React.Component {
                   className={`eventlink`}
                   // id={type}
                   key={day}
-                  id={eventType}
+                  id={eventType[0]}
                   >
 
                   <h5 className="gridStartTime">
@@ -191,7 +191,17 @@ class GetCalendarGrid extends React.Component {
 
         var thisclass = element.fields.EventType[0];
         console.log(element.fields)
-
+        var calStart = format(
+            parseISO(element.fields.StartDateTime),
+            "yyyMMdd:HHmmss"
+          )
+        var calEnd = format(
+            parseISO(element.fields.EndDateTime),
+            "yyyMMdd:HHmmss"
+          )
+        calStart = calStart.split(":").join("T");
+        calEnd = calEnd.split(":").join("T");
+       
          eventDays.push(
                 <div
                   className={`fullEvent ${thisclass}`}
@@ -231,6 +241,8 @@ class GetCalendarGrid extends React.Component {
                      <a href={ element.fields.DonateLInk} target="_blank" class="join">
                        Donate
                      </a>
+
+                     <a className='join' href={"https://www.google.com/calendar/render?action=TEMPLATE&text=" + element.fields.Event + "&details=" +"&location="+element.fields.StreamingLink + "&dates="+ calStart + '/' + calEnd}>Add to GCal</a>
                    </div>
 
                    <div className="clear"> </div>

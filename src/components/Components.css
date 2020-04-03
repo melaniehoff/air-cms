@@ -173,12 +173,21 @@ left:0px; */
 
 
 #Committees {
+<<<<<<< HEAD
 float: left;
+=======
+	float: left;
+  padding-bottom: 5em;
+>>>>>>> 4052aa965be39e2686cb854384aebda90668b55a
 }
 
 #CommitteesInfo {
 float: left;
 margin-top: -200px;
+}
+
+#MainElementsInfo {
+  float: left;
 }
 
 
@@ -305,6 +314,7 @@ position: absolute;
 box-shadow: 1px 0px 20px rgba(255,255,255,40);
 }
 
+<<<<<<< HEAD
 /*About*/
 .bubble:nth-child(2) {
 z-index: 1;
@@ -345,11 +355,55 @@ border-radius: 50%;
 .bubble:nth-child(3):hover {
 top: 64%;
 z-index: 1;
+=======
+/*Donate*/
+.bubble:nth-child(2) {
+    z-index: 2;
+  border-radius: 50%;
+   padding: 2%;
+    box-sizing: border-box;
+   width: 230px;
+   height:230px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 65%;
+    left: 15%;
+    animation: float2 6s ease-in-out infinite;
+    border: 3px solid #00FFBB;
+}
+.bubble:nth-child(2):hover {
+  top: 64%;
+  z-index: 1;
+>>>>>>> 4052aa965be39e2686cb854384aebda90668b55a
+}
+
+/*Calendar*/
+.bubble:nth-child(3) {
+    z-index: 2;
+   box-sizing: border-box;
+   width: 130px;
+   height: 130px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1%;
+   top: 17%;
+   left: 23%;
+  animation: float2 6s ease-in-out infinite;
+  border: 3px solid #E7F4AC;
+
+}
+.bubble:nth-child(3):hover {
+  top: 16%;
+  z-index: 1;
 }
 
 
 /*Community Guidelines*/
 .bubble:nth-child(4) {
+<<<<<<< HEAD
 z-index: 2;
 border-radius: 50%;
 padding: 2%;
@@ -367,6 +421,25 @@ animation: float 6s ease-in-out infinite;
 .bubble:nth-child(4):hover {
 top: 5%;
 z-index: 1;
+=======
+   z-index: 2;
+   box-sizing: border-box;
+   width: 110px;
+   height: 110px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1%;
+   bottom: 14%;
+   left: 7%;
+   animation: float3 6s ease-in-out infinite;
+   border: 3px solid #A6F876;
+}
+.bubble:nth-child(4):hover {
+  bottom: 14%;
+  z-index: 1;
+>>>>>>> 4052aa965be39e2686cb854384aebda90668b55a
 }
 
 
@@ -393,8 +466,9 @@ z-index: 1;
 }
 
 
-/*HELP*/
+/*Mutual Aid*/
 .bubble:nth-child(5) {
+<<<<<<< HEAD
 z-index: 2;
  box-sizing: border-box;
  width: 130px;
@@ -412,11 +486,31 @@ z-index: 2;
 .bubble:nth-child(5):hover {
 top:16%;
 z-index: 1;
+=======
+  z-index: 2;
+  border-radius: 50%;
+  padding: 2%;
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 6%;
+  left: 15%;
+  animation: float 6s ease-in-out infinite;
+   border: 3px solid #00EEFC;
+}
+.bubble:nth-child(5):hover {
+  top:5%;
+  z-index: 1;
+>>>>>>> 4052aa965be39e2686cb854384aebda90668b55a
 }
 
 
-/*Calendar*/
+/*About*/
 .bubble:nth-child(1) {
+<<<<<<< HEAD
 z-index: 2;
  box-sizing: border-box;
  width: 110px;
@@ -435,6 +529,25 @@ z-index: 2;
 .bubble:nth-child(1):hover {
 bottom:13%;
 z-index: 1;
+=======
+  z-index: 1;
+  border-radius: 50%;
+  padding: 1%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 27%;
+  left: 5%;
+  animation: float 6s ease-in-out infinite;
+  border: 3px solid #FFBEA1;
+}
+
+.bubble:nth-child(1):hover {
+  bottom:26%;
+  z-index: 1;
+>>>>>>> 4052aa965be39e2686cb854384aebda90668b55a
 }
 
 td {
@@ -499,9 +612,15 @@ box-sizing: border-box;
 
 
 .bigBreak {
+<<<<<<< HEAD
 display: block;
 width: 100%;
 height: 140px;
+=======
+  display: block;
+  width: 100%;
+  height: 90px;
+>>>>>>> 4052aa965be39e2686cb854384aebda90668b55a
 }
 
 
@@ -712,6 +831,10 @@ text-decoration: underline;
 font-style: italic;
 }
 
+p a:hover {
+  text-shadow: 0px 0px 4px #FFFFFF;
+}
+
 
 a[href^="https://"] h1 {
 display: inline-block;
@@ -734,6 +857,10 @@ text-decoration-color: yellow;
 a[href^="http://"] h1:hover {
 background-color: yellow;
 text-decoration: none;
+}
+
+a{
+  color:inherit;
 }
 
 a:visited {
@@ -765,9 +892,15 @@ color: inherit;
 }
 
 .bigBreak {
+<<<<<<< HEAD
 display: block;
 width: 100%;
 height: 120px;
+=======
+  display: block;
+  width: 100%;
+  height: 80px;
+>>>>>>> 4052aa965be39e2686cb854384aebda90668b55a
 }
 
 #CalendarContainer {
@@ -800,6 +933,7 @@ height: 120px;
   font-size: 11px;
 }
 /*
+<<<<<<< HEAD
 .bubble p {
   font-size: 14px;
 } */
@@ -840,6 +974,72 @@ height: 120px;
   z-index: 2;
   border-radius: 50%;
    padding: 2%;
+=======
+  .bubble p {
+    font-size: 14px;
+  } */
+
+  .bubble:hover {
+    box-shadow: 1px 0px 20px rgba(255,255,255,40);
+  }
+
+  /*Donate*/
+  .bubble:nth-child(3) {
+    z-index: 2;
+    border-radius: 50%;
+     padding: 2%;
+      box-sizing: border-box;
+     width: 80px;
+     height:80px;
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 15%;
+      right: 7%;
+      left: auto;
+      top: auto;
+      animation: float2 6s ease-in-out infinite;
+  }
+  .bubble:nth-child(3):hover {
+    top: auto;
+    bottom: 15%;
+    z-index: 1;
+  }
+
+
+  /*Donate*/
+  .bubble:nth-child(2) {
+    z-index: 2;
+    border-radius: 50%;
+     padding: 2%;
+      box-sizing: border-box;
+     width: 80px;
+     height:80px;
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 15%;
+      right: 7%;
+      left: auto;
+      top: auto;
+      animation: float2 6s ease-in-out infinite;
+  }
+  .bubble:nth-child(2):hover {
+    top: auto;
+    bottom: 15%;
+    z-index: 1;
+  }
+
+    .bubble:nth-child(2) p {
+    display: none;
+  }
+
+  /*Community Guidelines*/
+  .bubble:nth-child(4) {
+    z-index: 2;
+    border-radius: 50%;
+    padding: 2%;
+>>>>>>> 4052aa965be39e2686cb854384aebda90668b55a
     box-sizing: border-box;
    width: 80px;
    height:80px;
@@ -928,6 +1128,60 @@ height: 120px;
   z-index: 1;
 }
 
+<<<<<<< HEAD
+=======
+  .bubble:nth-child(6):hover {
+    top: auto;
+    bottom: 12%;
+    z-index: 1;
+  }
+
+
+  /*HELP*/
+  .bubble:nth-child(5) {
+    z-index: 2;
+     box-sizing: border-box;
+  	 width: 90px;
+     height: 90px;
+  	 border-radius: 50%;
+  	 display: flex;
+     justify-content: center;
+     align-items: center;
+  	 padding: 1%;
+     top: 0.5%;
+     left: 12%;
+       animation: float2 6s ease-in-out infinite;
+  }
+  .bubble:nth-child(5):hover {
+    top:0.5%;
+    z-index: 1;
+  }
+
+
+  /*Calendar*/
+  .bubble:nth-child(1) {
+    z-index: 2;
+     box-sizing: border-box;
+  	 width: 310px;
+     height: 310px;
+  	 border-radius: 50%;
+  	 display: flex;
+     justify-content: center;
+     align-items: center;
+     top: 38%;
+  	 padding: 1%;
+     left: 16%;
+    animation: float3 6s ease-in-out infinite;
+  }
+  .bubble:nth-child(1):hover {
+    bottom:5%;
+    z-index: 1;
+  }
+    .bubble:nth-child(1) p {
+/*    display: none;*/
+  }
+
+>>>>>>> 4052aa965be39e2686cb854384aebda90668b55a
 
 /*Calendar*/
 .bubble:nth-child(1) {
