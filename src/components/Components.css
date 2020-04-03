@@ -743,6 +743,10 @@ a[href^="http://"] h1:hover {
   text-decoration: none;
 }
 
+a{
+  color:inherit;
+}
+
 a:visited {
   color: inherit;
 }
