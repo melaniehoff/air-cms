@@ -27,6 +27,8 @@ class GetMainElementsInfo extends Component {
             const container = (linkNoHash + "Container");
             const url = fields.Url;
             const linkname = fields.LinkName;
+            const urltwo = fields.UrlTwo;
+            const linknametwo = fields.LinkNameTwo;
             const linkicon = fields.LinkIcon;
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
@@ -39,6 +41,7 @@ class GetMainElementsInfo extends Component {
                   <p dangerouslySetInnerHTML={{ __html: info }} />
 
                   <a href={url} target="_blank" id="Link">{linkname} <span>{linkicon}</span></a>
+                  <a href={urltwo} target="_blank" id="Link">{linknametwo} <span>{linkicon}</span></a>
 
               <div className="bigBreak"></div>
               </div>
