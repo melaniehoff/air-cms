@@ -29,6 +29,8 @@ class GetMainElementsInfo extends Component {
             const linkname = fields.LinkName;
             const urltwo = fields.UrlTwo;
             const linknametwo = fields.LinkNameTwo;
+            const urlthree = fields.UrlThree;
+            const linknamethree = fields.LinkNameThree;
             const linkicon = fields.LinkIcon;
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
@@ -42,6 +44,7 @@ class GetMainElementsInfo extends Component {
 
                   <a href={url} target="_blank" id="Link">{linkname} <span>{linkicon}</span></a>
                   <a href={urltwo} target="_blank" id="Link">{linknametwo} <span>{linkicon}</span></a>
+                  <a href={urlthree} target="_blank" id="Link">{linknamethree} <span>{linkicon}</span></a>
 
               <div className="bigBreak"></div>
               </div>
