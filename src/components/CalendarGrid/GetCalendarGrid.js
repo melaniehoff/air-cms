@@ -242,7 +242,7 @@ class GetCalendarGrid extends React.Component {
                        Donate
                      </a>
 
-                     <a className='join' href={"https://www.google.com/calendar/render?action=TEMPLATE&text=" + element.fields.Event + "&details=" +"&location="+element.fields.StreamingLink + "&dates="+ calStart + '/' + calEnd}>Add to Calendar</a>
+                     <a className='join' href={"https://www.google.com/calendar/render?action=TEMPLATE&text=" + element.fields.Event + "&details=" +"&location="+element.fields.StreamingLink + "&dates="+ calStart + '/' + calEnd}>Add to GCal</a>
                    </div>
 
                    <div className="clear"> </div>
