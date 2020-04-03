@@ -180,6 +180,12 @@
   margin-top: -200px;
 }
 
+
+#CommitteesInfo h4::first-letter{
+  font-style: normal !important;
+}
+
+
 #MainElementsInfo {
   float: left;
 }

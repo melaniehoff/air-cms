@@ -84,7 +84,7 @@ class GetOnlinePosts extends Component {
 
               <div id="CommitteesInfo">
                 <div className="break"></div>
-                <h4>Propose a Session</h4>
+                <h4 id="propose">↪ Propose a Session</h4>
                 <p className="Light-Text"> Join us in sharing stories, strategies, wisdom, sweetness, & online space. Now is a time fortify our networks of care. Proposal ideas include: ways of coping and caring for others, movement meditations, DJ sets, cooking classes or the thing you were gonna do that got cancelled.
                 </p>
                 <div className="footer">
