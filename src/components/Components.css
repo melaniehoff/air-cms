@@ -297,7 +297,7 @@ details p, details .footer {
 .bubble {
   cursor: pointer;
   background-color:  rgb(120, 160, 190);
-  background: url('./img/cloud1.png') no-repeat fixed , url('./img/blue-bg.png') no-repeat fixed ;
+  background: url('./img/cloud1.png') no-repeat fixed , url('./img/blue-bg.jpg') no-repeat fixed ;
   text-align: center;
   position: absolute;
 

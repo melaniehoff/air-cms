@@ -36,7 +36,7 @@ class GetOnlinePosts extends Component {
         // const { records } = this.state;
         // See the object destructuring section:
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-      
+
 
       const { records } = this.state;
         // This map call produces an array of <div> elements. Alternatively, we could use another
@@ -60,20 +60,16 @@ class GetOnlinePosts extends Component {
             // through an loop like this or React will give a warning.
             return (
                 <div key={id}>
-                    <div className="break"></div>
-
 
                     <h4>{committee}</h4>
-                  
-                    
-                    
+
                     <p className="Light-Text" dangerouslySetInnerHTML={{ __html: description }} />
                     <div className="footer">
                       <div className="footerLeft"></div>
                       <div className="footerRight"> <a href={url} target="_blank" className="joinLight">{linkname}</a> </div>
                     </div>
                     <div className="clear"></div>
-
+                    <div className="break"></div>
                 </div>
             );
         });
@@ -87,7 +83,19 @@ class GetOnlinePosts extends Component {
 
 
               <div id="CommitteesInfo">
-              {/* <h1>Committees</h1> */}
+                <div className="break"></div>
+                <h4>Propose a Session</h4>
+                <p className="Light-Text"> Join us in sharing stories, strategies, wisdom, sweetness, & online space. Now is a time fortify our networks of care. Proposal ideas include: ways of coping and caring for others, movement meditations, DJ sets, cooking classes or the thing you were gonna do that got cancelled.
+                </p>
+                <div className="footer">
+                  <div className="footerLeft"></div>
+                  <div className="footerRight"> <a href="https://chinares.wufoo.com/forms/cloud-9/" target="_blank" className="joinLight">Submit</a> </div>
+                </div>
+                <div className="clear"></div>
+
+                <div className="break"></div>
+
+              <h1>Committees</h1>
               {/* <p id="CommitteeDesc">CLOU9 is a living collection of committees made up of collaborators from all over the world. Reach out to [email] if you'd like to join us.</p> */}
                   {committeeElements}
               </div>
