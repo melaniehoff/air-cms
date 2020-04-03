@@ -163,7 +163,7 @@ class GetCalendarGrid extends React.Component {
                   className={`eventlink`}
                   // id={type}
                   key={day}
-                  id={eventType}
+                  id={eventType[0]}
                   >
 
                   <h5 className="gridStartTime">
