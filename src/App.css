@@ -97,6 +97,7 @@ button.button {
 
   #promo-gif {
     width: 300px;
+    display: block;
   }
 
   .right-header {
@@ -107,13 +108,4 @@ button.button {
 
 
 
-@media (max-width: 420px) {
 
-
-
-  #vid {
-    width: 50vw;
-    margin-top: 0;
-  }
-
-}
