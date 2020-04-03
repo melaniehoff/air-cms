@@ -45,6 +45,10 @@
     -moz-box-shadow: 1px 0px 10px #7DB7DD;
 }
 
+  #promo-gif {
+    display: none;
+  }
+
 
 @media (min-width: 1024px) {
 
