@@ -59,6 +59,7 @@ class App extends React.Component {
   }
 
 render() {
+
     const { records } = this.state;
     const { calendarRecords } = this.state;
     return (

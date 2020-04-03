@@ -3,7 +3,7 @@ import '../Components.css';
 
 class GetMainElementsInfo extends Component {
   render() {
-      // An alternative way to do this that's preferred in most style guides is:
+        // An alternative way to do this that's preferred in most style guides is:
         // const { records } = this.state;
         // See the object destructuring section:
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
@@ -39,6 +39,7 @@ class GetMainElementsInfo extends Component {
             // Note that you need to provide a unique key for each element that you create
             // through an loop like this or React will give a warning.
             return (
+
          <div key={id} id={container}>
               <div id={linkNoHash}>
                 <h1>{title}</h1>
