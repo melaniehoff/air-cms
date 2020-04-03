@@ -95,7 +95,7 @@ class GetOnlinePosts extends Component {
 
                 <div className="break"></div>
 
-              <h1>Committees</h1>
+              <h1 id="committees-header">Committees</h1>
               {/* <p id="CommitteeDesc">CLOU9 is a living collection of committees made up of collaborators from all over the world. Reach out to [email] if you'd like to join us.</p> */}
                   {committeeElements}
               </div>

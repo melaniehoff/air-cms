@@ -107,6 +107,7 @@ function Home(props) {
         <video id="vid" controls={false} autoPlay muted loop>
         <source src={pub + 'promo.mp4'} type="video/mp4"/>
         </video>
+        <img id="promo-gif" src={pub + 'promo.gif'}/>
         </div>
           <GetMainElementsInfo records={props.records} />
           <GetOnlinePosts/>

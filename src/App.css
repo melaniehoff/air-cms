@@ -32,7 +32,7 @@
   text-align: right;
 }
 
-#vid {
+#vid, #promo-gif {
     width: 30vw;
     margin-bottom: 2em;
     margin-top: 2em;
@@ -43,7 +43,6 @@
     box-shadow: 1px 0px 10px #7DB7DD;
     -webkit-box-shadow: none;
     -moz-box-shadow: 1px 0px 10px #7DB7DD;
-
 }
 
 
@@ -83,12 +82,22 @@ button.button {
     height: auto;
     width: 100%;
   }
-
   .right-header {
+    margin: auto;
+    float: left;
+  }
+
+  #vid {
     display: none;
   }
 
+  #promo-gif {
+    width: 300px;
+  }
 
+  .right-header {
+    margin-bottom: -90px;
+  }
 
 }
 
@@ -96,11 +105,7 @@ button.button {
 
 @media (max-width: 420px) {
 
-    .right-header {
-    display: block;
-    margin: auto;
-    float: left;
-  }
+
 
   #vid {
     width: 50vw;
