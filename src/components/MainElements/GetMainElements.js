@@ -31,7 +31,7 @@ class GetMainElements extends Component {
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
-            // through an loop like this or React will give a warning.
+            // through an loop like this or React will give a warning.  
             return (
 
                 <a className="bubble" href={link} key={id}>
@@ -39,8 +39,7 @@ class GetMainElements extends Component {
                 <h5 className="light">
                 {title}
                 </h5>
-                <p>{text}<span>{learn}</span>
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
                 </a>
 
