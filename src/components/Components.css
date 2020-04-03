@@ -325,7 +325,7 @@ details p, details .footer {
 }
 .bubble:nth-child(2):hover {
   top: 64%;
-  z-index: 1;
+  z-index: 100;
 }
 
 /*Calendar*/
@@ -347,7 +347,7 @@ details p, details .footer {
 }
 .bubble:nth-child(3):hover {
   top: 16%;
-  z-index: 1;
+  z-index: 100;
 }
 
 
@@ -369,7 +369,7 @@ details p, details .footer {
 }
 .bubble:nth-child(4):hover {
   bottom: 14%;
-  z-index: 1;
+  z-index: 100;
 }
 
 
@@ -392,7 +392,7 @@ details p, details .footer {
 
 .bubble:nth-child(6):hover {
   top: 56%;
-  z-index: 1;
+  z-index: 100;
 }
 
 
@@ -414,7 +414,7 @@ details p, details .footer {
 }
 .bubble:nth-child(5):hover {
   top:5%;
-  z-index: 1;
+  z-index: 100;
 }
 
 
@@ -436,7 +436,7 @@ details p, details .footer {
 
 .bubble:nth-child(1):hover {
   bottom:26%;
-  z-index: 1;
+  z-index: 100;
 }
 
 td {
