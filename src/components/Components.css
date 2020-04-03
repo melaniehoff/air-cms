@@ -757,9 +757,9 @@ a:visited {
   z-index: 100;
 }
 
-#committees-header {
+/*#committees-header {
   border-bottom: 2px solid rgba(255,255,255,.30);
-}
+}*/
 
 /* MAKE RESPONSIVE */
 
@@ -888,7 +888,7 @@ button.button {
   }
   .bubble:nth-child(5):hover {
     top:0.5%;
-    z-index: 1;
+    z-index: 3;
   }
 
   /*Community Guidelines*/
