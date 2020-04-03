@@ -32,6 +32,8 @@ class GetMainElementsInfo extends Component {
             const urlthree = fields.UrlThree;
             const linknamethree = fields.LinkNameThree;
             const linkicon = fields.LinkIcon;
+            const linkicontwo = fields.LinkIconTwo;
+            const linkiconthree= fields.LinkIconThree;
             // Here, we are taking the data we pulled from the object and rendering them
             // with a JSX element!
             // Note that you need to provide a unique key for each element that you create
@@ -43,8 +45,8 @@ class GetMainElementsInfo extends Component {
                   <p dangerouslySetInnerHTML={{ __html: info }} />
 
                   <a href={url} target="_blank" id="Link">{linkname} <span>{linkicon}</span></a>
-                  <a href={urltwo} target="_blank" id="Link">{linknametwo} <span>{linkicon}</span></a>
-                  <a href={urlthree} target="_blank" id="Link">{linknamethree} <span>{linkicon}</span></a>
+                  <a href={urltwo} target="_blank" id="Link">{linknametwo} <span>{linkicontwo}</span></a>
+                  <a href={urlthree} target="_blank" id="Link">{linknamethree} <span>{linkiconthree}</span></a>
 
               <div className="bigBreak"></div>
               </div>
