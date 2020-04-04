@@ -122,14 +122,14 @@
        background-position: 110% 0;
       transform:translateX(100vw) translateY(100vw) rotate(45deg);
     }
-    
+
 }
 
 
 
 
 
-  
+
 @-moz-keyframes Gradient {
     0% {
         background-position: -1% 0;
@@ -143,7 +143,7 @@
        background-position: 210% 0;
       transform:translateX(100vw) translateY(100vw) rotate(45deg);
     }
-    
+
 }
 
 
@@ -849,7 +849,7 @@ a:visited {
 
 #credits {
   background-color: rgb(253,193,244,.2);
-  border-radius: 10%;
+  border-radius: 32px;
 }
 
 #credits p {
@@ -902,11 +902,22 @@ button.button {
   .bubble {
     cursor: pointer;
     background-color:  rgb(120, 160, 190, .5);
-    background: url('./img/cloud1.png') no-repeat fixed;
+    /* background: url('./img/cloud1.png') no-repeat fixed; */
     text-align: center;
     position: absolute;
 
   }
+
+   .bubble:nth-child(1) {
+    background: url('./img/cloud1.png') no-repeat fixed;
+  }
+
+  .bubble:nth-child(2), .bubble:nth-child(3), .bubble:nth-child(4), .bubble:nth-child(5), .bubble:nth-child(6) {
+    background: url('./img/cloud1.png') no-repeat fixed , url('./img/blue-bg.jpg') no-repeat fixed ;
+  }
+
+
+
 
   .bubble h5 {
     font-size: 11px;
@@ -936,8 +947,8 @@ button.button {
   border: 3px solid #00FFBB;
 }
 .bubble:nth-child(3):hover {
-  top: 56%;
-  z-index: 100;
+  top: 33%;
+  /* z-index: 100; */
 }
   .bubble:nth-child(3) p {
   display: none;
@@ -964,7 +975,7 @@ button.button {
   .bubble:nth-child(6):hover {
     top: auto;
     bottom: 12%;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
 
@@ -985,7 +996,7 @@ button.button {
   }
   .bubble:nth-child(5):hover {
     top:0.5%;
-    z-index: 3;
+    /* z-index: 3; */
   }
 
   /*Community Guidelines*/
@@ -1006,7 +1017,7 @@ button.button {
   }
   .bubble:nth-child(4):hover {
     top: 7%;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
     /*Calendar*/
@@ -1029,7 +1040,7 @@ button.button {
   .bubble:nth-child(2):hover {
     top: auto;
     bottom: 15%;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   /*About*/
@@ -1049,7 +1060,7 @@ button.button {
   }
   .bubble:nth-child(1):hover {
     bottom:5%;
-    z-index: 0;
+    /* z-index: 0; */
   }
 
 
