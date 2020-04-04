@@ -100,7 +100,7 @@ function Home(props) {
       <header className="App-header">
         <img src={pub + 'cloud9-logo.png'} />
       </header>
-
+      <div id='rainbow-meow'></div>
       <a href="#">
       <center><button className="button">☁️</button></center>
       </a>
@@ -127,6 +127,7 @@ function Calendar(props) {
   return (
     <div>
       <div className="cloudbg"></div>
+      <div id='rainbow-meow'></div>
     {/* <GetCalendar calendarRecords={props.calendarRecords} records={props.records}/> */}
       <GetCalendarGrid calendarRecords={props.calendarRecords} records={props.records}/>
     </div>
