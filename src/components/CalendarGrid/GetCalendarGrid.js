@@ -42,7 +42,7 @@ class GetCalendarGrid extends React.Component {
 
                 <div class="bullet Blue-Fill SongCircle"></div> <span> Song Circle</span>
                 <div class="bullet Indigo-Fill Checkin"></div> <span> Check-in</span>
-                <div class="bullet Purple-Fill CommunityCollab"></div> <span> Community Collab</span>
+                <div class="bullet Purple-Fill CommunityCollab"></div> <span> Community Program</span>
                 <div class="bullet Pink-Fill FrontlinePSA"></div> <span> Frontline PSA</span>
               </div>
           </div>
