@@ -9,13 +9,15 @@ center button{
   border: 2px solid white !important;
 }
 
+
 #load {
   display: block;
   margin: 0px auto;
   text-align: center;
   width: 100%;
   color: #fff;
-  font-size: italic;
+  font-size: 2em;
+  font-style: italic;
 }
 
 .row {
