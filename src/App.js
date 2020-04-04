@@ -10,6 +10,8 @@ import GetOnlinePosts from './components/OnlinePosts/GetOnlinePosts';
 import GetMainElements from './components/MainElements/GetMainElements';
 import GetMainElementsInfo from './components/MainElementsInfo/GetMainElementsInfo';
 import GetCalendarGrid from './components/CalendarGrid/GetCalendarGrid';
+import GetMutualAid from './components/MutualAid/GetMutualAid';
+
 
 const pub = process.env.PUBLIC_URL;
 class App extends React.Component {
@@ -81,6 +83,9 @@ render() {
             <Route path="/">
               <Home records={records} />
             </Route>
+            <Route path="/mutualaid">
+              <MutualAid />
+            </Route>
           </Switch>
         </div>
       </Router>
@@ -124,6 +129,16 @@ function Calendar(props) {
       <div className="cloudbg"></div>
     {/* <GetCalendar calendarRecords={props.calendarRecords} records={props.records}/> */}
       <GetCalendarGrid calendarRecords={props.calendarRecords} records={props.records}/>
+    </div>
+
+  );
+}
+
+function MutualAid(props) {
+  return (
+    <div>
+      <div className="cloudbg"></div>
+      <GetMutualAid />
     </div>
 
   );
