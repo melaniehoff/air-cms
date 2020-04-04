@@ -98,6 +98,7 @@
   top: 0;
   bottom: 0;
   position: fixed;
+  z-index:-1;
   pointer-events:none;
   background: linear-gradient(90deg,rgba(255,255,255,0), #e60073, #e60000, #ff9966, #ffff66, #1affd1, #6600ff, #cc00ff, #e60073,rgba(255,255,255,0));
   background-size: 1000% 600%;
