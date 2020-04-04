@@ -115,9 +115,9 @@
   padding-top: 20px;
   /* border: 1px solid #fff; */
   box-sizing: border-box;
-  background-color:  rgb(120, 160, 190);
-  background: url('../../img/cloud1.png') no-repeat fixed , url('./img/blue-bg.png') no-repeat fixed ;
-  border-top: 1px solid #fff;
+  background-color:  rgb(120, 160, 190, .6);
+/*  background: url('../../img/cloud1.png') no-repeat fixed , url('./img/blue-bg.png') no-repeat fixed ;
+*/  border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
 
@@ -626,9 +626,9 @@ button:hover {
     padding-top: 20px;
     /* border: 1px solid #fff; */
     box-sizing: border-box;
-    background-color:  rgb(120, 160, 190);
-    background: url('../../img/cloud1.png') no-repeat fixed , url('./img/blue-bg.png') no-repeat fixed ;
-    border-top: 1px solid #fff;
+    background-color:  rgb(120, 160, 190, .4);
+/*    background: url('../../img/cloud1.png') no-repeat fixed , url('./img/blue-bg.png') no-repeat fixed ;
+*/    border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
   }
 

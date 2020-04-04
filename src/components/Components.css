@@ -91,7 +91,7 @@
   height: 200vw;
   width: 3px;
   left:0;
-  filter: blur(5px);
+  filter: blur(8px);
   border-left: 2px solid white;
   border-right: 2px solid white;
   right: 0;
