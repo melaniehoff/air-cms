@@ -201,7 +201,7 @@ class GetCalendarGrid extends React.Component {
           )
         calStart = calStart.split(":").join("T");
         calEnd = calEnd.split(":").join("T");
-       
+
          eventDays.push(
                 <div
                   className={`fullEvent ${thisclass}`}
@@ -347,7 +347,8 @@ class GetCalendarGrid extends React.Component {
 	    return (
         <div className="calendarContainer">
         <a href="/">
-        <center><button>☁️</button></center>
+        <center><button>↜</button></center>
+        {/* <center><button>☁️</button></center> */}
         </a>
 	      <div className="calendar">
           {this.renderHeader()}
