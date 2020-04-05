@@ -1055,7 +1055,8 @@ button.button {
      align-items: center;
      top: 38%;
   	 padding: 1%;
-     left: 16%;
+     /* left: 16%; */
+     left: calc((100vw - 310px)/2);
     animation: float3 6s ease-in-out infinite;
   }
   .bubble:nth-child(1):hover {
