@@ -966,7 +966,7 @@ button.button {
      justify-content: center;
      align-items: center;
   	 padding: 1%;
-  	 bottom: 12%;
+  	 bottom: 8%;
      left: 7%;
      top: auto;
      animation: float2 6s ease-in-out infinite;
@@ -1031,7 +1031,7 @@ button.button {
      display: flex;
       justify-content: center;
       align-items: center;
-      bottom: 15%;
+      bottom: 5%;
       right: 7%;
       left: auto;
       top: auto;
@@ -1053,7 +1053,7 @@ button.button {
   	 display: flex;
      justify-content: center;
      align-items: center;
-     top: 38%;
+     top: 40%;
   	 padding: 1%;
      /* left: 16%; */
      left: calc((100vw - 310px)/2);
