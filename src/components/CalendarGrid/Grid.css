@@ -742,6 +742,7 @@ button:hover {
          z-index: 1000000 !important;
          width: 46px;
          height: 46px;
+         min-height: 46px;
          font-size: 22px;
          line-height: 42px;
        }
