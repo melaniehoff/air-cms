@@ -8,7 +8,7 @@ class GetMutualAid extends Component {
  
         return(
             <div id="MutualAid">
-                <h1>GOUGOUGOU</h1>
+                <h1>TESTESTEST</h1>
             </div>
         );
     }
