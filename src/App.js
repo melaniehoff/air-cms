@@ -11,6 +11,7 @@ import GetMainElements from './components/MainElements/GetMainElements';
 import GetMainElementsInfo from './components/MainElementsInfo/GetMainElementsInfo';
 import GetCalendarGrid from './components/CalendarGrid/GetCalendarGrid';
 import GetMutualAid from './components/MutualAid/GetMutualAid';
+import GetCommunityGuidelines from './components/CommunityGuidelines/GetCommunityGuidelines';
 
 
 const pub = process.env.PUBLIC_URL;
@@ -86,6 +87,9 @@ render() {
             <Route path="/mutualaid">
               <MutualAid />
             </Route>
+            <Route path="/communityguidelines">
+              <CommunityGuidelines />
+            </Route>
           </Switch>
         </div>
       </Router>
@@ -139,6 +143,15 @@ function MutualAid(props) {
   return (
     <div>
       <GetMutualAid />
+    </div>
+
+  );
+}
+
+function CommunityGuidelines(props) {
+  return (
+    <div>
+      <GetCommunityGuidelines />
     </div>
 
   );
