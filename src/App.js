@@ -80,7 +80,7 @@ render() {
             <Route path="/calendar">
               <Calendar calendarRecords={calendarRecords} records={records}/>
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <Home records={records} />
             </Route>
             <Route path="/mutualaid">
@@ -138,7 +138,6 @@ function Calendar(props) {
 function MutualAid(props) {
   return (
     <div>
-      <div className="cloudbg"></div>
       <GetMutualAid />
     </div>
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Components.css';
+// import '../Components.css';
 
 class GetMutualAid extends Component {
 
@@ -8,7 +8,9 @@ class GetMutualAid extends Component {
  
         return(
             <div id="MutualAid">
-                <h1>TESTESTEST</h1>
+                
+<iframe width="100%" height="1100px" src="https://melaniehoff.github.io/cloud9-subpages/mutualaid.html" frameborder="0" allowfullscreen></iframe>
+
             </div>
         );
     }
