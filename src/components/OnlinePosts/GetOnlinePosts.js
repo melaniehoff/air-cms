@@ -105,14 +105,7 @@ class GetOnlinePosts extends Component {
                 </div>
                 <div className="clear"></div>
                  <div className="break"></div>
-                <h4 id="propose">↪ Propose a Session</h4>
-                <p className="Light-Text"> Join us in sharing stories, strategies, wisdom, sweetness, & online space. Now is a time fortify our networks of care. Proposal ideas include: ways of coping and caring for others, movement meditations, DJ sets, cooking classes or the thing you were gonna do that got cancelled. Send us your proposals before April 15th for the next round!
-                </p>
-                <div className="footer">
-                  <div className="footerLeft"></div>
-                  <div className="footerRight"> <a href="https://chinares.wufoo.com/forms/cloud-9/" target="_blank" className="joinLight">Submit</a> </div>
-                </div>
-                <div className="break"></div>
+            
 
               <h1 id="committees-header">Committees</h1>
               {/* <p id="CommitteeDesc">CLOU9 is a living collection of committees made up of collaborators from all over the world. Reach out to [email] if you'd like to join us.</p> */}
