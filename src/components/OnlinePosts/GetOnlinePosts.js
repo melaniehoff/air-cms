@@ -83,7 +83,28 @@ class GetOnlinePosts extends Component {
 
 
               <div id="CommitteesInfo">
+              <div className="break"></div>
+                 <h4 id="propose">↪ Become an oracle</h4>
+                <p className="Light-Text"> Join us in visioning our future. Spend a week amongst a global cohort of artists, activists, dreamers, technologists, organizers, & you dreaming, designing, & divinating new futures across the following themes: <br/>
+                  Week 1: The Future of Care & Healing<br/>
+                  Week 2: The Future of Work & Cooperative<br/>
+                  Week 3: The Future of Earth & Technologies<br/> <br/>
+                  Send us your application before May 14. Stipends will be provided to participants.
+                </p>
+                <div className="footer">
+                  <div className="footerLeft"></div>
+                  <div className="footerRight"> <a href="https://forms.gle/5WhXwYU7e5uDXvpW6" target="_blank" className="joinLight">Submit</a> </div>
+                </div><br/>
                 <div className="break"></div>
+                <h4 id="propose">↪ Propose a Session</h4>
+                <p className="Light-Text"> Join us in sharing stories, strategies, wisdom, sweetness, & online space. Now is a time fortify our networks of care. Proposal ideas include: ways of coping and caring for others, movement meditations, DJ sets, cooking classes or the thing you were gonna do that got cancelled. 
+                </p>
+                <div className="footer">
+                  <div className="footerLeft"></div>
+                  <div className="footerRight"> <a href="https://chinares.wufoo.com/forms/cloud-9/" target="_blank" className="joinLight">Submit</a> </div>
+                </div>
+                <div className="clear"></div>
+                 <div className="break"></div>
                 <h4 id="propose">↪ Propose a Session</h4>
                 <p className="Light-Text"> Join us in sharing stories, strategies, wisdom, sweetness, & online space. Now is a time fortify our networks of care. Proposal ideas include: ways of coping and caring for others, movement meditations, DJ sets, cooking classes or the thing you were gonna do that got cancelled. Send us your proposals before April 15th for the next round!
                 </p>
@@ -91,8 +112,6 @@ class GetOnlinePosts extends Component {
                   <div className="footerLeft"></div>
                   <div className="footerRight"> <a href="https://chinares.wufoo.com/forms/cloud-9/" target="_blank" className="joinLight">Submit</a> </div>
                 </div>
-                <div className="clear"></div>
-
                 <div className="break"></div>
 
               <h1 id="committees-header">Committees</h1>
