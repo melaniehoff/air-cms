@@ -102,7 +102,7 @@ function Home(props) {
     <div>
       {/* LOGO */}
       <header className="App-header">
-
+        <img src={pub + 'cloud9-logo.png'} />
       </header>
       <div id='rainbow-meow'></div>
       <a href="#">
