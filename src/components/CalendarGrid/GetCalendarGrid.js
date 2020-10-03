@@ -6,8 +6,8 @@ import { format, startOfWeek, parse, parseISO, endOfWeek, addDays, startOfMonth,
 
 class GetCalendarGrid extends React.Component {
   state = {
-    currentMonth: new Date(),
-    selectedDate: new Date()
+    currentMonth: new Date("1 April, 2020"),
+    selectedDate: new Date("1 April, 2020")
   };
 
   renderHeader() {
